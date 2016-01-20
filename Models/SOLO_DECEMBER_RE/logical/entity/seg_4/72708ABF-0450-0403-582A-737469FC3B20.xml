@@ -1,0 +1,302 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="72708ABF-0450-0403-582A-737469FC3B20" name="T RECV SESSION">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>2ABAA7D3-D41C-D397-7908-E2D29F790E21</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RECEIVING ACCESS METHOD ID" id="F8CC5DC6-D0F8-AAF3-2ECC-E79D88C3453B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>3FAB9011-1540-BCA4-C490-49A0948C72CF</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<referedAttribute>119BD3E4-799C-109D-8736-B3426491B928</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONTENT ID" id="0142517B-AD5F-D85A-F1A6-556DB7FE9809">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>0FE3FFBD-6682-BCE9-8CD4-5C81CE88AE78</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<referedAttribute>804ACECC-FF22-CC8B-79F9-84413ECFF6FD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECV SESSION START DTTM" id="742EB210-F471-05FD-255D-4B581A5D2253">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>B82DB104-F230-DC8F-CFB4-97F0B0319E4C</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECV SESSION END DTTM" id="4D7495F2-F5AD-010C-B2E6-E00D739EB39D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>0639F8DE-57DE-CCEB-8B02-B66F5A332E20</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONTENT ACCESS DEVICE ID" id="C8734292-F643-C8ED-B67A-2601D0E6C1BF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>88FCC3E3-9CE8-F537-9785-80DE892DCC59</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>028EBB3D-3960-8175-528D-10D4CBCFEF90</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BCST CHANNEL ID" id="66564BE8-ABF5-9599-191C-79101E561FE9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>E11A9F1C-8FD2-FB7E-CEAE-36901C46A230</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATION CALL SIGN ID" id="CDC2BD0E-7C33-681F-CD81-DC08F0CFE7E0">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>C7DAAABF-3C7C-9547-7C1B-613BFDD5A885</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BLG AMT" id="5BCAC609-82E1-DBAA-4E6F-3E1FA0CA36EC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>AC0CFD07-CFC5-A50E-1981-763DBF0BEBD9</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,13,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAY PER VIEW IND" id="5C5A720F-9287-479D-C1EB-EDE76CE12C4F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>028AAFF5-9E98-5F86-49E5-95C38E68F0FE</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FROM INTER PRG GUIDE IND" id="BC5D897A-C3AF-1437-95E2-AB625D1A0703">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>8D0D22AB-EFFB-18E0-C046-B6BAF13AC2E1</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VOD REQUEST TYPE CD" id="B96532D1-E7E7-D13D-86A1-CDFF4AD0DA5D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>94FEFA99-0ECA-ED36-CB8C-1A318E030BEA</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VOD IND" id="7ED4086B-E2ED-941D-C315-FA897D5F7507">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>456ED030-93A8-E97C-4C3E-C1096404AB19</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REQUESTING INDIVIDUAL PARTY ID" id="8F4F01DF-7E66-87E5-DC61-EB7801283AA3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>297AA568-4AC5-5DE3-67F3-077868FAF757</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="96E70C70-B285-387E-D786-B7B27955C404">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>665D1A35-0284-6F39-7101-3D47922C8D37</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="A44B9E84-A937-B397-CA58-3E2E6BFF011B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>231969DB-30D0-28FF-BCA2-90061E6F3BAF</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="55576FD7-3072-4203-B7D7-76EC333507AB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>AF703896-5F4E-2E89-83E9-C5BEEA83E2BD</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="87550F6D-FA36-15CE-FBAF-232CB9DE71DC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>610DF058-09F8-B122-E4F5-23CE5DC441E2</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="5FE66F7C-89CA-63FB-4C29-066C6DC54AF7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>8BE83619-9D62-1EF8-800F-B8278F38620B</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D4A5A73F-B292-B720-133E-B1926789ED97" name="PK RECV SESSION">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>8CD4EA33-85BD-C1EA-EF3F-35F11E1FAAA2</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F8CC5DC6-D0F8-AAF3-2ECC-E79D88C3453B</attributeRef>
+<attributeRef>0142517B-AD5F-D85A-F1A6-556DB7FE9809</attributeRef>
+<attributeRef>742EB210-F471-05FD-255D-4B581A5D2253</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

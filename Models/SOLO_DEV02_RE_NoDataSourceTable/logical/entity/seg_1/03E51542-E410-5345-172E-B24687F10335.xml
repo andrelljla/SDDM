@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="03E51542-E410-5345-172E-B24687F10335" name="T PROD ORDER ITEM STATUS">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>38E99D21-F256-B868-5010-53A502436D5C</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PRODUCT ORDER ITEM ID" id="7FDC2673-4770-A76F-83B8-D88389A09C1F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>C366D864-C2B5-7E7B-3FD8-BF70247CE86B</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<referedAttribute>ED3E4860-B220-21C3-0482-6437AFB2F8C8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATA SOURCE TYPE CD" id="87EC3D34-CCC8-9018-DDA8-42B5B96550BA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>6BA5C545-A67C-2638-F8DB-E1EED7DDE439</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<referedAttribute>036ADE1A-57A1-DA9C-52EF-E9CE6129E98E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT ORDER ITEM STATUS CD" id="074408D5-B296-2EFC-E8FE-435EC5B98308">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>E75F63D2-A48B-6BE5-26A5-386585E27C6C</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<referedAttribute>822DC19D-193A-60FB-A01F-6B9234FF5AB6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="12FBE74A-898A-0F3B-3277-115A8AD1645F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>9E0897C3-BE11-A1F9-28C4-EB4617DDEEC2</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="FDFCACB1-DD7C-620D-4268-ACC8E19F7F80">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>3D742CBF-37D8-1C83-8896-8CD680ED13DD</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="66553CCA-7AE0-B493-A505-31327E082F3D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>02D6C5CC-30AA-BAE3-10B1-57EE2D5BBD19</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="99E76E0B-20A5-C8C6-183A-6609291340EC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>81318179-840D-4558-2ADF-8917C9BA04E4</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="C97DCBE2-5186-6307-EFD8-11035E990CCB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>AB290E94-944E-CC0C-1600-B07014689E58</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="T PROD ORDER ITEM STATUS CD.DATA SOURCE TYPE CD" id="96938664-7B18-A712-9062-C4E6B8245C3E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>E75F63D2-A48B-6BE5-26A5-386585E27C6C</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<referedAttribute>3B53B5F3-C70B-22A8-61A6-499675469A30</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="66FBE4F2-FEC8-6BEA-1B46-A0AA40F1A5C7" name="PK PROD ORDER ITEM STATUS">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>17FEAB2B-94D7-709F-6A2B-44DB99E80FD5</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7FDC2673-4770-A76F-83B8-D88389A09C1F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

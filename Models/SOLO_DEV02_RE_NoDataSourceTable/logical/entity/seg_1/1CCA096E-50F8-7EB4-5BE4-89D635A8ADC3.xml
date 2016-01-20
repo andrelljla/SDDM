@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="1CCA096E-50F8-7EB4-5BE4-89D635A8ADC3" name="T PARTY MEMO">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>91A4BDBA-8F27-540C-524D-0B41F6C7B307</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="MEMO ID" id="A432847B-8BE2-B6C7-EF45-D96A61F3E5E9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>734DC70F-9685-7133-18B8-7D7DE5C345B5</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<referedAttribute>36E12D39-4759-B660-1B96-EF04F373172E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PARTY ID" id="A0F300C0-BF69-B5B9-5339-414C6DD0F4E9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>C4882FED-8FE2-95E2-08D6-2417268F9D3A</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<referedAttribute>3574F910-F213-F8D2-40F0-BA46AD0AE8FE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="50CEA82C-BC70-CA03-EA33-DB0DB0B5909E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>1ABB6447-8779-B7FA-00F4-CE95874A8B45</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="109FF40B-98A0-25BB-BA50-6F40FBAEA029">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>37C7118B-029F-4E4E-D3AC-290A6383AFA7</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="4770AC3A-8CF4-F5F3-4BCF-6D323ADCE7CF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>906DCAC3-83F2-AF46-42B5-4EE9FE91863D</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="2AC6C7E3-E2CE-2B79-4F32-BFDD50D960D3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>DAB67230-3819-B92E-B2F7-CDAF0E56B11E</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="A834C17D-645B-E8A3-F53C-E46F2B6C0A57">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:50 UTC</createdTime>
+<generatorID>8F288305-97EB-E16C-802F-C531D2499BD2</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

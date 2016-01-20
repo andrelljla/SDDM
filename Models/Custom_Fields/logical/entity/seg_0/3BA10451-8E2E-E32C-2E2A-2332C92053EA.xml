@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3BA10451-8E2E-E32C-2E2A-2332C92053EA" name="Work Order">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>25D2CFE9-8057-2545-6BE7-4AE50382E264</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Work Order ID" id="95647F1F-38B6-BEA9-3D1D-021D4FAD40ED">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>1EC7B3C6-4BED-2931-9D66-F988226C652E</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Account ID" id="F9C81B41-CB0B-0A85-75A7-A29B2599F617">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>5098A12F-9BC1-44E0-D774-7E90E43A00D8</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<referedAttribute>E6C86B16-3A42-C46F-4D0C-C9C35BAB04EA</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Order Date" id="43DB6062-686A-A85E-9792-D1B342FEC789">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>0A14F31D-8FD8-E3E7-92B7-23D526F2DC0B</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3F7C9C1B-0098-F5D6-8CA5-720C1DF67449" name="Work Order PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>F278B38C-CF87-C99E-2E62-70030473B6CF</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>95647F1F-38B6-BEA9-3D1D-021D4FAD40ED</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

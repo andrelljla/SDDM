@@ -1,0 +1,198 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="7D8C40B5-0A16-FC4C-02FD-7D2AF200F588" name="T PARTY RELATED">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>E359E3E2-6F5D-B0FB-923F-0BDC3DDCAE0C</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PARTY ID" id="7FEB7AD0-2CD2-1C03-4AE7-1B2576D550B7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>E96F042B-C801-FABB-0344-5A8E79BCFFC4</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<referedAttribute>6387E52B-95E9-BD38-0DB9-9D7FC6081C29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RELATED PARTY ID" id="3ED31573-2325-E079-A10C-A974858DF4EB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>4B84B9E8-A51C-1DD2-04CD-1B5650D809EF</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<referedAttribute>6387E52B-95E9-BD38-0DB9-9D7FC6081C29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PARTY RELATED ROLE CD" id="9757F3AC-5DE6-0B96-976F-674B3E63FB14">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>364110A9-D6AD-ADA1-A17B-DB9D54350E32</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PARTY RELATED SUBTYPE CD" id="8D2414ED-6CF8-81CB-DA5C-E2432AFA2D35">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>EADFF502-02B9-2C2A-2710-E9091BCE516C</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PARTY RELATED STATUS REASON CD" id="40EF9271-4280-010F-34F8-59F73D0BFD80">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>55D7C854-36B8-1E02-F9C7-EA9EF7211C58</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATA SOURCE TYPE CD" id="ECB5A307-9BC2-8711-26F1-B5120DB6C998">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>764444C0-FBF3-F82D-943C-355C55F2EEB5</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<referedAttribute>B0417E57-4DB0-1457-55F5-1A8E023C43D5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="02D6048E-CC88-2392-ADA7-CE38A7FCDA6C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>A9C088C0-9B19-A484-505D-DED61DCBA79C</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="DF5FF47C-476F-0C1A-07EB-544C6FB61807">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>1AD281A1-3921-FBEC-E18F-09D84025FF74</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="BB21D259-83EC-3247-6C99-E7DFFB3A835F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>8D9867E3-5489-4545-ED81-DD55936E9981</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="0AD5B08C-FA8C-63DD-F605-99BB5F48A9F1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>BC8DB163-E248-982E-E401-705CD8C867AB</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="DEBF9325-EC2A-A1F6-D73E-F95792B3231F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>93B90ECF-1F14-141F-A941-B5D2DA9EF484</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C5A2678E-910C-07A8-D5F1-59B1A1B75EFD" name="PK PARTY RELATED">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:27 UTC</createdTime>
+<generatorID>419BE433-82FD-F6FA-6F33-B77307C1A14D</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7FEB7AD0-2CD2-1C03-4AE7-1B2576D550B7</attributeRef>
+<attributeRef>3ED31573-2325-E079-A10C-A974858DF4EB</attributeRef>
+<attributeRef>9757F3AC-5DE6-0B96-976F-674B3E63FB14</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

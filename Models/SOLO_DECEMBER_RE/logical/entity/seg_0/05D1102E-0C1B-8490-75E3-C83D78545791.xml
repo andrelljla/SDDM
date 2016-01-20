@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="05D1102E-0C1B-8490-75E3-C83D78545791" name="T BILLING PROD INST PRC CHARGE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:25 UTC</createdTime>
+<generatorID>4940732F-34AA-4872-A967-0A66EF60CF4D</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BILLING PROD INST ID" id="7B4EE95E-A244-F2BC-3658-4EE4F4F020BC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:25 UTC</createdTime>
+<generatorID>7710E1DA-5332-B877-4C8A-2FB1604C64D7</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<referedAttribute>82A11645-3337-F542-0B8B-37C76DF8FDCF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BILLING PRICE CD" id="57A52A7A-2E23-1D25-D0AF-C75AB80AAC8D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:25 UTC</createdTime>
+<generatorID>7710E1DA-5332-B877-4C8A-2FB1604C64D7</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<referedAttribute>96876D3A-472D-02C3-EC42-22501E9105A7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CHARGE PRICE TYPE CD" id="75385105-C9E1-6157-4A06-4C0B5B49D13D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:25 UTC</createdTime>
+<generatorID>B09F6024-7183-9D75-3F8E-B0D22877F3A4</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="398D7F5F-25FD-8037-5996-BA5926E0D693">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:25 UTC</createdTime>
+<generatorID>33DF2EDA-0203-536D-D3AA-9513F2CF889F</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="D420A774-2276-2ED5-6C55-C6A29574CF85">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:25 UTC</createdTime>
+<generatorID>FB7D1374-2428-1379-00B8-76B64F39F913</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="FFB7F5CC-C04F-378A-5CCB-69B9ACC3A8E2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:25 UTC</createdTime>
+<generatorID>2EE346A4-7036-046A-3E1B-307AD097BFC1</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="B85A78E8-4180-51DA-760C-5B71BA4FC760">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:25 UTC</createdTime>
+<generatorID>75FEFB93-121D-B3A4-043C-81BEAAEA14ED</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="F3BFF203-E522-0AC3-F67B-CFD46583EB39">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:25 UTC</createdTime>
+<generatorID>FC5231A0-3491-F539-98EA-84895143ECB4</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="T COMPNT BILLING PROD INST PRC.BILLING PROD INST ID" id="C36866A5-22D2-9D1B-11B6-DD821B624701">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:29 UTC</createdTime>
+<generatorID>2E8738E0-BE77-338F-44D0-8398118AFB95</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<referedAttribute>658A5687-A641-CDBC-5304-6C0FD21D54F7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="T COMPNT BILLING PROD INST PRC.BILLING PRICE CD" id="3393A187-2505-0BE3-BCC0-021C07AF3C53">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:29 UTC</createdTime>
+<generatorID>2E8738E0-BE77-338F-44D0-8398118AFB95</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<referedAttribute>966A8D83-6D0A-9546-4229-25FB60464949</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="17023E20-BF86-3F6D-94DA-7B848385C1B6" name="PK BILLING PROD INST PRC CHARG">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:25 UTC</createdTime>
+<generatorID>0D2DFC62-C98B-9F59-0550-544800CDB86E</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7B4EE95E-A244-F2BC-3658-4EE4F4F020BC</attributeRef>
+<attributeRef>57A52A7A-2E23-1D25-D0AF-C75AB80AAC8D</attributeRef>
+<attributeRef>C36866A5-22D2-9D1B-11B6-DD821B624701</attributeRef>
+<attributeRef>3393A187-2505-0BE3-BCC0-021C07AF3C53</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

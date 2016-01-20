@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5F4F2824-5063-953B-FE29-7E469D564D01" name="T ACCOUNT BALANCE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>8639A403-13DF-06C1-0CF4-A675F4B4CE0B</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ACCOUNT ID" id="328492F2-7C42-157E-C5CE-00173E2639B8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>4718FB58-062C-B3D8-BC9B-F669F19D415E</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<referedAttribute>934ADA0C-39C3-5FF8-642A-AE552B8EA200</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACCOUNT BALANCE TYPE CD" id="5688E794-3416-E629-E1A2-F4BFF6B9F63B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>1FB77571-F154-EA09-6ADD-78FFA3D166C5</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<referedAttribute>8409627B-DC52-A3C1-71BD-05F570D720A8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACCOUNT BALANCE AMT" id="490E471C-23DE-C074-ABA4-7802B3CFE9FD">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>9A2E23B2-3102-CA1F-490D-3FBB15636F09</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,13,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="0038332B-20DA-E095-38B0-659CC0BB141B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>95BDFCA8-1F55-FA26-2BD6-48CF7E3E5EB8</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="7317AF09-9648-427C-D36E-B4E6003869B2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>B0F5F2BD-AD3D-6DA6-98E7-C12BF34B937D</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="6361BE4F-6BE8-7E55-9A36-5DEB7CB5EB64">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>41C19855-416C-B27A-E870-2C2ABBDDFA13</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="1EE42F35-59C1-190D-3B0E-A3CADE601A92">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>75C1364D-27DC-5D7F-5444-B802F272379A</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="F910A669-BF4B-6B1F-96F7-182B5C8BF849">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>949F135D-6B50-37A5-E8B7-8BFD713270C0</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A98DF05B-E687-68F5-FD48-626CEF3FA2E7" name="PK ACCOUNT BALANCE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>5C7719D6-72B2-FF3B-1CC8-A6FA5C1911B0</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>328492F2-7C42-157E-C5CE-00173E2639B8</attributeRef>
+<attributeRef>5688E794-3416-E629-E1A2-F4BFF6B9F63B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

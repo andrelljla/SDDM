@@ -1,0 +1,219 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="D67E8F2B-D6E7-C687-2B60-52F2A246B1DE" name="Account Telephone Address">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="07512ADB-0616-1AC9-5C6F-2E2ED8249315">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:45 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telephone Address Type Code" id="565BF7FE-DA0B-71F1-F6D8-52E13F355868">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:14:10 UTC</createdTime>
+<generatorID>4119F524-F2AC-44AC-F086-D9F1676B51F2</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>1779B8E7-9823-D5A7-5BE6-FAF7C8DEFEA3</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>53757E19-4D1C-7D48-82B8-B547D384EF3A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telephone Number" id="61718EF7-FFAE-42ED-B340-F271DE5AD3E5">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<comment>Limited to North American telephone numbers</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telephone Area Code" id="74FD1A84-3AC3-3CB0-974D-75CE15BEBACD">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telephone Exchange Number" id="1CFAAA5F-BE5A-4093-2B5F-8594ADDB041D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telephone Line Number" id="4E9E08CC-5F69-803C-02F5-5752134ED23F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Preference Sequence" id="140889F8-D24B-C363-F9E2-D8CCAD195F38">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Effective Date" id="1510D4F6-6E13-50C1-6CC0-5817C723CD98">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="End Date" id="64A6E333-00CE-21D0-9F07-DED775057C25">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Is Active" id="68E2F613-F64A-5B30-13B0-29D7A153CE9F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM2022950</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Document Link" id="68C643D6-7264-A61B-8CE9-4A1F1D6EA518">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT052</logicalDatatype>
+<domain>DOM2025190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comment" id="98D2B391-39A5-664B-3EA1-8650BAF10463">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>088C8227-2A17-7B49-31AB-6F32AB32A61B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Account ID" id="00AE8928-46E9-862A-3A9D-12F3BB008474">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:14:48 UTC</createdTime>
+<generatorID>0396AD31-FCDB-0927-3D48-7F1E120E2A90</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>1588AD6E-BF72-71CF-7DB3-C374933CDCF1</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4375BF24-F1B3-E058-9B0D-1021BB35AFAE" name="Account Telephone Address PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>61718EF7-FFAE-42ED-B340-F271DE5AD3E5,07512ADB-0616-1AC9-5C6F-2E2ED8249315</newElementsIDs>
+<usedAttributes>
+<attributeRef>61718EF7-FFAE-42ED-B340-F271DE5AD3E5</attributeRef>
+<attributeRef>07512ADB-0616-1AC9-5C6F-2E2ED8249315</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0F7E8CD5-EB41-FBE3-36F2-604F0A3CF844" name="Account Telephone Number Assignment UK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:12:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<newElementsIDs>61718EF7-FFAE-42ED-B340-F271DE5AD3E5,1510D4F6-6E13-50C1-6CC0-5817C723CD98</newElementsIDs>
+<usedAttributes>
+<attributeRef>61718EF7-FFAE-42ED-B340-F271DE5AD3E5</attributeRef>
+<attributeRef>1510D4F6-6E13-50C1-6CC0-5817C723CD98</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

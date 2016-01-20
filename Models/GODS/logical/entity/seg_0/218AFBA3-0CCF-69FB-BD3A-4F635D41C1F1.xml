@@ -1,0 +1,430 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="218AFBA3-0CCF-69FB-BD3A-4F635D41C1F1" name="House Custom Fields">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<generatorID>2551AEF5-0B80-1998-7F51-EBE3C071C079</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Effective Date" id="6B712E4A-4A3B-337D-561C-8CC7D4E3D7E9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>F98D3810-6118-320F-D835-76CCEB604F78</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Overbuilder Code Stream Video" id="48DCA4FB-ABD9-132C-1BB8-F78DB7A805B0">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE01&lt;br/&gt;&lt;br/&gt;PRODUCT01 from RDM Gold Map spreadsheet.  &lt;br/&gt;&lt;br/&gt;Valid values:&lt;br/&gt;K = Kindle (deprecated with BRF 1882)&lt;br/&gt;R = Roku (effective with BRF 1882)</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>FC1B9446-A5F8-E96D-4219-999C318440E8</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Overloaded HSE02" id="EDCD4017-A5DB-B57A-B97E-54FFC4762B22">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE02&lt;br/&gt;&lt;br/&gt;MDUCNTRTYPE field in RDM Mapping spreadsheet.&lt;br/&gt;&lt;br/&gt;Position 1-2 = Contract Code (Various Pre-Defined Values)&lt;br/&gt;Position 3 = Hyphen (-)&lt;br/&gt;Position 4 = Auto renewal Status (Y/N)&lt;br/&gt;Position 5-6 = Auto renewal Number of Months (two digits)&lt;br/&gt; </commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>BE0C91A7-C36E-E377-B498-D768C6CE632F</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MDU Contract Code" id="524A3BAF-0381-868A-0642-7F8DD9A8BEA0">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE02&lt;br/&gt;&lt;br/&gt;First 2 positions of the existing MDUCNTRTYPE field in RDM Mapping spreadsheet.</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>78866E47-AB84-FC63-C445-139F4EC6EF5E</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MDU Contract AutoRenew Flag" id="3F92F70A-E093-F08A-3446-C232D01EA573">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE02&lt;br/&gt;&lt;br/&gt;Position 4 of the existing MDUCNTRTYPE field in RDM Mapping spreadsheet.  (Position 3 is reserved for a hyphen for data readability; omitted in breakout model).&lt;br/&gt;</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>E94D2E32-F9FB-F5A3-3D04-7E9C7B9C7AE8</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MDU Contract AutoRenew Months" id="9651E0E9-38F1-1BEB-665E-1AFAAC5F6C97">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE02&lt;br/&gt;&lt;br/&gt;Positions 5-6 of the existing MDUCNTRTYPE field in RDM Mapping spreadsheet.  Represents the number of months for auto-renewal of the property (2-digits).</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>D6D1D219-1EBB-8B91-993D-4D81E0CF7BAC</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Digital Trap Indicator" id="BE284676-CD5C-1397-3140-DBF2598B42C8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE03&lt;br/&gt;&lt;br/&gt;ALLDIGTRAP from RDM mapping spreadsheet.  Valid value TRAP indicates a trap exists.&lt;br/&gt;&lt;br/&gt;Trap indicator.  Used with all-digital launches to define when a trap/filter is on a dwelling.</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>DF3B1DB1-C6EF-4D39-3D09-0ACF7D1EF164</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Last Audit Date" id="50F81F96-A98D-0D67-976B-89E2A6A57D99">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE04&lt;br/&gt;&lt;br/&gt;HSECUSTOM04 from RDM Mapping spreadsheet&lt;br/&gt;&lt;br/&gt;</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>07FAC5F9-6140-6E2E-0F43-D8D9CB82979E</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="New Build Project Num" id="08D4571A-AB77-DE70-A2A3-84DCD63AB5D7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE05&lt;br/&gt;&lt;br/&gt;NEWBUILDNUM from RDM Mapping Spreadsheet&lt;br/&gt;&lt;br/&gt;New build project number used by Construction, Serviceability.</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>78DAC2BA-F22B-E34D-9EA8-530B052CEACD</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Auditor ID" id="ACB287F5-118B-5986-46A7-0284DFEB62DB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE06&lt;br/&gt;&lt;br/&gt;HSECUSTOM06 from RDM Mapping Spreadsheet&lt;br/&gt;&lt;br/&gt;</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>DB59423D-8CF1-36E3-D61C-7AED88B327FE</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Overloaded HSE07" id="0BB693E3-2B22-8E7D-6514-10A5E21980CE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE07&lt;br/&gt;&lt;br/&gt;ADDDELHSERSN from RDM Mapping Spreadsheet.  &lt;br/&gt;&lt;br/&gt;Used to track the reason for locations being marked for add or delete as well as the date in which the add or delete update was made.&lt;br/&gt;&lt;br/&gt;- 01 – Baseline value.&lt;br/&gt;- 11 – New Build Add&lt;br/&gt;- 12 – Fill In House Maintenance group Add&lt;br/&gt;- 13 – Fill in MDU Process group Add&lt;br/&gt;- 14 – Fill In Serviceability Desk group Add&lt;br/&gt;- 15 – Sys,Prin and/or Agent Correction – Add&lt;br/&gt;- 16 – Hierarchy Control Location Add&lt;br/&gt;- 17 – Bulk MDU Variance Resolution Add&lt;br/&gt;- 18 – Production Test Account Add&lt;br/&gt;- 19 – Fill In CB group Add&lt;br/&gt;- 20 – Fill In GIS Add&lt;br/&gt;- 51 – Duplicate Address Delete&lt;br/&gt;- 52 – Invalid Address Delete&lt;br/&gt;- 53 – Invalid sys, prin and/or Agent Correction Delete&lt;br/&gt;- 54 – Location No Longer Exists – Delete&lt;br/&gt;- 55 – No longer serviceable by Charter Communications – Delete&lt;br/&gt;- 56 – Bulk MDU Variance Resolution Delete&lt;br/&gt;- 57 – CB Tenants Delete&lt;br/&gt;- 58 – Production Test Account Delete&lt;br/&gt;- S1 – Special Project Add: CB 2 MDU Q4 2014-Q1 2015&lt;br/&gt;- S2 – Special Project Add: Mass CB House Builds Q1 2015&lt;br/&gt;- S3 – Special Project Delete: All Digital 2014&lt;br/&gt;&lt;br/&gt;- Establish HSE07 format of:&lt;br/&gt;&lt;br/&gt;- Pos 1-2: 2 digit alpha numeric reason code&lt;br/&gt;- Pos 3: A (add), D (delete), B (baseline)&lt;br/&gt;- Pos 4-9: date, MMDDYY</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>80C49B67-EDE0-61E0-8E8F-4259BBBEFD81</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Add Delete House Reason Code" id="BFB4E61A-95F4-A240-84BF-2E8E5E67F6AE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE07&lt;br/&gt;&lt;br/&gt;Position 1-2 in ADDDELHSERSN from RDM Mapping Spreadsheet.  &lt;br/&gt;&lt;br/&gt;Used to track the reason for locations being marked for add or delete as well as the date in which the add or delete update was made.&lt;br/&gt;&lt;br/&gt;Valid Values (Initial):&lt;br/&gt;- 01 – Baseline value.&lt;br/&gt;- 11 – New Build Add&lt;br/&gt;- 12 – Fill In House Maintenance group Add&lt;br/&gt;- 13 – Fill in MDU Process group Add&lt;br/&gt;- 14 – Fill In Serviceability Desk group Add&lt;br/&gt;- 15 – Sys,Prin and/or Agent Correction – Add&lt;br/&gt;- 16 – Hierarchy Control Location Add&lt;br/&gt;- 17 – Bulk MDU Variance Resolution Add&lt;br/&gt;- 18 – Production Test Account Add&lt;br/&gt;- 19 – Fill In CB group Add&lt;br/&gt;- 20 – Fill In GIS Add&lt;br/&gt;- 51 – Duplicate Address Delete&lt;br/&gt;- 52 – Invalid Address Delete&lt;br/&gt;- 53 – Invalid sys, prin and/or Agent Correction Delete&lt;br/&gt;- 54 – Location No Longer Exists – Delete&lt;br/&gt;- 55 – No longer serviceable by Charter Communications – Delete&lt;br/&gt;- 56 – Bulk MDU Variance Resolution Delete&lt;br/&gt;- 57 – CB Tenants Delete&lt;br/&gt;- 58 – Production Test Account Delete&lt;br/&gt;- S1 – Special Project Add: CB 2 MDU Q4 2014-Q1 2015&lt;br/&gt;- S2 – Special Project Add: Mass CB House Builds Q1 2015&lt;br/&gt;- S3 – Special Project Delete: All Digital 2014&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>EC8DA7DB-599A-06CC-D70F-8B9ED3AFF65F</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Add Delete House Action" id="5A4E1299-E459-D3DE-59E0-E6FAB5E43C03">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE07&lt;br/&gt;&lt;br/&gt;Position 3 in ADDDELHSERSN from RDM Mapping Spreadsheet.  &lt;br/&gt;&lt;br/&gt;Used to track the reason for locations being marked for add or delete as well as the date in which the add or delete update was made.  &lt;br/&gt;&lt;br/&gt;Valid Values: &lt;br/&gt;A = add&lt;br/&gt;D = delete&lt;br/&gt;B = baseline&lt;br/&gt;</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>FB5631F2-6835-C3EA-4382-A4EED7460505</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Add Delete House Date" id="26C75A0E-88B1-9BD8-5F55-6A3F3D0259FE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE07&lt;br/&gt;&lt;br/&gt;Positions 4-9 of ADDDELHSERSN from RDM Mapping Spreadsheet (MMDDYY).  &lt;br/&gt;&lt;br/&gt;Used to track the reason for locations being marked for add or delete as well as the date in which the add or delete update was made.</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>6071851B-BE26-B547-554A-B59EEC689EFD</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Max Capacity" id="6AC2EF38-BB14-F755-18CB-B574632E8692">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE08&lt;br/&gt;&lt;br/&gt;HSECUSTOM08 from RDM Mapping Spreadsheet.  &lt;br/&gt;&lt;br/&gt;Max Capacity</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>335D14ED-27EE-68C7-931A-D713D0066CA2</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Audit Tracking" id="C0B82D1B-B4CD-BFE4-B44D-FF3BDE07CE36">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE09&lt;br/&gt;&lt;br/&gt;HSECUSTOM09 from RDM Mapping Spreadsheet.  &lt;br/&gt;&lt;br/&gt;Audit Tracking&lt;br/&gt;</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>C56F4A4D-A46F-7E40-260D-3611D772D3B8</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Contract End Date" id="1A227E2E-7BD8-CCC0-71ED-C2F9AB7A209A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE10&lt;br/&gt;&lt;br/&gt;CONTRENDDTE from RDM Mapping Spreadsheet.  &lt;br/&gt;&lt;br/&gt;</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>D53369DF-4150-17D8-7CAF-18B4741F4911</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Overloaded HSE11" id="D038BF04-931F-A23C-6785-8B60CDD60DA6">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE11&lt;br/&gt;&lt;br/&gt;MRKTOFFERS in RDM Mapping Spreadsheet&lt;br/&gt;&lt;br/&gt;Current Data:&lt;br/&gt;Positions 1-3 = ATT(for AT&amp;T Uverse),VER (For Verizon),BTH (Both AT&amp;T and Verizon)&lt;br/&gt;Positions 1-4 = ATnT = AT&amp;T&lt;br/&gt;Positions 4-5 = 01 OR&lt;br/&gt;Position 5 = N - 3Year Double-Triple Play Offers&lt;br/&gt;Position 7 = K&lt;br/&gt;Positions 8-9 = 01</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>96DB9BA7-6522-14DE-1DB4-B5816A6E5250</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Competitor Overbuilder Code" id="6B9FACB8-30C6-14D9-3D0B-F1029A30D539">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE11&lt;br/&gt;&lt;br/&gt;Position 1-3 of MRKTOFFERS in RDM Mapping Spreadsheet&lt;br/&gt;&lt;br/&gt;Valid Values:&lt;br/&gt;ATT = AT&amp;T UVerse&lt;br/&gt;VER = Verizon FIOS&lt;br/&gt;BTH = Both AT&amp;T and Verizon&lt;br/&gt;</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>73D9E034-D716-BDAE-5CC2-45433D4C9FE8</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Column 21" id="31970FF0-45DD-2FC2-84FB-77CCDA1103DD">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE11&lt;br/&gt;&lt;br/&gt;Position 4-5 of MRKTOFFERS in RDM Mapping Spreadsheet&lt;br/&gt;&lt;br/&gt;Valid Values:&lt;br/&gt;01 = &lt;br/&gt;OR = </commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>93FCB8FC-A002-D360-DA47-F1CEB5519E0A</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="3Year DP TP Offers" id="AF9A3062-00AC-A7F0-7390-55923D9E1AE3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE11&lt;br/&gt;&lt;br/&gt;Position 6 of MRKTOFFERS in RDM Mapping Spreadsheet&lt;br/&gt;&lt;br/&gt;Indicates if 3-year Double Play or Triple Play offers are eligible at this location.&lt;br/&gt;&lt;br/&gt;Valid Values: Y/N&lt;br/&gt;</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>94855D88-5090-7D5E-60D6-D328383A22BC</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Column 23" id="44EE0EDB-098F-F4CF-2441-421B9D35E599">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE11&lt;br/&gt;&lt;br/&gt;Position 7 of MRKTOFFERS in RDM Mapping Spreadsheet&lt;br/&gt;&lt;br/&gt;Valid Values:&lt;br/&gt;K</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>22912349-336D-5CAF-1465-5AE3BB5F8A2F</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Column 24" id="7CDE64CD-EA56-1927-C31B-247326B7050F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE11&lt;br/&gt;&lt;br/&gt;Position 8-9 of MRKTOFFERS in RDM Mapping Spreadsheet&lt;br/&gt;&lt;br/&gt;Valid Values:&lt;br/&gt;01 </commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>25F8D413-3E19-48B2-DE39-A7C3EA5CFF7E</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Commercial Code" id="DCD0E4E3-3159-95C9-E5FF-48907B43741A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<commentInRDBMS>HSE12&lt;br/&gt;&lt;br/&gt;HSECUSTOM12 from RDM Mapping Spreadsheet.  &lt;br/&gt;&lt;br/&gt;</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>9D3A4415-A36C-D36B-2BED-8E0000B0E456</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Location Node ID" id="14C09D9F-9F44-DEE2-988F-3E72BF79AEC5">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 16:42:30 UTC</createdTime>
+<generatorID>067DF019-FB8E-E340-02C7-D6FBD33D329E</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>D281DE13-2C96-A123-FD17-37A983607861</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E71BD943-02A6-7E43-89FA-2507784308DE" name="House Custom Fields PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:51 UTC</createdTime>
+<generatorID>03C6A1A8-13F9-D429-0466-23A1D4234529</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6B712E4A-4A3B-337D-561C-8CC7D4E3D7E9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

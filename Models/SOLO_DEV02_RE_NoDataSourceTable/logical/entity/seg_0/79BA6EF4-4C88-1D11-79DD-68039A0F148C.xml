@@ -1,0 +1,333 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79BA6EF4-4C88-1D11-79DD-68039A0F148C" name="T ACCOUNT BILL INFO">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>5AAC6D4F-6AA7-0015-69EF-DDD0108A2882</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ACCOUNT ID" id="A1BB1F0E-B311-323C-6F50-BD9137A9B013">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>CE3C79CE-7E23-8DED-0E64-718EEE54A1EA</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<referedAttribute>B404E860-8981-940B-E105-7B0687234217</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BILL DAY" id="FC582754-8AE6-2189-2FAF-D04323AA0570">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>AB4D69D6-18EB-F6CF-6151-A7B11AF9921F</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BILL CYCLE" id="1748E238-50DD-89FA-6756-5AC90D1A65B8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>32160251-9FFB-CB00-B5F6-6A2B2AC2B3FF</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAPERLESS BILL" id="8EBD7A4D-08F2-EDA0-4A8F-C5AF69F78DAB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>EC7E4058-DB46-5D4E-3BBE-3859AB2FA786</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ELECTRONIC BILL FLAG" id="B00A7F8C-DFE3-C84A-F13A-B58491CB3559">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>30A10DDC-258B-4250-93D9-7AADA3BFC45E</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EBPP IND" id="EFA3FD53-1C2E-1797-E6AC-417BD246F323">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>7E49FDA0-B9CA-73E8-92EC-304A7B1F0253</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BILL TO NM" id="E4688524-5D27-A2C0-8A2F-65A8C4D2425A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>A6F7D944-DBD5-F1C2-C8E5-0D8F28AC3D29</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STMT HLD CD" id="ABF3E664-6D3F-F314-809A-EA03FB19C6A8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>1770657E-14F9-B3E3-A736-E194DB944D16</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="278676E6-71ED-5370-EF1A-9203F246B69B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>0001DA31-805C-7947-F068-4B5BB01EB6E2</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="C6484A7C-AB85-C048-1E37-BB4D3DC3C11D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>E918F3C1-EE71-B420-5B3C-B1E3FC8FCD4B</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="32C83B39-161A-FD47-383A-B78E5197507B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>2E66F292-2C45-6274-936D-7DEA112F490A</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="1BDFCB22-9B96-39B7-3F42-CEB6E78AAE40">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>433992EA-C396-A766-7A57-C5735C0FF7D1</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="18824D15-F331-C06E-E667-A57866BD981B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>7EBD9C89-F196-1B45-032A-6F16082F0307</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAYMENT METHOD CD" id="F97415B6-A491-B193-20B4-BA7F784A41F0">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>F52CF0D4-5C57-0EBF-A161-8F7FE9C5DF02</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F65DF123-B33A-0DAD-B0CC-D515AEED47DB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATA SOURCE TYPE CD" id="1F2472D3-CF89-1F00-FB22-0835DC4A6F34">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>F52CF0D4-5C57-0EBF-A161-8F7FE9C5DF02</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>61ED5624-3603-D15C-AF32-20B0AF30CEBC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LAST STATEMENT DT" id="04587BD9-7F68-D63B-6893-048AF815A705">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>C1901456-36FB-56AD-823A-96E718D82EE8</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROMISE TO PAY DT" id="9D910572-9C05-D817-E737-BDD5EAB2CE6C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>6659CA73-EA95-826B-D252-54F5E2683067</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RESTRICT CARD PAYMENT FLAG" id="44DFC249-2E08-8BBD-7121-21215A1C2263">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>17491C91-36C6-E445-6492-2467656B5D30</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RESTRICT EFT PAYMENT FLAG" id="27179FD8-7050-A2D0-0FC5-917D12E18EB0">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>643E9B76-2CD6-C7B3-3815-54821865A98C</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REMITTANCE COUNT" id="2EF12EF9-ABEC-DBAA-3209-DFD13FAAA319">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>2C644AF1-617E-F355-285D-FDF409D10D64</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4611393A-1AF6-CFA6-0912-F341289CD453" name="PK ACCOUNT BILL INFO">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:47 UTC</createdTime>
+<generatorID>35D2640F-4946-3A30-A40C-9747320E1FA6</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A1BB1F0E-B311-323C-6F50-BD9137A9B013</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

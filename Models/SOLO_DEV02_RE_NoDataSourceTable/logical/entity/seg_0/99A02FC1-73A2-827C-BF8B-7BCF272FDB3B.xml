@@ -1,0 +1,451 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="99A02FC1-73A2-827C-BF8B-7BCF272FDB3B" name="T CUSTOMER LOGIN">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>32E2F18B-9B6E-DCEA-8186-489AD9E0D7BE</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CUSTOMER LOGIN ID" id="7A729967-E060-8BBE-AB65-D5C455180E5D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>F9424859-47D9-979F-A5C7-B1BF1146F376</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACCOUNT ID" id="0F0A8D48-8A24-F054-4AA5-1DFB6206A8AC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>F3008CB2-20DD-89AD-01AD-1DBE2F3F99A2</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<referedAttribute>B404E860-8981-940B-E105-7B0687234217</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAMESPACE ID" id="C397BCD7-5F70-747B-CA45-1E9C10E4EAC1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>B678642C-CE01-5487-59BE-DB23C734B84C</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<referedAttribute>472960C3-B53D-ACE1-F1B3-0691D76776DB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOGIN ROOT NM" id="01DADE27-9584-FCA2-4605-2C2063CE1A61">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>801D7E02-C67A-982E-D033-85C9F65B517A</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOGIN NM" id="E9A731EA-BB13-2165-3D44-C4DBA93E4D70">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>8094AB4E-DD36-F9B3-7722-E7ED163FAA59</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOGIN NAME STATUS CD" id="27F1EA99-5340-635F-7C8C-A22767DB31B3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>BAD3F577-7B7F-C6D7-28D6-BEEA98AFEB06</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENCRYPTION KEY TXT" id="09271AAF-312C-17AC-7FC7-1F0D500E6552">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>CFC6DF27-AE48-A499-0797-CEF8A99B0DCF</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PASSWORD TXT" id="F69E296F-5C36-FD5C-97A1-DEA2F8DF38A1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>D0921D22-0934-4726-B363-805EA4D6A711</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOGIN STATUS CD" id="08FE5866-F158-7049-AEAC-435525B63626">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>D6DD9531-894D-1C42-47CA-70DAED95A288</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOGIN EXPIRATION DT" id="9E60BD6B-7237-A6CB-F057-F273F8C1D17E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>21C4C97D-63C0-D95F-0C21-FDC7AB441136</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LAST LOGIN DT" id="622108AD-B0DC-B2EC-9127-47C23EC55F5C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>56AA9C7D-8D6E-0220-6DB8-5BCF68A37EB7</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FAILED LOGIN ATTEMPT CNT" id="296E6FA2-82F9-DB1E-43BC-9D3084335ACC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>11EB94B3-E373-681C-A70E-24DFBAF918CD</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REMAINING LOGIN ATTEMPT CNT" id="108394F2-DC86-287F-6F9E-DD344A4F1FC7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>F92DE15D-C943-D6E0-CA89-755C882A1092</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOGIN ROLE NM" id="0C565336-3CD0-9DBF-22E8-DEA4A7F8D6B4">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>CE45F450-5983-45E5-292B-35E64C2DF677</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONTACT VERIFICATION CD" id="2B55AEF6-2597-78A1-4AC5-8F44AA2B425A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>47950348-C659-AB3D-5515-1047799646AB</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONTACT VERIFICATION VAL" id="71423FAF-B2EE-E300-793A-CBDF8352D46A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>D19C1E3F-46B5-AF56-7FB1-810654E89D0F</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOCK EXPIRATION DTTM" id="9F4E40CF-7D7A-A5C4-C1C6-D4DEB8B38DE6">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>209194F4-F940-47BF-84E6-D1871EC7797E</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CPNI COMPLIANT IND" id="4E68B81A-BD57-C633-2D7A-FFD1AB17DF7A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>A173B727-EE23-2DC3-C9D8-CD380AA913B2</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CPNI COMPLIANT DTTM" id="8132DB9A-76FD-C949-2E37-4C509F9855D3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>BFE50493-96E5-2D22-FFBC-1EFF3F7697FE</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENCRYPTION ALGORITHM CD" id="42C9877C-5420-3B81-78C1-AD9BAB0D40AA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>61D8B6E2-579C-1063-C0B9-8F039300D02A</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL ADMINISTRATION POLICY NM" id="C16BA7C5-0E82-E030-1020-16049AA98777">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>9077C04F-272E-548F-B32C-DB6CA9159F5C</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="832BD3D5-EFEB-F93B-BDB0-B30A0C0479E3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>1B91B1ED-3FBE-9827-2B6E-96BC35BF0339</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="84A1EB48-1DB7-2768-8696-56375B25A380">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>1CA166CA-BBD0-A21C-21DF-00A1A46910D2</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="FA18D2AC-9D57-2748-5219-A6542952A1AE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>42D51D4C-E43E-7E0C-7186-A9CFDADF50F9</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="0FD7CA1E-3C58-AB66-562E-376ACC89285D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>E8C9CCE9-9946-94A6-7274-DEA73931065D</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="35B80FC6-7E86-5945-60B5-E46606E3681E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>40BBF4DA-4046-1D37-10E1-9F55450398C9</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LAST LOGIN IP ADDRESS" id="6C861F18-8641-7AA9-BBF1-0AC312248CC3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>9BD34DD2-5184-9A03-4357-943FD5958D60</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SOURCE SYSTEM ID" id="62D7BC22-C650-CDFC-4A4B-85EA2F66E1E5">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>B7AF22AD-9139-608A-2B20-2F926286A8CE</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4082626E-8C34-FF11-EE79-97B5A11A6DD1" name="PK CUSTOMER LOGIN">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>F54612C0-5F15-A073-2B8A-5456FA84F62B</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7A729967-E060-8BBE-AB65-D5C455180E5D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

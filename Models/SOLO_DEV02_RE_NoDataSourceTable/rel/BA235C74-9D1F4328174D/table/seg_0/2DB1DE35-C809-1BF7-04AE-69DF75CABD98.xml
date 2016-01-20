@@ -1,0 +1,237 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2DB1DE35-C809-1BF7-04AE-69DF75CABD98" schemaObject="C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1" name="T_BUS_INTERACT_ITEM">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_BUS_INTERACT_ITEM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:37 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BUS_INTERACT_ITEM_ID" id="7B7274E7-238B-5005-4FBB-CAB0CC31822B">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_BUS_INTERACT_ITEM</sourceObjSchema>
+<sourceObjName>BUS_INTERACT_ITEM_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:43 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_SOURCE_TYPE_CD" id="70BCDF88-0B7B-8077-ACD2-F62DFE2540E5">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_BUS_INTERACT_ITEM</sourceObjSchema>
+<sourceObjName>DATA_SOURCE_TYPE_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:43 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOURCE_SYSTEM_ID" id="62ECFB5A-5238-F0EB-0CAF-1408FBFE2AAD">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_BUS_INTERACT_ITEM</sourceObjSchema>
+<sourceObjName>SOURCE_SYSTEM_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:43 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BUS_INTERACT_ID" id="E86A5E8E-56C6-C571-18A2-6EE38F74FAD3">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_BUS_INTERACT_ITEM</sourceObjSchema>
+<sourceObjName>BUS_INTERACT_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:43 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F92969F-D652-46B8-B12F-E298B3528DBA" referredColumn="3E13FA23-D27A-4611-F1D3-26AB4FF20072"/>
+</associations>
+</Column>
+<Column name="BUS_INTERACT_ITEM_TYPE_CD" id="86BB1D75-1639-1F38-74DD-D94D0933CCC8">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_BUS_INTERACT_ITEM</sourceObjSchema>
+<sourceObjName>BUS_INTERACT_ITEM_TYPE_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:43 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D109F096-6BC4-9E40-3B29-31E723218F27" referredColumn="74B79841-3453-8644-CA7A-945FF6A72282"/>
+</associations>
+</Column>
+<Column name="RECORD_STAT" id="C87758A5-5D72-C9EE-ACB3-733866E39D90">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_BUS_INTERACT_ITEM</sourceObjSchema>
+<sourceObjName>RECORD_STAT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:43 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DTTM" id="993F834E-29B1-AD17-2D2B-6963D26974B4">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_BUS_INTERACT_ITEM</sourceObjSchema>
+<sourceObjName>CREATED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:43 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="B8DE9FA8-0840-3F5E-9108-C057A0D9368A">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_BUS_INTERACT_ITEM</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:43 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DTTM" id="729145AA-9D0D-307D-0440-EEA730F4147C">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_BUS_INTERACT_ITEM</sourceObjSchema>
+<sourceObjName>MODIFIED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:43 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="55EDDC73-8DD9-E40B-0A48-07FC8661BEE5">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_BUS_INTERACT_ITEM</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:43 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49C30073-02BB-A4A5-ABB0-A89322AE1E14" name="PK_BUS_INTERACT_ITEM">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_BUS_INTERACT_ITEM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:06 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B7274E7-238B-5005-4FBB-CAB0CC31822B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A83A0C62-32C0-434B-0D16-54632771519B" schemaObject="C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1" name="IDX_BUS_INTERACT_ITEM1">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_BUS_INTERACT_ITEM1</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:58 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E86A5E8E-56C6-C571-18A2-6EE38F74FAD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54B8D61E-CCCB-3A44-85B5-476E70065F09" schemaObject="C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1" name="IDX_BUS_INTERACT_ITEM2">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_BUS_INTERACT_ITEM2</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:58 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70BCDF88-0B7B-8077-ACD2-F62DFE2540E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="124E48D3-7084-7D65-CE32-44BAC20D2222" schemaObject="C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1" name="PK_BUS_INTERACT_ITEM">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_BUS_INTERACT_ITEM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:58 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B7274E7-238B-5005-4FBB-CAB0CC31822B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBE2D099-78B1-E4D7-2BBD-F8BFBE86D8D2" name="FK_BUS_INTERACT_ITEM1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:30 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E86A5E8E-56C6-C571-18A2-6EE38F74FAD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5977568-AF22-58C9-FCEB-7668FBD2594F" name="FK_BUS_INTERACT_ITEM2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:30 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86BB1D75-1639-1F38-74DD-D94D0933CCC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

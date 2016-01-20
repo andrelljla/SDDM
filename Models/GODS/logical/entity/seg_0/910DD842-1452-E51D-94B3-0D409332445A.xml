@@ -1,0 +1,337 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="910DD842-1452-E51D-94B3-0D409332445A" name="Customer Custom Fields">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<generatorID>DCB2D23E-8EF8-2C3C-1280-9E0A5F3B9628</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Effective Date" id="B7695174-B49A-5658-9344-F7DF6C22C46A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>EC857693-3952-AA6F-3085-41BE8B38A7B0</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer Promotion" id="AE29EDBC-7453-CBC8-1DAF-1D3B5605EF17">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>CUS01</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>84CAD047-F3B0-C249-F303-388A84850EE7</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer SCASS" id="F383811E-041D-BFC5-D017-3BDEA5F30420">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>CUS02</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>6D97DDAD-5A7A-89E3-FE44-1B219AC057C5</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TCF CUS MULTI1" id="10F714CC-DEC9-2A99-4403-F287053394DD">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>CUS05</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>146064E1-D481-6A66-899C-6E1993A98D68</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Gfathered Bundled Internet Ind" id="E4374301-D1EE-478D-D4AD-FDD6E33E949D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>From CUS05/TCF_CUS_MULTI1</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>629D2BF8-A5A5-79EC-1F33-CDAE6E421D0B</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="D Ring Migration" id="E1FE94EE-ED2F-55C1-2C08-594A02E1FACF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>From CUS05/TCF_CUS_MULTI1</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>36BB4C24-C35E-B1D8-2A1A-A857E687C5FD</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Low Income Broadband Ind" id="687C2094-ED99-E491-5A04-29E87A8468E6">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>CUS07</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>6338B32E-772D-4D31-CA25-0951210841A8</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TCF CUS MULTI2" id="163C969A-CDF8-D5D1-E0A3-6EF2523DACFD">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>CUS08</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>7F61C29F-A970-8A73-7484-5167CE67D9D9</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos1" id="24D15E0B-83FE-CEF2-1E26-EA18AC1926BF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 1</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>A08875B3-4EA2-CF18-3ABB-58E9B91FB78D</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos2" id="73C36959-6702-0772-2E25-E7D7D1D5A8CF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 2</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>7CC68B9F-EE9B-1A12-FFF8-1F97DE37CB67</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos3" id="2BE21125-6330-553A-65D0-118722689018">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 3</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>BF083CB5-A3E6-2BB9-C96A-B34E9F42A8D8</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos4" id="B3C46C74-8612-2027-B34E-451FAECE1B02">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 4</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>FA331B13-76A7-38A0-09DA-8E9C558A10AA</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos5" id="743CB493-2A73-6867-879B-8BAA0899803C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 1</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>EA566B38-4536-B33D-C54B-535BF88FC523</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos6" id="B5116CA8-B0B3-F77C-3C0C-141F00D9DE92">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 2</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>17F235C6-5399-7A5D-820E-65B7FF1F9B71</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos7" id="17218D14-DD04-84C2-0425-882B731D7476">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 3</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>1D1C8594-B0C6-D2B5-BF58-D07F5D1C03A7</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos8" id="6783390B-E8E3-3C31-7560-985A70604DC9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 4</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>D634AC17-6051-1C57-DC42-ED5C940DB584</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos9" id="A5DD82B9-2EDD-84FB-1003-F84B10D66AAD">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 4</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>C39E586F-3DDE-9044-501C-4C1269D73A25</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer Credit Class" id="7D4A145D-69DA-9AE7-E21C-6AA2264D1F45">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<commentInRDBMS>CUS09</commentInRDBMS>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>5BAFA1BC-97E0-F4E3-ACDC-D808E4426238</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Account ID" id="7361B52C-0272-0D82-E64F-94FE1A1CB299">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 18:24:31 UTC</createdTime>
+<generatorID>0748E41C-8879-3AD8-9BF3-0212B0762E62</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>1588AD6E-BF72-71CF-7DB3-C374933CDCF1</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="62A4F781-AF80-35EB-5ACE-201C32E78D6D" name="Customer Custom Fields PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 17:54:03 UTC</createdTime>
+<generatorID>100DBFF4-D15C-BAD1-DE34-8BA8DF09E288</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B7695174-B49A-5658-9344-F7DF6C22C46A</attributeRef>
+<attributeRef>7361B52C-0272-0D82-E64F-94FE1A1CB299</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

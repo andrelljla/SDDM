@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<PackageOracle class="oracle.dbtools.crest.model.design.storage.oracle.PackageOracle" name="DA_PARTY_PRODUCT" directorySegmentName="seg_3" id="8E24B5D0-EFF5-B41A-AA4B-79516FEFE6C0">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>DA_PARTY_PRODUCT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:15:37 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<owner>5AF9E3FC-7A76-C437-3E83-BF29D7EA2FC7</owner>
+<source>CREATE OR REPLACE PACKAGE CHTR.DA_PARTY_PRODUCT&lt;br/&gt;/* Generated on 20-JAN-15 03.40.07.041135000 PM -06:00 */&lt;br/&gt;AS&lt;br/&gt; &lt;br/&gt;   PROCEDURE add (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,party_id IN NUMBER&lt;br/&gt;      ,product_id IN NUMBER&lt;br/&gt;      ,party_product_role_cd IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   );&lt;br/&gt; &lt;br/&gt;   PROCEDURE del (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,party_id IN NUMBER&lt;br/&gt;      ,product_id IN NUMBER&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   );&lt;br/&gt; &lt;br/&gt;END da_party_product;</source>
+<body class="oracle.dbtools.crest.model.design.storage.oracle.PackageBodyOracle" name="DA_PARTY_PRODUCT" id="8E24B5D0-EFF5-B41A-AA4B-79516FEFE6C0">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>DA_PARTY_PRODUCT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:15:37 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<owner>5AF9E3FC-7A76-C437-3E83-BF29D7EA2FC7</owner>
+<source>CREATE OR REPLACE PACKAGE BODY CHTR.DA_PARTY_PRODUCT&lt;br/&gt;/* Generated on 20-JAN-15 03.40.07.054682000 PM -06:00 */&lt;br/&gt;AS&lt;br/&gt; &lt;br/&gt;   PROCEDURE add (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,party_id IN NUMBER&lt;br/&gt;      ,product_id IN NUMBER&lt;br/&gt;      ,party_product_role_cd IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   )&lt;br/&gt;   IS&lt;br/&gt;   BEGIN&lt;br/&gt; &lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;begin da_party_product.add, parms=&apos; || party_id || &apos;|&apos; || product_id || &apos;|&apos; || party_product_role_cd || &apos;|&apos; || audit_user || &apos;|&apos;);&lt;br/&gt;      INSERT INTO chtr.t_party_product a&lt;br/&gt;      (&lt;br/&gt;         a.party_id&lt;br/&gt;         ,a.product_id&lt;br/&gt;         ,a.party_product_role_cd&lt;br/&gt;         ,a.record_stat&lt;br/&gt;         ,a.created_dttm&lt;br/&gt;         ,a.created_by&lt;br/&gt;         ,a.modified_dttm&lt;br/&gt;         ,a.modified_by&lt;br/&gt;      )&lt;br/&gt;      VALUES&lt;br/&gt;      (&lt;br/&gt;         add.party_id&lt;br/&gt;         ,add.product_id&lt;br/&gt;         ,add.party_product_role_cd&lt;br/&gt;         ,&apos;A&apos;&lt;br/&gt;         ,SYSTIMESTAMP&lt;br/&gt;         ,add.audit_user&lt;br/&gt;         ,NULL&lt;br/&gt;         ,NULL&lt;br/&gt;      );&lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;end da_party_product.add&apos;);&lt;br/&gt; &lt;br/&gt;   END add;&lt;br/&gt; &lt;br/&gt;   PROCEDURE del (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,party_id IN NUMBER&lt;br/&gt;      ,product_id IN NUMBER&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   )&lt;br/&gt;   IS&lt;br/&gt;   BEGIN&lt;br/&gt; &lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;begin da_party_product.del, parms=&apos; || party_id || &apos;|&apos; || product_id || &apos;|&apos; || audit_user || &apos;|&apos;);&lt;br/&gt;      UPDATE chtr.t_party_product a&lt;br/&gt;      SET a.record_stat = &apos;D&apos;&lt;br/&gt;          ,a.modified_dttm = SYSTIMESTAMP&lt;br/&gt;          ,a.modified_by = del.audit_user&lt;br/&gt;      WHERE a.party_id = del.party_id&lt;br/&gt;      AND a.product_id = del.product_id&lt;br/&gt;      ;&lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;end da_party_product.del&apos;);&lt;br/&gt; &lt;br/&gt;   END del;&lt;br/&gt; &lt;br/&gt;END da_party_product;</source>
+</body>
+</PackageOracle>

@@ -1,0 +1,421 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<EntityView class="oracle.dbtools.crest.model.design.logical.EntityView" directorySegmentName="seg_0" id="209C1D41-BF59-0969-7DB9-9709ADACBD49" name="AQ$EQUIPMENT CHANGE QTABLE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>2877B862-1523-357A-FF6C-8193CAB3BCC6</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<userDefined>true</userDefined>
+<userDefinedSQL>CREATE OR REPLACE VIEW AQ$EQUIPMENT_CHANGE_QTABLE&lt;br/&gt;AS &lt;br/&gt;SELECT q_name QUEUE, msgid MSG_ID, corrid CORR_ID, priority MSG_PRIORITY, decode(state, 0,   &apos;READY&apos;,&lt;br/&gt;                                1,   &apos;WAIT&apos;,&lt;br/&gt;                                2,   &apos;PROCESSED&apos;,&lt;br/&gt;                                3,   &apos;EXPIRED&apos;,&lt;br/&gt;                                10,  &apos;BUFFERED_EXPIRED&apos;) MSG_STATE, cast(FROM_TZ(delay, &apos;00:00&apos;)&lt;br/&gt;                  at time zone sessiontimezone as date) DELAY, cast(FROM_TZ(delay, &apos;00:00&apos;)&lt;br/&gt;               at time zone sessiontimezone as timestamp) DELAY_TIMESTAMP, expiration, cast(FROM_TZ(enq_time, &apos;00:00&apos;)&lt;br/&gt;                  at time zone sessiontimezone as date) ENQ_TIME, cast(FROM_TZ(enq_time, &apos;00:00&apos;)&lt;br/&gt;                  at time zone sessiontimezone as timestamp) &lt;br/&gt;                  ENQ_TIMESTAMP, enq_uid ENQ_USER_ID, enq_tid ENQ_TXN_ID, cast(FROM_TZ(deq_time, &apos;00:00&apos;)&lt;br/&gt;                  at time zone sessiontimezone as date) DEQ_TIME, cast(FROM_TZ(deq_time, &apos;00:00&apos;)&lt;br/&gt;                  at time zone sessiontimezone as timestamp) &lt;br/&gt;                  DEQ_TIMESTAMP, deq_uid DEQ_USER_ID, deq_tid DEQ_TXN_ID, retry_count,  decode (state, 0, exception_qschema, &lt;br/&gt;                                  1, exception_qschema, &lt;br/&gt;                                  2, exception_qschema,  &lt;br/&gt;                                  NULL) EXCEPTION_QUEUE_OWNER,  decode (state, 0, exception_queue, &lt;br/&gt;                                  1, exception_queue, &lt;br/&gt;                                  2, exception_queue,  &lt;br/&gt;                                  NULL) EXCEPTION_QUEUE,  user_data,  decode (state, 3, &lt;br/&gt;                     decode (deq_tid, &apos;INVALID_TRANSACTION&apos;, NULL, &lt;br/&gt;                             exception_queue), NULL)&lt;br/&gt;                                ORIGINAL_QUEUE_NAME,  decode (state, 3, &lt;br/&gt;                     decode (deq_tid, &apos;INVALID_TRANSACTION&apos;, NULL, &lt;br/&gt;                             exception_qschema), NULL)&lt;br/&gt;                                ORIGINAL_QUEUE_OWNER,  decode(state, 3, &lt;br/&gt;                     decode(deq_time, NULL, &lt;br/&gt;                       decode(deq_tid, NULL,&lt;br/&gt;                       decode (expiration , NULL , &apos;MAX_RETRY_EXCEEDED&apos;,&lt;br/&gt;                            &apos;TIME_EXPIRATION&apos;),&lt;br/&gt;                              &apos;INVALID_TRANSACTION&apos;, NULL,&lt;br/&gt;                              &apos;MAX_RETRY_EXCEEDED&apos;), NULL), NULL) &lt;br/&gt;                             EXPIRATION_REASON , sender_name SENDER_NAME, sender_address SENDER_ADDRESS, sender_protocol SENDER_PROTOCOL, dequeue_msgid ORIGINAL_MSGID  FROM &quot;EQUIPMENT_CHANGE_QTABLE&quot; WHERE state != 7 AND   state != 9 </userDefinedSQL>
+<validSQL>false</validSQL>
+<viewType>EntityView</viewType>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="QUEUE" id="30C487D4-F557-3799-AE27-EA6F73E8B33B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>52BB2F36-E722-155A-4083-52740E62B582</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>QUEUE</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="MSG_ID" id="01A8FA0F-E02F-9D55-7355-732FE0E63967">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>CA98FF47-693F-7C2A-62FD-B1F3E0BCA467</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MSG_ID</alias>
+<dataType>RAW (16)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="CORR_ID" id="7E7E7FBB-2A11-0FEE-4323-001597C422A8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>DF40FE06-29BB-9854-EE9A-6464523F2472</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>CORR_ID</alias>
+<dataType>VARCHAR2 (128)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="MSG_PRIORITY" id="488E325A-78B5-95B7-0302-1E7C16A32AC8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>9F610150-493A-886F-934E-82360FCC6B02</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MSG_PRIORITY</alias>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="MSG_STATE" id="1E119D74-EBEF-3934-66FD-DECCFC6C3796">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>86D3F13E-5065-A2BC-C5AD-F442D018C32A</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MSG_STATE</alias>
+<dataType>VARCHAR2 (16)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DELAY" id="F82000F4-CDA7-FDEB-2999-8019DEC74111">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>DC8052F1-F2FF-0FB4-0805-4022CEB580D5</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DELAY</alias>
+<dataType>DATE (8)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DELAY_TIMESTAMP" id="33DE98B3-E3F2-0760-D50D-9BA26FD8B1FE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>E2BE5B81-26E5-30C6-935B-A83792E085EE</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DELAY_TIMESTAMP</alias>
+<dataType>TIMESTAMP(6)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="EXPIRATION" id="70A51092-FD84-D7BB-1868-271849A8792F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>7E945FCF-D85B-0694-8216-E4A2B6AFA87F</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EXPIRATION</alias>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ENQ_TIME" id="89C3A547-4AC5-0D6B-69C2-8C0A27F1D306">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>F5E9D91E-A2BE-88C1-B708-6C111D2880E4</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ENQ_TIME</alias>
+<dataType>DATE (8)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ENQ_TIMESTAMP" id="1E24C6B6-2364-84B7-137E-EDF6E654125D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>34FEA1FF-AA0A-D4CD-2370-33FAAFBD5469</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ENQ_TIMESTAMP</alias>
+<dataType>TIMESTAMP(6)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ENQ_USER_ID" id="445E5995-8BC2-C727-2120-28D807EA58B6">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>C9B1A00F-A9A1-1E6B-D798-DE0DB74D2E1D</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ENQ_USER_ID</alias>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ENQ_TXN_ID" id="261028AD-87C7-53B3-8894-FCF2030E5DBA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>26A75D20-CA58-11FD-BFBC-B1E1BAF7D713</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ENQ_TXN_ID</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DEQ_TIME" id="596A0599-A692-BEC1-234A-36924FD28FB9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>A4D3CCCE-8C34-01FC-A15B-0AC71044A5A7</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DEQ_TIME</alias>
+<dataType>DATE (8)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DEQ_TIMESTAMP" id="11DCE77C-86BB-33FF-AD1D-34568BD07A5C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>E0496C62-DB6C-0069-6ACB-E579B96E10B8</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DEQ_TIMESTAMP</alias>
+<dataType>TIMESTAMP(6)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DEQ_USER_ID" id="CDE35599-5A06-7466-873E-AF29C6EC0B92">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>DA0ABE79-7247-62A4-021B-504843885210</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DEQ_USER_ID</alias>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DEQ_TXN_ID" id="5B5875F2-3382-FBBF-4317-1BC3389A4993">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>F5C9C829-3ED0-FB58-958D-4A7E1D37C76E</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DEQ_TXN_ID</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="RETRY_COUNT" id="F175C2FA-BD33-3A27-1F3B-9C96BAA7E2CB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>C37CDE69-CFC9-6EF0-584B-3D2C5517EA57</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>RETRY_COUNT</alias>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="EXCEPTION_QUEUE_OWNER" id="85335A64-D61E-0FC2-5652-4D00D9468F7B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>BA8F3F54-7C01-FB85-1D4D-E5624C278F80</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EXCEPTION_QUEUE_OWNER</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="EXCEPTION_QUEUE" id="FFAC15A5-9278-8D6F-7BCB-346C44DF3C7C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>2DC5238D-5C8F-6679-C3CF-D502CCF98363</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EXCEPTION_QUEUE</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="USER_DATA" id="A3D8CC72-CBA2-F8C1-424E-AEBC9FB80F9D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>DD38E137-B1B6-5151-148B-C02D10E57B36</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>USER_DATA</alias>
+<dataType>EQUIPMENT_CHANGE_QTYPE (64)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ORIGINAL_QUEUE_NAME" id="3D2742B7-A72F-D57D-E91C-4CE14E6F5768">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>C697F830-3674-C12C-7EA3-DA60B3500208</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ORIGINAL_QUEUE_NAME</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ORIGINAL_QUEUE_OWNER" id="6984F524-F32E-D2A5-DF40-C5684EA647A9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>D067FC26-16B8-C8C8-2F7F-8CF5221EEDB0</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ORIGINAL_QUEUE_OWNER</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="EXPIRATION_REASON" id="C959101C-775A-2A59-8B79-81D93F2711CE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>68227339-DDF0-294E-4492-80FD85865696</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EXPIRATION_REASON</alias>
+<dataType>VARCHAR2 (18)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SENDER_NAME" id="C142205F-7183-0F60-C2CD-79F5443D0CDB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>44CE29B7-7871-2A44-98C3-B187A3FEBB5C</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SENDER_NAME</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SENDER_ADDRESS" id="49C59189-D4AD-2EE9-9A88-7602B51DEF68">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>546040C6-7F2B-AD94-BC91-9206DE580044</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SENDER_ADDRESS</alias>
+<dataType>VARCHAR2 (1024)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SENDER_PROTOCOL" id="8B2283C2-87EC-61DD-AEB1-D26EA0577D57">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>F6E7443F-03E7-A32C-3AEC-96D31A538D98</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SENDER_PROTOCOL</alias>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ORIGINAL_MSGID" id="A8A8A205-1C61-47DE-76A9-1DC112A3BE5C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>71BF982E-ACFC-F9DB-4E65-D6BED9F99243</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ORIGINAL_MSGID</alias>
+<dataType>RAW (16)</dataType>
+<reference>false</reference>
+<viewID>209C1D41-BF59-0969-7DB9-9709ADACBD49</viewID>
+</viewElement>
+</viewElements>
+</EntityView>

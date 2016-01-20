@@ -1,0 +1,302 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7795FDEC-F330-EDDE-9D64-4E92BAC3FBC9" name="T BILLING PRODUCT">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>3E869841-4ED5-8967-007D-224973C987EE</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BILLING PRODUCT ID" id="18F8D78A-A8D0-8D47-83D9-492099FA98E9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>113A719C-FD5E-C5B1-559C-191A715BC533</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATA SOURCE TYPE CD" id="8BBAA74D-B0DB-C1A6-3FBE-FCF4B50E837F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>B638D431-7FED-3C0F-A294-696E397E77CC</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<referedAttribute>036ADE1A-57A1-DA9C-52EF-E9CE6129E98E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SOURCE SYSTEM ID" id="A3495957-5D01-3D0A-BF4D-EC0CEC2B074F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>77F0D1D8-5C58-34AB-A471-C4425328A192</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BILLING PRODUCT CD" id="BC136360-09D4-CAA3-4F70-0D2764704E4A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>F09621D5-D2CE-38DB-9E84-62DC682E6DA3</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BILLING PRODUCT DESCRIPTION" id="7ED7C472-7161-9573-812C-0899EE075BF0">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>9D227A57-4726-6075-2197-8D331321EA35</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BILLING PRODUCT LONG DESCR" id="1C2A0CA4-8272-1C8E-226E-A55E2B3EBA88">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>AF377F14-6239-1C8C-DE50-3264FD39524E</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1024 BYTE</dataTypeSize>
+<ownDataTypeParameters>1024 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BILLING PRODUCT CUST TYPE NM" id="4EAB28A6-234C-0858-E12D-7C58934EFEC8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>3F060F40-8086-475E-F288-78880E30A73F</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LINE OF BUSINESS NM" id="69F0E721-4E9D-BF1B-59C7-6D9EECEC67CD">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>D20F4177-9A07-CFBB-C52C-7678EC8FA775</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUBSCRIBER SERVICE COUNT IND" id="D16B1417-ECFA-0731-D0E7-B317CC2EDFDE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>B4AEFEEE-C48B-4F71-2859-79FAAEB03455</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GL ACCOUNT NM" id="911BE836-CFA0-FE9E-B16D-6F970C3843D8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>5833B6EF-9C8A-C755-3C13-4699691624E3</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HSD SPEED DESC" id="31CE31C8-C148-8949-ABCC-D4F4668E72E2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>895AE6EB-D4C8-4FE8-40FC-86A02C23627F</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DETAIL PRODUCT GROUP NM" id="444E6842-26F8-165C-88DA-D8848D09777B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>3CB460D1-C397-3F7C-BECF-83D306E15CD1</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B80ED79E-D0DE-F07D-ACA0-8BD736F92110</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BILLING PRODUCT CODE TYPE NM" id="7A163374-D040-9AB5-063C-087896BE526B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>597EFBE0-536E-9DCE-EDA7-B89372D37789</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="A0803E86-440E-206E-62E0-8CF77C897118">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>995B736E-FB08-8345-94DE-24A0085552DD</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="15D8B80A-6607-743C-2022-C141B95D13B4">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>C716FF82-62B9-7109-976E-1A7D656C4EDB</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="A8511321-940F-25EE-C1B4-10838C47BE56">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>CAFA30CC-D1A4-0AC6-0EBC-8677B031557D</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="A271DD8B-2CC8-3CC9-F9CB-6359C192CE9B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>699CC058-B38C-4D12-CB25-13CC8F949052</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="5C8116D7-2595-F4B4-4F9E-B49E88E1078A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>41FA8F91-7DB1-C8E3-1D1F-9634A2602DC2</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7360667B-D280-0273-A226-3E712AB9FEFE" name="PK BILLING PRODUCT">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>2B88982A-178B-A98A-1EB7-9B510BA81E46</generatorID>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>18F8D78A-A8D0-8D47-83D9-492099FA98E9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

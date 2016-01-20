@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="467A46DD-3D73-042B-55A0-31A3A387F8B3" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="T_ORG_OMS_DIVISION_XREF">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_ORG_OMS_DIVISION_XREF</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:07:36 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OMS_ID" id="DBFB0D58-1D8F-3119-721A-AC067AFAB2F8">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ORG_OMS_DIVISION_XREF</sourceObjSchema>
+<sourceObjName>OMS_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARTY_ID" id="17DA4F34-B599-5D99-A631-DEA461A19F9B">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ORG_OMS_DIVISION_XREF</sourceObjSchema>
+<sourceObjName>PARTY_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65AA0420-1A4A-3421-B72A-B2B70CAF95DF" referredColumn="C7C51557-EA58-DE94-8E79-CF565D4806CF"/>
+</associations>
+</Column>
+<Column name="RECORD_STAT" id="5015F757-5EDE-26F4-0A80-AB8F02C4A0EE">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ORG_OMS_DIVISION_XREF</sourceObjSchema>
+<sourceObjName>RECORD_STAT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DTTM" id="BD387236-A605-E8C3-7CA5-2E77CDE79D39">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ORG_OMS_DIVISION_XREF</sourceObjSchema>
+<sourceObjName>CREATED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="CDC60960-BB14-5D55-E42A-B206E723A90E">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ORG_OMS_DIVISION_XREF</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DTTM" id="8C077DC2-DBD8-0429-8503-1012A3028E7D">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ORG_OMS_DIVISION_XREF</sourceObjSchema>
+<sourceObjName>MODIFIED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="749E991E-5E95-B681-8EC6-6A4918847047">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ORG_OMS_DIVISION_XREF</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D0EA755-1409-060F-9526-6FA22640135C" name="PK_ORG_OMS_DIVISION_XREF">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_ORG_OMS_DIVISION_XREF</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:12:12 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBFB0D58-1D8F-3119-721A-AC067AFAB2F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C97AA77D-5299-532D-9BB1-ECB961FD0F5A" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="IDX_ORG_OMS_DIVISION_XREF1">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_ORG_OMS_DIVISION_XREF1</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:33 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17DA4F34-B599-5D99-A631-DEA461A19F9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2072B12E-72E9-473E-9F25-38208D891B74" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="PK_ORG_OMS_DIVISION_XREF">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_ORG_OMS_DIVISION_XREF</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:33 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBFB0D58-1D8F-3119-721A-AC067AFAB2F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="616CF027-C262-AA7F-EA9F-80E2068FB845" name="FK_ORG_OMS_DIVISION_XREF1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:21:16 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17DA4F34-B599-5D99-A631-DEA461A19F9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

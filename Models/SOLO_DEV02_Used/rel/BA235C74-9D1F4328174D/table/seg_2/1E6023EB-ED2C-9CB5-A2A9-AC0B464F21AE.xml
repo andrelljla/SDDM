@@ -1,0 +1,255 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="1E6023EB-ED2C-9CB5-A2A9-AC0B464F21AE" schemaObject="C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1" name="T_SPECIAL_REQUEST_REASON">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_SPECIAL_REQUEST_REASON</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:39 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SPECIAL_REQUEST_ID" id="962AA4F7-028A-3577-03B1-73EEE32B0112">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SPECIAL_REQUEST_REASON</sourceObjSchema>
+<sourceObjName>SPECIAL_REQUEST_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:53 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3F4F8197-C14A-9FA7-A7FB-278D03906388" referredColumn="CB5AA120-427F-F18B-8C12-1D0F073A202D"/>
+</associations>
+</Column>
+<Column name="SPECIAL_REQUEST_REASON_CD" id="03511AE2-507A-CBCF-5AD0-AAFF9E2640D9">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SPECIAL_REQUEST_REASON</sourceObjSchema>
+<sourceObjName>SPECIAL_REQUEST_REASON_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:53 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="009E8226-1A5C-7583-C704-E82B1488D4C1" referredColumn="99C7CDF0-B0E3-396F-E466-211AFD4385ED"/>
+</associations>
+</Column>
+<Column name="DATA_SOURCE_TYPE_CD" id="0FD38E9E-35C7-F112-66A9-81594563B8CF">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SPECIAL_REQUEST_REASON</sourceObjSchema>
+<sourceObjName>DATA_SOURCE_TYPE_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:53 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0BAB6A84-8FB0-451B-3E95-25F34191E097" referredColumn="E69E7632-720A-B65B-9314-31B46975D08C"/>
+<colAssociation fkAssociation="009E8226-1A5C-7583-C704-E82B1488D4C1" referredColumn="07826E8D-CF88-DA82-7875-5423F439E063"/>
+</associations>
+</Column>
+<Column name="CODE_SEQUENCE_NUM" id="835C5AB0-34D1-3509-0630-5F2D6A73429E">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SPECIAL_REQUEST_REASON</sourceObjSchema>
+<sourceObjName>CODE_SEQUENCE_NUM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:53 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECORD_STAT" id="AA7CDFC5-D67B-1507-BDED-D48A28BEC00F">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SPECIAL_REQUEST_REASON</sourceObjSchema>
+<sourceObjName>RECORD_STAT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:53 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DTTM" id="10DEC75A-6290-0E21-A16C-5B239A57A618">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SPECIAL_REQUEST_REASON</sourceObjSchema>
+<sourceObjName>CREATED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:53 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="FE542E57-0728-C347-6FCA-5CCE68C6F3B2">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SPECIAL_REQUEST_REASON</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:53 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DTTM" id="4142EDF0-39B0-66AE-D696-57DB95018644">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SPECIAL_REQUEST_REASON</sourceObjSchema>
+<sourceObjName>MODIFIED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:53 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="5BB5C72F-DD67-EE1E-2B1B-CBA9F28755E9">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SPECIAL_REQUEST_REASON</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:53 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8438C9D4-CD09-12E5-68D9-712770708F22" name="PK_SPECIAL_REQUEST_REASON">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_SPECIAL_REQUEST_REASON</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:17 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="962AA4F7-028A-3577-03B1-73EEE32B0112"/>
+<colUsage columnID="03511AE2-507A-CBCF-5AD0-AAFF9E2640D9"/>
+<colUsage columnID="0FD38E9E-35C7-F112-66A9-81594563B8CF"/>
+<colUsage columnID="835C5AB0-34D1-3509-0630-5F2D6A73429E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F17FFA4F-1750-ED71-3641-AB73906EA6F2" schemaObject="C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1" name="PK_SPECIAL_REQUEST_REASON">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_SPECIAL_REQUEST_REASON</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:01 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="962AA4F7-028A-3577-03B1-73EEE32B0112"/>
+<colUsage columnID="03511AE2-507A-CBCF-5AD0-AAFF9E2640D9"/>
+<colUsage columnID="0FD38E9E-35C7-F112-66A9-81594563B8CF"/>
+<colUsage columnID="835C5AB0-34D1-3509-0630-5F2D6A73429E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B82751CB-54D1-68F4-FD92-0ED84027C718" schemaObject="C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1" name="IDX_SPECIAL_REQUEST_REASON">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_SPECIAL_REQUEST_REASON</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:01 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FD38E9E-35C7-F112-66A9-81594563B8CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B961DB99-0620-3B40-7B2F-B958C46BC879" schemaObject="C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1" name="IDX_SPECIAL_REQUEST_REASON1">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_SPECIAL_REQUEST_REASON1</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:01 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="962AA4F7-028A-3577-03B1-73EEE32B0112"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39E7E4A5-3950-9FB4-4507-CF62178D1744" schemaObject="C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1" name="IDX_SPECIAL_REQUEST_REASON2">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_SPECIAL_REQUEST_REASON2</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:01 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03511AE2-507A-CBCF-5AD0-AAFF9E2640D9"/>
+<colUsage columnID="0FD38E9E-35C7-F112-66A9-81594563B8CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4BF1539-C8F7-3370-4081-3D500171858A" name="FK_SPECIAL_REQUEST_REASON">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:30 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FD38E9E-35C7-F112-66A9-81594563B8CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E27A04F-711A-8553-49CA-6FFB5894D436" name="FK_SPECIAL_REQUEST_REASON1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:30 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03511AE2-507A-CBCF-5AD0-AAFF9E2640D9"/>
+<colUsage columnID="0FD38E9E-35C7-F112-66A9-81594563B8CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="110CAB8E-E33C-29A1-D472-59F814F1D14C" name="FK_SPECIAL_REQUEST_REASON2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:30 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="962AA4F7-028A-3577-03B1-73EEE32B0112"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

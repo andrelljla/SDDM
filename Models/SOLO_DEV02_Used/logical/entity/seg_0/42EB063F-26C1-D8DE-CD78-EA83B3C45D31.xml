@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="42EB063F-26C1-D8DE-CD78-EA83B3C45D31" name="T BUS INTERACT ITEM">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>2DB1DE35-C809-1BF7-04AE-69DF75CABD98</generatorID>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BUS INTERACT ITEM ID" id="64012B56-25A5-4D27-E5C7-7F452088DF1A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>7B7274E7-238B-5005-4FBB-CAB0CC31822B</generatorID>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATA SOURCE TYPE CD" id="53968A6E-BE38-4433-2B18-0970B1B2D729">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>6BAA8544-2903-60F6-E3A5-966EC7F8E4C7</generatorID>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<referedAttribute>036ADE1A-57A1-DA9C-52EF-E9CE6129E98E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SOURCE SYSTEM ID" id="00521A39-2D07-DA95-CC54-1C6CBE1BF714">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>62ECFB5A-5238-F0EB-0CAF-1408FBFE2AAD</generatorID>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BUS INTERACT ID" id="9E2593DB-A9BD-FCF5-F2B4-849EA1D2A196">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>33B1D5B7-908E-BF98-7D25-3224CBC2D8C5</generatorID>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<referedAttribute>D21DBB32-5BFE-02C6-2484-99D5E4C5E14D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BUS INTERACT ITEM TYPE CD" id="C2633122-D6C9-8B43-F6C2-8CE78590487D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>6A44770C-CA16-BB97-B150-1FF2A5FCC1DE</generatorID>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>04C4EFCC-CF48-4DA8-CAAF-689ED6B43F4F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="17C17F07-D624-25F3-7DC2-739E0287F864">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>C87758A5-5D72-C9EE-ACB3-733866E39D90</generatorID>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="48C01912-6690-2FC4-1A5F-C0A1472E01EA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>993F834E-29B1-AD17-2D2B-6963D26974B4</generatorID>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="F8CD09CF-4540-E8C8-8B43-18D96DEE086A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>B8DE9FA8-0840-3F5E-9108-C057A0D9368A</generatorID>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="40DE5578-F5B5-1FDA-1041-13335B8B67B6">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>729145AA-9D0D-307D-0440-EEA730F4147C</generatorID>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="2A26C8C4-6C94-B0CC-2709-DEB871FE2E39">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>55EDDC73-8DD9-E40B-0A48-07FC8661BEE5</generatorID>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D108346F-82A3-5639-9497-B24FA9833ACD" name="PK BUS INTERACT ITEM">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 22:04:49 UTC</createdTime>
+<generatorID>49C30073-02BB-A4A5-ABB0-A89322AE1E14</generatorID>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<engineerTo>
+<item key="BA235C74-6B24-4E1F-7A65-9D1F4328174D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>64012B56-25A5-4D27-E5C7-7F452088DF1A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,391 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="2877B862-1523-357A-FF6C-8193CAB3BCC6" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="AQ$EQUIPMENT_CHANGE_QTABLE">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL>CREATE OR REPLACE VIEW AQ$EQUIPMENT_CHANGE_QTABLE&lt;br/&gt;AS &lt;br/&gt;SELECT q_name QUEUE, msgid MSG_ID, corrid CORR_ID, priority MSG_PRIORITY, decode(state, 0,   &apos;READY&apos;,&lt;br/&gt;                                1,   &apos;WAIT&apos;,&lt;br/&gt;                                2,   &apos;PROCESSED&apos;,&lt;br/&gt;                                3,   &apos;EXPIRED&apos;,&lt;br/&gt;                                10,  &apos;BUFFERED_EXPIRED&apos;) MSG_STATE, cast(FROM_TZ(delay, &apos;00:00&apos;)&lt;br/&gt;                  at time zone sessiontimezone as date) DELAY, cast(FROM_TZ(delay, &apos;00:00&apos;)&lt;br/&gt;               at time zone sessiontimezone as timestamp) DELAY_TIMESTAMP, expiration, cast(FROM_TZ(enq_time, &apos;00:00&apos;)&lt;br/&gt;                  at time zone sessiontimezone as date) ENQ_TIME, cast(FROM_TZ(enq_time, &apos;00:00&apos;)&lt;br/&gt;                  at time zone sessiontimezone as timestamp) &lt;br/&gt;                  ENQ_TIMESTAMP, enq_uid ENQ_USER_ID, enq_tid ENQ_TXN_ID, cast(FROM_TZ(deq_time, &apos;00:00&apos;)&lt;br/&gt;                  at time zone sessiontimezone as date) DEQ_TIME, cast(FROM_TZ(deq_time, &apos;00:00&apos;)&lt;br/&gt;                  at time zone sessiontimezone as timestamp) &lt;br/&gt;                  DEQ_TIMESTAMP, deq_uid DEQ_USER_ID, deq_tid DEQ_TXN_ID, retry_count,  decode (state, 0, exception_qschema, &lt;br/&gt;                                  1, exception_qschema, &lt;br/&gt;                                  2, exception_qschema,  &lt;br/&gt;                                  NULL) EXCEPTION_QUEUE_OWNER,  decode (state, 0, exception_queue, &lt;br/&gt;                                  1, exception_queue, &lt;br/&gt;                                  2, exception_queue,  &lt;br/&gt;                                  NULL) EXCEPTION_QUEUE,  user_data,  decode (state, 3, &lt;br/&gt;                     decode (deq_tid, &apos;INVALID_TRANSACTION&apos;, NULL, &lt;br/&gt;                             exception_queue), NULL)&lt;br/&gt;                                ORIGINAL_QUEUE_NAME,  decode (state, 3, &lt;br/&gt;                     decode (deq_tid, &apos;INVALID_TRANSACTION&apos;, NULL, &lt;br/&gt;                             exception_qschema), NULL)&lt;br/&gt;                                ORIGINAL_QUEUE_OWNER,  decode(state, 3, &lt;br/&gt;                     decode(deq_time, NULL, &lt;br/&gt;                       decode(deq_tid, NULL,&lt;br/&gt;                       decode (expiration , NULL , &apos;MAX_RETRY_EXCEEDED&apos;,&lt;br/&gt;                            &apos;TIME_EXPIRATION&apos;),&lt;br/&gt;                              &apos;INVALID_TRANSACTION&apos;, NULL,&lt;br/&gt;                              &apos;MAX_RETRY_EXCEEDED&apos;), NULL), NULL) &lt;br/&gt;                             EXPIRATION_REASON , sender_name SENDER_NAME, sender_address SENDER_ADDRESS, sender_protocol SENDER_PROTOCOL, dequeue_msgid ORIGINAL_MSGID  FROM &quot;EQUIPMENT_CHANGE_QTABLE&quot; WHERE state != 7 AND   state != 9 </userDefinedSQL>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="QUEUE" id="52BB2F36-E722-155A-4083-52740E62B582">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>QUEUE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>QUEUE</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>QUEUE</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="MSG_ID" id="CA98FF47-693F-7C2A-62FD-B1F3E0BCA467">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>MSG_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MSG_ID</alias>
+<dataType>RAW (16)</dataType>
+<headerAlias>MSG_ID</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="CORR_ID" id="DF40FE06-29BB-9854-EE9A-6464523F2472">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>CORR_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>CORR_ID</alias>
+<dataType>VARCHAR2 (128)</dataType>
+<headerAlias>CORR_ID</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="MSG_PRIORITY" id="9F610150-493A-886F-934E-82360FCC6B02">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>MSG_PRIORITY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MSG_PRIORITY</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>MSG_PRIORITY</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="MSG_STATE" id="86D3F13E-5065-A2BC-C5AD-F442D018C32A">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>MSG_STATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MSG_STATE</alias>
+<dataType>VARCHAR2 (16)</dataType>
+<headerAlias>MSG_STATE</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DELAY" id="DC8052F1-F2FF-0FB4-0805-4022CEB580D5">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>DELAY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DELAY</alias>
+<dataType>DATE (8)</dataType>
+<headerAlias>DELAY</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DELAY_TIMESTAMP" id="E2BE5B81-26E5-30C6-935B-A83792E085EE">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>DELAY_TIMESTAMP</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DELAY_TIMESTAMP</alias>
+<dataType>TIMESTAMP(6)</dataType>
+<headerAlias>DELAY_TIMESTAMP</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="EXPIRATION" id="7E945FCF-D85B-0694-8216-E4A2B6AFA87F">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>EXPIRATION</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EXPIRATION</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>EXPIRATION</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ENQ_TIME" id="F5E9D91E-A2BE-88C1-B708-6C111D2880E4">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>ENQ_TIME</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ENQ_TIME</alias>
+<dataType>DATE (8)</dataType>
+<headerAlias>ENQ_TIME</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ENQ_TIMESTAMP" id="34FEA1FF-AA0A-D4CD-2370-33FAAFBD5469">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>ENQ_TIMESTAMP</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ENQ_TIMESTAMP</alias>
+<dataType>TIMESTAMP(6)</dataType>
+<headerAlias>ENQ_TIMESTAMP</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ENQ_USER_ID" id="C9B1A00F-A9A1-1E6B-D798-DE0DB74D2E1D">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>ENQ_USER_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ENQ_USER_ID</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>ENQ_USER_ID</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ENQ_TXN_ID" id="26A75D20-CA58-11FD-BFBC-B1E1BAF7D713">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>ENQ_TXN_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ENQ_TXN_ID</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>ENQ_TXN_ID</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DEQ_TIME" id="A4D3CCCE-8C34-01FC-A15B-0AC71044A5A7">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>DEQ_TIME</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DEQ_TIME</alias>
+<dataType>DATE (8)</dataType>
+<headerAlias>DEQ_TIME</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DEQ_TIMESTAMP" id="E0496C62-DB6C-0069-6ACB-E579B96E10B8">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>DEQ_TIMESTAMP</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DEQ_TIMESTAMP</alias>
+<dataType>TIMESTAMP(6)</dataType>
+<headerAlias>DEQ_TIMESTAMP</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DEQ_USER_ID" id="DA0ABE79-7247-62A4-021B-504843885210">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>DEQ_USER_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DEQ_USER_ID</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>DEQ_USER_ID</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DEQ_TXN_ID" id="F5C9C829-3ED0-FB58-958D-4A7E1D37C76E">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>DEQ_TXN_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DEQ_TXN_ID</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>DEQ_TXN_ID</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="RETRY_COUNT" id="C37CDE69-CFC9-6EF0-584B-3D2C5517EA57">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>RETRY_COUNT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>RETRY_COUNT</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>RETRY_COUNT</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="EXCEPTION_QUEUE_OWNER" id="BA8F3F54-7C01-FB85-1D4D-E5624C278F80">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>EXCEPTION_QUEUE_OWNER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EXCEPTION_QUEUE_OWNER</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>EXCEPTION_QUEUE_OWNER</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="EXCEPTION_QUEUE" id="2DC5238D-5C8F-6679-C3CF-D502CCF98363">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>EXCEPTION_QUEUE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EXCEPTION_QUEUE</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>EXCEPTION_QUEUE</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="USER_DATA" id="DD38E137-B1B6-5151-148B-C02D10E57B36">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>USER_DATA</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>USER_DATA</alias>
+<dataType>EQUIPMENT_CHANGE_QTYPE (64)</dataType>
+<headerAlias>USER_DATA</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ORIGINAL_QUEUE_NAME" id="C697F830-3674-C12C-7EA3-DA60B3500208">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>ORIGINAL_QUEUE_NAME</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ORIGINAL_QUEUE_NAME</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>ORIGINAL_QUEUE_NAME</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ORIGINAL_QUEUE_OWNER" id="D067FC26-16B8-C8C8-2F7F-8CF5221EEDB0">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>ORIGINAL_QUEUE_OWNER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ORIGINAL_QUEUE_OWNER</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>ORIGINAL_QUEUE_OWNER</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="EXPIRATION_REASON" id="68227339-DDF0-294E-4492-80FD85865696">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>EXPIRATION_REASON</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EXPIRATION_REASON</alias>
+<dataType>VARCHAR2 (18)</dataType>
+<headerAlias>EXPIRATION_REASON</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SENDER_NAME" id="44CE29B7-7871-2A44-98C3-B187A3FEBB5C">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>SENDER_NAME</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SENDER_NAME</alias>
+<dataType>VARCHAR2 (30)</dataType>
+<headerAlias>SENDER_NAME</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SENDER_ADDRESS" id="546040C6-7F2B-AD94-BC91-9206DE580044">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>SENDER_ADDRESS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SENDER_ADDRESS</alias>
+<dataType>VARCHAR2 (1024)</dataType>
+<headerAlias>SENDER_ADDRESS</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SENDER_PROTOCOL" id="F6E7443F-03E7-A32C-3AEC-96D31A538D98">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>SENDER_PROTOCOL</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SENDER_PROTOCOL</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>SENDER_PROTOCOL</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ORIGINAL_MSGID" id="71BF982E-ACFC-F9DB-4E65-D6BED9F99243">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>AQ$EQUIPMENT_CHANGE_QTABLE</sourceObjSchema>
+<sourceObjName>ORIGINAL_MSGID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:38 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ORIGINAL_MSGID</alias>
+<dataType>RAW (16)</dataType>
+<headerAlias>ORIGINAL_MSGID</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</TableView>

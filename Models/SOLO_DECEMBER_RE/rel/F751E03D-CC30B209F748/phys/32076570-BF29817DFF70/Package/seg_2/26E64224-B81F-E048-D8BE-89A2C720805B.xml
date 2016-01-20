@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<PackageOracle class="oracle.dbtools.crest.model.design.storage.oracle.PackageOracle" name="DA_INTERNAL_SYSTEM" directorySegmentName="seg_2" id="26E64224-B81F-E048-D8BE-89A2C720805B">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>DA_INTERNAL_SYSTEM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:15:00 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<owner>5AF9E3FC-7A76-C437-3E83-BF29D7EA2FC7</owner>
+<source>CREATE OR REPLACE PACKAGE CHTR.DA_INTERNAL_SYSTEM&lt;br/&gt;/* Generated on 20-JAN-15 03.39.57.043090000 PM -06:00 */&lt;br/&gt;AS&lt;br/&gt; &lt;br/&gt;   PROCEDURE add (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,system_nm IN VARCHAR2&lt;br/&gt;      ,system_desc IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   );&lt;br/&gt; &lt;br/&gt;   PROCEDURE del (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,system_nm IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   );&lt;br/&gt; &lt;br/&gt;END da_internal_system;</source>
+<body class="oracle.dbtools.crest.model.design.storage.oracle.PackageBodyOracle" name="DA_INTERNAL_SYSTEM" id="26E64224-B81F-E048-D8BE-89A2C720805B">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>DA_INTERNAL_SYSTEM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:15:01 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<owner>5AF9E3FC-7A76-C437-3E83-BF29D7EA2FC7</owner>
+<source>CREATE OR REPLACE PACKAGE BODY CHTR.DA_INTERNAL_SYSTEM&lt;br/&gt;/* Generated on 20-JAN-15 03.39.57.052974000 PM -06:00 */&lt;br/&gt;AS&lt;br/&gt; &lt;br/&gt;   PROCEDURE add (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,system_nm IN VARCHAR2&lt;br/&gt;      ,system_desc IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   )&lt;br/&gt;   IS&lt;br/&gt;   BEGIN&lt;br/&gt; &lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;begin da_internal_system.add, parms=&apos; || system_nm || &apos;|&apos; || system_desc || &apos;|&apos; || audit_user || &apos;|&apos;);&lt;br/&gt;      INSERT INTO chtr.t_internal_system a&lt;br/&gt;      (&lt;br/&gt;         a.system_nm&lt;br/&gt;         ,a.system_desc&lt;br/&gt;         ,a.record_stat&lt;br/&gt;         ,a.created_dttm&lt;br/&gt;         ,a.created_by&lt;br/&gt;         ,a.modified_dttm&lt;br/&gt;         ,a.modified_by&lt;br/&gt;      )&lt;br/&gt;      VALUES&lt;br/&gt;      (&lt;br/&gt;         add.system_nm&lt;br/&gt;         ,add.system_desc&lt;br/&gt;         ,&apos;A&apos;&lt;br/&gt;         ,SYSTIMESTAMP&lt;br/&gt;         ,add.audit_user&lt;br/&gt;         ,NULL&lt;br/&gt;         ,NULL&lt;br/&gt;      );&lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;end da_internal_system.add&apos;);&lt;br/&gt; &lt;br/&gt;   END add;&lt;br/&gt; &lt;br/&gt;   PROCEDURE del (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,system_nm IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   )&lt;br/&gt;   IS&lt;br/&gt;   BEGIN&lt;br/&gt; &lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;begin da_internal_system.del, parms=&apos; || system_nm || &apos;|&apos; || audit_user || &apos;|&apos;);&lt;br/&gt;      UPDATE chtr.t_internal_system a&lt;br/&gt;      SET a.record_stat = &apos;D&apos;&lt;br/&gt;          ,a.modified_dttm = SYSTIMESTAMP&lt;br/&gt;          ,a.modified_by = del.audit_user&lt;br/&gt;      WHERE a.system_nm = del.system_nm&lt;br/&gt;      ;&lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;end da_internal_system.del&apos;);&lt;br/&gt; &lt;br/&gt;   END del;&lt;br/&gt; &lt;br/&gt;END da_internal_system;</source>
+</body>
+</PackageOracle>

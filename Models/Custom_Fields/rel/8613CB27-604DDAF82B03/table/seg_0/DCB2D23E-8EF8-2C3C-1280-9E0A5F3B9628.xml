@@ -1,0 +1,282 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DCB2D23E-8EF8-2C3C-1280-9E0A5F3B9628" name="Customer_Custom_Fields">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 16:38:44 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Account_ID" id="A09BE9B7-68F5-082A-F82A-D75A9907C9B8">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 17:37:57 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FB53438-0FC0-A5FC-933D-7966E1C3E717" referredColumn="A5732837-DB75-CD5A-B0A5-2DE1718FD674"/>
+</associations>
+</Column>
+<Column name="Effective_Date" id="71817561-2A77-427B-9DBF-0BCA74284090">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:07:01 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_Promotion" id="6D499EB0-1950-ABF8-860B-95230ED98B5E">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:07:01 UTC</createdTime>
+<commentInRDBMS>CUS01</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_SCASS" id="C99135A1-FF30-6648-7247-2C917295DBD3">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:08:23 UTC</createdTime>
+<commentInRDBMS>CUS02</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TCF_CUS_MULTI1" id="45CCD175-21FC-DEBD-CD47-476F3C6F50D0">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:08:23 UTC</createdTime>
+<commentInRDBMS>CUS05</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Gfathered_Bundled_Internet_Ind" id="3C07A68B-77D6-C9B3-023E-85FCC0150DBE">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:45:09 UTC</createdTime>
+<commentInRDBMS>From CUS05/TCF_CUS_MULTI1</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="D_Ring_Migration" id="CDA23533-5FB7-8046-71AF-9D80EDDB8926">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:45:09 UTC</createdTime>
+<commentInRDBMS>From CUS05/TCF_CUS_MULTI1</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Low_Income_Broadband_Ind" id="1020B7C2-D3CA-B6F6-D011-EBF1E6554CED">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:08:23 UTC</createdTime>
+<commentInRDBMS>CUS07</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TCF_CUS_MULTI2" id="097688CD-DDA6-95CF-3334-0FEFD932276E">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:08:23 UTC</createdTime>
+<commentInRDBMS>CUS08</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CF08_Pos1" id="79CF9E3C-869C-4024-0963-179450277FD4">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:51:23 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 1</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CF08_Pos2" id="E731D4DD-D84C-8058-7193-F6C125852CBA">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:51:23 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 2</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CF08_Pos3" id="153678E9-5CDA-E8F6-9AA4-C5055959003C">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:51:23 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 3</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CF08_Pos4" id="164AA980-9CCB-C1FE-14E4-2806C360169B">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:51:23 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 4</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CF08_Pos5" id="B3FF4AFD-08EE-7179-41E1-B987F3A4FEA3">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:55:46 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 1</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CF08_Pos6" id="8AA0091D-7DBB-7092-CED0-B11F4F2BEBDE">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:55:46 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 2</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CF08_Pos7" id="9ADA60C3-F24F-A8D2-7D30-43B0021BB589">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:55:46 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 3</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CF08_Pos8" id="644CFD4E-6FE6-4E54-6724-97B31A185B4E">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:55:46 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 4</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_CF08_Pos9" id="F4874FE6-2944-C145-A12E-13E4FBBCD6DD">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:55:56 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 4</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_Credit_Class" id="6B2A6E33-A741-2B5B-DF37-DAEDB42BC447">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:08:23 UTC</createdTime>
+<commentInRDBMS>CUS09</commentInRDBMS>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="100DBFF4-D15C-BAD1-DE34-8BA8DF09E288" name="Customer_Custom_Fields_PK">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 18:07:01 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71817561-2A77-427B-9DBF-0BCA74284090"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9A57991-EE99-DCD6-9CF4-61CF866303F0" name="Account_Custom_Customer_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 17:37:57 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A09BE9B7-68F5-082A-F82A-D75A9907C9B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14DB7CCC-4B5B-356E-4E5B-D47B2FE837A7" name="Account">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 16:39:37 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Account_ID" id="A5732837-DB75-CD5A-B0A5-2DE1718FD674">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 16:40:57 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Biller_Account_Number" id="CEB0243C-419E-CD24-D7A3-2A4AFADD1085">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 16:40:57 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Party_ID" id="DA4BCC65-6474-2A06-2A58-8EDF7C837340">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 16:41:35 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55022ADA-6147-92F6-3C1A-769F318F03D0" referredColumn="F3A1AC1B-E353-D970-938D-629E803414B6"/>
+</associations>
+</Column>
+<Column name="Service_Address_ID" id="90E8A0CA-FC1C-E6CD-8FDC-E69953C1871F">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 16:42:33 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A5F091A-D30A-0865-E7C5-678BA111020E" referredColumn="C8B97249-B3AF-561E-C184-B282A090FDC5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="012AC6F4-F504-5C56-F2A5-42F61D8F6737" name="Account_PK">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 16:40:57 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5732837-DB75-CD5A-B0A5-2DE1718FD674"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A882582-ACF8-2CF4-6022-F56B2886438F" name="Account_Party_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 16:41:35 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA4BCC65-6474-2A06-2A58-8EDF7C837340"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DBA871E-55A6-F832-5442-156E78E72609" name="Account_Location_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 16:42:33 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90E8A0CA-FC1C-E6CD-8FDC-E69953C1871F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

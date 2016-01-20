@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="058613D0-2CBD-92B9-6CC8-6633ECBC49F6" schemaObject="C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1" name="T_SERVICE_ADDRESS_VANTAGE_XREF">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_SERVICE_ADDRESS_VANTAGE_XREF</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:39 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HS_KEY" id="8697E7D4-C551-F8C0-F8A5-70A4C9DFB0FD">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SERVICE_ADDRESS_VANTAGE_XREF</sourceObjSchema>
+<sourceObjName>HS_KEY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:52 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS_ID" id="EDD24A39-E3A8-4A2B-A5D0-4564CC2C6024">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SERVICE_ADDRESS_VANTAGE_XREF</sourceObjSchema>
+<sourceObjName>ADDRESS_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:52 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71C050BA-2C6C-CEF0-54B2-80BF60B1C97B" referredColumn="1819AECB-469E-7B17-A002-0E5471A62499"/>
+</associations>
+</Column>
+<Column name="RECORD_STAT" id="23C0CE4E-BACA-48FB-34B4-DE3104B24C80">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SERVICE_ADDRESS_VANTAGE_XREF</sourceObjSchema>
+<sourceObjName>RECORD_STAT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:52 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DTTM" id="D16802CC-4491-504D-4242-E27779E88DF8">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SERVICE_ADDRESS_VANTAGE_XREF</sourceObjSchema>
+<sourceObjName>CREATED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:52 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="E3B9AFB6-BFB5-E399-F9C7-D0943843B8B4">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SERVICE_ADDRESS_VANTAGE_XREF</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:52 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DTTM" id="B2123981-37AF-C904-F539-AB7FF3BC43E2">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SERVICE_ADDRESS_VANTAGE_XREF</sourceObjSchema>
+<sourceObjName>MODIFIED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:52 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="87438264-730E-F0C6-1509-BC854288E015">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>T_SERVICE_ADDRESS_VANTAGE_XREF</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:52 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="853D3887-2BD1-547B-DCC4-718D8CF423E5" name="PK_SVC_ADDR_VANTAGE_XREF">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_SVC_ADDR_VANTAGE_XREF</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:16 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8697E7D4-C551-F8C0-F8A5-70A4C9DFB0FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19DEDAD5-F53C-0CC1-EC49-53811FBB1EAD" schemaObject="C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1" name="IDX_SVC_ADDR_VANTAGE_XREF1">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_SVC_ADDR_VANTAGE_XREF1</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:00 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDD24A39-E3A8-4A2B-A5D0-4564CC2C6024"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="455EA28E-16D9-025F-33FE-F26815A815D6" schemaObject="C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1" name="PK_SVC_ADDR_VANTAGE_XREF">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_SVC_ADDR_VANTAGE_XREF</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:00 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8697E7D4-C551-F8C0-F8A5-70A4C9DFB0FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32B60C9C-1EE1-7377-4F53-B59912E9AB8C" name="FK_SVC_ADDR_VANTAGE_XREF1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:59:30 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_Used</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDD24A39-E3A8-4A2B-A5D0-4564CC2C6024"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A320F13A-0EC8-A3CB-2CE4-F8C92DBBE381" name="Product Order">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>E126FBF1-2D25-0CDA-5AD3-A272D438E1CB</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Order ID" id="3D7EE67C-C309-30A7-4172-A94DD187F677">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>2DA35FD7-0FA5-7350-9274-B31BB248A72F</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Account ID" id="58FF0460-01A6-621E-21F4-C2CFF75C28F8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>BFB74967-A61B-F7C7-3688-A9D015846D47</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<referedAttribute>E6C86B16-3A42-C46F-4D0C-C9C35BAB04EA</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Order Date" id="898950D6-FFC7-F921-AA38-C69FFC38244F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>0EF8B11F-348F-0AD6-D04C-6B0848AEB7BB</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="35F13CA6-082C-8E04-3076-BA8AF1B51DCB" name="Product Order PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>E658F86B-0EC2-04EE-8458-FC55C147E014</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3D7EE67C-C309-30A7-4172-A94DD187F677</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

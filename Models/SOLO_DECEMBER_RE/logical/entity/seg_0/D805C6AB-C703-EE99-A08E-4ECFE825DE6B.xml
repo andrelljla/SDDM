@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D805C6AB-C703-EE99-A08E-4ECFE825DE6B" name="T ACCOUNTING FTA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>2F6AA235-886A-DC64-FE64-2E72E6DC5130</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ACCOUNTING FTA ID" id="FC6F8D93-5979-443E-3445-27CD79EC095F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>4841B34C-3856-DBDC-8923-30FA3FD95E30</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<referedAttribute>4BF0CCA5-CBA9-A916-50F6-B2863B4E0CE2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COMMUNITY ID" id="D96C0D67-30A3-A7CF-371D-01A50C3913C1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>F9F5709F-2645-2BA5-8DE6-2F349732DCDA</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>95B4C16C-7C56-04AD-45BB-2E3D0AD985FA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACCOUNTING SYSTEM ID" id="A15777BA-DCA2-AA0A-0AE4-46E3CE950AA1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>C57ED2AA-5904-2A19-F0CB-E0151A4FA191</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>13735CA6-6375-1AFF-7C02-7FC724A5E1F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="6A020D85-FD16-EF20-4086-D3112F6AF687">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>89F93658-5151-373B-DD73-1DF5AF5AFE67</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="0C6EC524-45C6-4E93-D720-EFD459C8C997">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>F8370BB2-C0C2-A6AA-B3FE-13CA17D413E6</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="9F6ECC24-FD60-B852-7C97-D20B21F6FC23">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>9211B847-FE90-7D83-2B18-B155DEEE8ECE</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="09B34B09-7BF7-3930-1F4D-9F1C0B08A298">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>E447BB85-A261-BD4C-D735-BDAAA1C3FCBA</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="B3CAF9BD-B8E2-5162-8565-B6D5DAB988EF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>C82B8955-375B-D03B-234F-192C031725B5</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1F42EE85-FAB1-1E82-D1A6-F99CB6C22F28" name="PK ACCOUNTING FTA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:24 UTC</createdTime>
+<generatorID>350E06F6-47CA-EB49-7002-F42984538EB1</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FC6F8D93-5979-443E-3445-27CD79EC095F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

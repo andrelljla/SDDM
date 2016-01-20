@@ -1,0 +1,884 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="E7012D05-6B23-3E64-B2D3-3A2C7149C609" schemaObject="B5DA1D80-BC1F-DEEB-A262-CA58037BF88D" name="T_MEC_APITEM">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_MEC_APITEM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:00 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AP_ID" id="881B364A-2F89-1C80-ECCE-BCE3FA951F11">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>AP_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>The primary key field of the assigned product item derived from the base entity</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AP_VERSION_ID" id="3442AA3B-8517-3657-CEFA-6524B2ACE0A9">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>AP_VERSION_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>The second field of the primary key </commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FINAL_STATUS" id="EF1D1FEA-93CB-E0B4-DA08-A89C85601E48">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>FINAL_STATUS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>The final status of an ordered item version when its order action is completed. This status takes into consideration the final status of previous versions of the item. The final status is taken into account when checking whether a specific order action is allowed on an assigned product.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_ACTION_ID" id="C545F977-A41D-BB62-745E-31D63CAA3B1C">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>ORDER_ACTION_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>The order action that created the version. Logical FK to ORDER_UNIT_ID in ORDER_ACTION table.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OFFER_DEF_ID" id="B2A8FE99-C003-F2B7-25A0-82254115EF39">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>OFFER_DEF_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>For main items - the catalog ID of the offer</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OFFER_DEF_VER" id="44B35B1F-5302-53F0-B28A-7FC51764221B">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>OFFER_DEF_VER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>For main items - the catalog version of the offer</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCT_DEF_ID" id="271E10B1-C81A-C5BD-A17F-CC4527045C66">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>PRODUCT_DEF_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>The product definition in the product catalog. Populated only for main items. Logical FK to CID in CATALOG_ITEM table.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCT_DEF_VER" id="2E77AB61-9258-6600-3CEE-F0266EF5F013">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>PRODUCT_DEF_VER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>A unique identifier of the version of the product definition in the product catalog, according to which this product was created. Logical FK to PCVERSION_ID in CATALOG_ITEM table.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ITEM_DEF_ID" id="2F21487B-716E-A3D8-DEEC-0171F2435976">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>ITEM_DEF_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>The item definition in the product catalog, upon which the ApItem is based. This item definition can refer to one of the following definitions:  COMPONENT, COMMITMENT_TERM, PRICE_PLAN, SLA, OFFER.  Logical FK to CID in CATALOG_ITEM table.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ITEM_DEF_VER" id="266E020E-60BA-C21C-6B86-4FED6A803288">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>ITEM_DEF_VER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>A unique identifier of the version of the item definition in the product catalog, according to which this item was created. Logical FK to PCVERSION_ID in CATALOG_ITEM table.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ITEM_LEVEL" id="E87B5BE8-26EC-AA8B-0BF7-94E532015B94">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>ITEM_LEVEL</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>The level of an assigned product item, that is, whether it is a main item or a regular item. Note, that if the item is a technical component, only one main item corresponding to the main component of the product as defined in the product catalog can exist for an assigned product.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PC_RELATION_ID" id="0BBCC8EE-48FF-49B1-41ED-4A927D11294F">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>PC_RELATION_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>A unique identifier of the relation between the item and its dominant item. This column is populated if the type of relation is containment.  This field in logical FK to the RELATION_ID column in the (TBRELATION) table.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PC_RELATION_VER" id="698AEC3A-4C59-9274-A9FA-A54EBA5A1B12">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>PC_RELATION_VER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>The version of the relation between the item and its dominant item (according to the product catalog version).  This field in logical FK to the PCVERSION_ID column in the (TBRELATION) table.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_PLAN_DEF_ID" id="36147AF8-1A14-5C69-780A-83AB9CDA26D3">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>PRICE_PLAN_DEF_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:37 UTC</createdTime>
+<commentInRDBMS>Added by JLA in extension design</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_PLAN_DEF_VER" id="AD37EEC0-D3F7-BEA5-C87E-6D1D2BA6E37D">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>PRICE_PLAN_DEF_VER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>Added by JLA in extension design</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEC_ORDER_ID" id="538D17E4-505F-C33B-9A0A-BC42ECA10B57">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>MEC_ORDER_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>Added by JLA in extension design</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75FFFEE6-0C4E-CD9E-0084-3084CE3B021A" referredColumn="154BFAD3-6654-4270-FC38-807980F3BF2A"/>
+</associations>
+</Column>
+<Column name="MEC_ORDER_VERSION_NUM" id="D36F8707-6AB3-0762-C2E5-38F3F90680E0">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>MEC_ORDER_VERSION_NUM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75FFFEE6-0C4E-CD9E-0084-3084CE3B021A" referredColumn="2847B848-7B0A-E073-A436-293F9A2FCB5B"/>
+</associations>
+</Column>
+<Column name="START_DATE" id="A2967DF3-5E5B-ED48-1A30-3EA871B8AF60">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>START_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>For an assigned version, the FromDate specifies the beginning date of the period in which the version is effective. For a version in the state of Ordered, the field may be empty, or represents the due date of the order action according to specific application logic. Date Mask: YYYYMMDD</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="8CD96961-D037-8A86-94C7-3F2909294D13">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>END_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>The date from which this assigned product version is no longer effective. It is populated only when there is a more current version for that assigned product (in which case this date is the START_DATE of the next version), or when the assigned product is no longer active (Ceased). Date Mask: YYYYMMDD</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SERVICE_ID" id="F59D0855-1136-1087-E220-F7ABA4F3DBDB">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>SERVICE_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>A unique identifier of the service item. The formats for this attribute can differ, depending on the template and the established service type (for example, 972-3-7546813 for a subscription number). Because the user identifies assigned product items by their service type and service ID, the ApItem base entity stores the Service ID attribute to allow common access to this attribute for all derived items.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SERVICE_TYPE" id="211B37F7-55D7-44B2-CD6A-8314FCAAB765">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>SERVICE_TYPE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>The type of the service or product.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAIN_IND" id="B249B067-C673-086F-5B60-98F1B1E877EF">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>MAIN_IND</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>Indicates whether an item is a main component or a regular component. Valid values are: 1 - Main 0 - Not main</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAIN_ITEM_ID" id="4C511617-95FD-A97F-F3C2-A8A2B69A51CF">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>MAIN_ITEM_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>The object that is the main item of this item.  Logical self-referential FK to the AP_ID colum.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REASON" id="D913EF98-2276-D705-525F-BB301A54AEA5">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>REASON</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>From a predefined list of values, specifies the reason for activating the specific order action.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROVIDER" id="B4BFCCDA-D249-3EA1-20AF-CE11EA8ED560">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>PROVIDER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>The provider of this item.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROV_DATE" id="88AF5FD7-0954-45F7-1891-4E241212F14D">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>PROV_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>The date on which the product was provisioned. Date Mask: YYYYMMDD</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENTITY_TYPE" id="FAFD513D-986B-61B8-8903-38C5F2B4FD29">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>ENTITY_TYPE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>The name of the entity class for inheritance facilities.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIGRATED_PROD_ID" id="49081E68-83D9-EA25-0565-48D4853BE33C">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>MIGRATED_PROD_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>A unique identifier of the product this item was migrated from.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIGRATED_TO_ITEM" id="F24CC8D7-1120-7643-599F-108CCA298959">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>MIGRATED_TO_ITEM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>A unique identifier of the item to which the item was migrated.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROV_SERVICE_ID" id="2E8EB2D9-D25B-38BA-729E-CBE716DB1692">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>PROV_SERVICE_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTION_TYPE" id="3B2671CB-9709-98E9-EC0B-E55716DDF41C">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>ACTION_TYPE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>For main items records, holds the order action type of the order action that created this item version. For non main item records, holds information on charge events created due to adding or removing optional items from the product configuration. This information is cleaned after it is used.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATE" id="028DFA61-4FC3-1069-E14C-A8902B142911">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>STATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>The state of the current version (Ordered, Cancelled or Assigned).</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_MODE" id="E2C7EC27-141E-82EF-5E10-227E96A01327">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>ORDER_MODE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>Holds the mode of the order in which this version was ordered (for example, Delivery, Proposal).</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="70F27B45-67C2-D382-F16A-00F92F12B597">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>The status of the item (Active, Ceased or Suspended).</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AP_ID_DOMINANT" id="05B72BED-3B33-37E1-9C8D-C69FC96BEED2">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>AP_ID_DOMINANT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>A reference to the dominant item. This field is populated if the type of relation is containment.  This field in logical FK to the AP_ID column in the (TBAP_ITEM) table. Logical self-referential FK to AP_ID </commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALL_CHANGED_ATTR" id="988830BB-0BA7-5792-CBEA-FA0CA1536B82">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>ALL_CHANGED_ATTR</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>Holds a string with the names of all the attributes that were changed by this version, separated with a semicolon ;.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONSTANT_SUBS" id="16F8B69C-A711-2409-0253-76F11ADAC32D">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>CONSTANT_SUBS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>This column holds a string of the constant item object name separated with a semicolon (;).</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ITEM_ATRS_LIST" id="B4735251-C4B1-0AC2-CA0B-3B5C65EA0569">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>ITEM_ATRS_LIST</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>This string holds information on the dynamic attribute defined on the item. The string includes the attribute name, value, and type if it is a date. The details of the attribute are separated by default by a plus sign (+), while the attributes in the list are separated by default by a semicolon (;).</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RELATION_ATRS_LIST" id="4D9BCD45-D80C-C967-79C1-6692484D9A9A">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>RELATION_ATRS_LIST</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>This string holds information on the dynamic attribute defined on the relation to the item. The string includes the attribute name, value, and type if it is a date. The details of the attribute are separated by default by a plus sign (+), while the attributes in the list are separated by default by a semicolon (;). </commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EFFECTIVE_PCVER" id="110FC9FA-2726-6A46-874F-653530795490">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>EFFECTIVE_PCVER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>The effective product catalog version.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXTERNAL_ID" id="79AC0C8A-3585-C74C-E85A-5FA44BC3EA95">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>EXTERNAL_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ITEM_ACTION_TYPE" id="6EF39C35-C092-3E66-46AC-F4D672B6A990">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>ITEM_ACTION_TYPE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>The type of action which caused this item to be added or removed</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCOUNT_ID" id="B7F98976-92CC-6C0D-601D-E6A307D5DA55">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>ACCOUNT_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>Added by JLA in extension design&lt;br/&gt;</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B122DCDD-5A4C-AE6A-C651-ACA222D82960" referredColumn="9A679182-E20E-D19F-51AB-1B127A1D4A53"/>
+</associations>
+</Column>
+<Column name="QUANTITY" id="677386B4-D28C-B05E-0B13-177E388738CF">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>QUANTITY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>The quantity of products ordered within this order action. Relevant for Provide requests only.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REASON_ID" id="B5EE67C3-03A3-7404-DED1-0C6BA5398068">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>REASON_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>A unique identifier of the reason related to the order action. </commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REASON_FREE_TEXT" id="9468D009-F651-CA7A-9236-4B2ED966CFB8">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>REASON_FREE_TEXT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:38 UTC</createdTime>
+<commentInRDBMS>The reason description that was describe by the user</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ITEM_ACTION_CD" id="9D2FB030-D3C9-AEF4-49D2-7771E3720D2A">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>ITEM_ACTION_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:39 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECORD_STAT" id="854B537B-2262-2A00-609A-0934D7C3A04B">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>RECORD_STAT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:39 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DTTM" id="9F593A7F-C3A9-AE8B-C338-7F26D31A67A2">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>CREATED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:39 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="97D2D2F6-6E12-D1C3-97C5-C81D88F42D56">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:39 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DTTM" id="B5CF594F-E8DF-410B-2E2B-D242B26E05AA">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>MODIFIED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:39 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="39FEA242-44B1-F393-85C2-7E6B2AF2F3E0">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_APITEM</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:39 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC7C828E-BDD8-1193-25FE-57271C6C3C7F" name="PK_MEC_APITEM">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_MEC_APITEM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:30:03 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="881B364A-2F89-1C80-ECCE-BCE3FA951F11"/>
+<colUsage columnID="3442AA3B-8517-3657-CEFA-6524B2ACE0A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F75AF3A1-B841-4EF6-8AE6-1D9BD667A5E1" schemaObject="B5DA1D80-BC1F-DEEB-A262-CA58037BF88D" name="PK_MEC_APITEM">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_MEC_APITEM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:29:26 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="881B364A-2F89-1C80-ECCE-BCE3FA951F11"/>
+<colUsage columnID="3442AA3B-8517-3657-CEFA-6524B2ACE0A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DEC6EA27-7C3D-A0B8-9EFF-D435A2CF3DD6" name="FK_MEC_APITEM1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:31:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7F98976-92CC-6C0D-601D-E6A307D5DA55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D116DA7D-B18E-54DF-44D9-F046ACF09DBA" name="FK_MEC_APITEM2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:31:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="538D17E4-505F-C33B-9A0A-BC42ECA10B57"/>
+<colUsage columnID="D36F8707-6AB3-0762-C2E5-38F3F90680E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

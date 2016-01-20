@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="10300AA0-2354-2FDA-0BE4-13067CE78CDC" name="Unit of Measure Conversion">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:25:35 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Unit Of Measure From Code" id="42468DF6-5212-08EA-04D0-4D92C3A58514">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:26:38 UTC</createdTime>
+<generatorID>127E5B55-D581-B037-828C-827F11B78BE1</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>47C1F05A-1A9C-5EAA-45BA-DBB58685E6BD</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>53757E19-4D1C-7D48-82B8-B547D384EF3A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Unit Of Measure To Code" id="01710A32-20F5-3469-9D06-3A27155791A0">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:26:59 UTC</createdTime>
+<generatorID>9B9308E6-559D-84A8-9F31-D5127398A56C</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>47C1F05A-1A9C-5EAA-45BA-DBB58685E6BD</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>53757E19-4D1C-7D48-82B8-B547D384EF3A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Calculation Sequence" id="D77AB651-7D20-F612-401A-F0B4CFFA3CF6">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:29:02 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>9BA9B96A-BA36-3A30-A804-C9DA0996B59D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Operation" id="8A73AD3F-60E8-AFC1-2527-CAF17CCCA8AF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:32:37 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2FCBA118-724C-3386-F381-E8FECD2D8E59</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Constant" id="E9942A71-310C-C648-B938-FC1D97C06385">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:33:40 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="42C12228-6688-5E1A-6814-523866CDDF8D" name="Unit of Measure Conversion PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:26:55 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>42468DF6-5212-08EA-04D0-4D92C3A58514</attributeRef>
+<attributeRef>01710A32-20F5-3469-9D06-3A27155791A0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

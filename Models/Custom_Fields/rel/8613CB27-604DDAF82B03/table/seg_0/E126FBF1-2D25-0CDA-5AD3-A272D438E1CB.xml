@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E126FBF1-2D25-0CDA-5AD3-A272D438E1CB" name="Product_Order">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 17:39:42 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Order_ID" id="2DA35FD7-0FA5-7350-9274-B31BB248A72F">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 17:41:49 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_ID" id="6B7E092B-3692-917B-2522-5974ED94BE2D">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 17:40:12 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B87BD84E-39FD-66E4-7279-24F3A3963BD7" referredColumn="A5732837-DB75-CD5A-B0A5-2DE1718FD674"/>
+</associations>
+</Column>
+<Column name="Order_Date" id="0EF8B11F-348F-0AD6-D04C-6B0848AEB7BB">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 17:41:49 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E658F86B-0EC2-04EE-8458-FC55C147E014" name="Product_Order_PK">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 17:41:49 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DA35FD7-0FA5-7350-9274-B31BB248A72F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C444881-C3F9-AD4A-29A4-3B4A33E9E2C4" name="Prod_Order_Account_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2015-12-01 17:40:12 UTC</createdTime>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B7E092B-3692-917B-2522-5974ED94BE2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

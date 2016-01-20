@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DAB40061-CF82-6971-6FF4-614710A85AFD" name="Party">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>404F2B15-A7EA-540C-D087-A226D11C9ACC</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Party ID" id="F7B7C836-315A-0B37-22CD-54BEE08F806C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>F3A1AC1B-E353-D970-938D-629E803414B6</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Legal Name" id="314DEDC0-038B-BD65-3CA5-38100B01CFBE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>BD17E5A7-B415-F0AC-F9D7-F3F7853F19A0</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Party Classification Code" id="101A4A3D-11C9-4512-7608-46B507F7570A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>Used to distinguish entities from individuals (or other classes of parties that client wants to distinguish from a legal perspective).  Part of the unique key, to allow for both an ENTITY and an INDIV(idual) with the same legal_name.&lt;br/&gt;&lt;br/&gt;Note: This is NOT a substitute for Party_Role (customer, vendor, affiliate, etc), managed in separate tables.&lt;br/&gt;&lt;br/&gt;Valid Values (Inital): &lt;br/&gt;- ENTITY&lt;br/&gt;- INDIV&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</commentInRDBMS>
+<generatorID>12AF9D4C-EF38-10A6-213B-C8B630FB037F</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DF791779-5495-9957-C898-3E4E485C07A2" name="Party PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>BFCB774A-6D9C-E9D8-5DDF-33A551B81685</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F7B7C836-315A-0B37-22CD-54BEE08F806C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="990C031C-E438-971B-172E-FFBC50C3304D" name="Party UK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>A9ACB3D8-A96B-9CF3-E060-0BC608C6CA95</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>314DEDC0-038B-BD65-3CA5-38100B01CFBE</attributeRef>
+<attributeRef>101A4A3D-11C9-4512-7608-46B507F7570A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

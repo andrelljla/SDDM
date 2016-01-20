@@ -1,0 +1,240 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_6" id="09E0C690-A9CA-EEB7-B84F-D204463BF8EC" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="T_TV_SCHEDULE">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_TV_SCHEDULE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:07:46 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROGRAMMING_SERVICE_PRODUCT_ID" id="976C19CB-C378-D386-95D7-0C189430C0A2">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_TV_SCHEDULE</sourceObjSchema>
+<sourceObjName>PROGRAMMING_SERVICE_PRODUCT_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:00 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="494B0E51-8820-7350-4E0B-2D74D3D85F71" referredColumn="4F14FF9B-4E22-B1F3-6F6C-279CA8637D2B"/>
+</associations>
+</Column>
+<Column name="BROADCAST_DT" id="A445FA29-3484-2C3A-19C2-33BD450EA033">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_TV_SCHEDULE</sourceObjSchema>
+<sourceObjName>BROADCAST_DT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:00 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BROADCAST_START_DTTM" id="C9E801BC-94A5-9582-6C73-AF9BA962F90A">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_TV_SCHEDULE</sourceObjSchema>
+<sourceObjName>BROADCAST_START_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:00 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE_ID" id="9250ABDB-0E1A-9DEC-AAF6-F9B8A7A8F1DA">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_TV_SCHEDULE</sourceObjSchema>
+<sourceObjName>TITLE_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:00 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25771CAA-A85F-CEF1-7F7B-ACA9004520DF" referredColumn="524E3474-4D86-D1E0-D331-C5E540A06870"/>
+</associations>
+</Column>
+<Column name="BROADCAST_END_DTTM" id="751FA6F1-8701-46CB-EB6D-FAB8EA6442F2">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_TV_SCHEDULE</sourceObjSchema>
+<sourceObjName>BROADCAST_END_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:00 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECORD_STAT" id="92FD607D-9DDE-B8FB-98CC-7828A67728E3">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_TV_SCHEDULE</sourceObjSchema>
+<sourceObjName>RECORD_STAT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:00 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DTTM" id="2DCBEFA3-FD09-8027-7E8A-C2AE6756BA0A">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_TV_SCHEDULE</sourceObjSchema>
+<sourceObjName>CREATED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:00 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="55302581-FC6B-B305-566B-C03359DE659E">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_TV_SCHEDULE</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:00 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DTTM" id="4818E4B4-574A-C6F7-5FA5-83C5B842DE13">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_TV_SCHEDULE</sourceObjSchema>
+<sourceObjName>MODIFIED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:00 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="6AA82D91-3CE8-F3FA-D91B-BB483BF35D7F">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_TV_SCHEDULE</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:00 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="72C6DF53-5AC8-3883-64A8-85CCE28215F0" name="PK_TV_SCHEDULE">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_TV_SCHEDULE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:13:01 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="976C19CB-C378-D386-95D7-0C189430C0A2"/>
+<colUsage columnID="A445FA29-3484-2C3A-19C2-33BD450EA033"/>
+<colUsage columnID="C9E801BC-94A5-9582-6C73-AF9BA962F90A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="519170BF-C56A-6DD9-6AFD-F9A79304D270" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="PK_TV_SCHEDULE">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_TV_SCHEDULE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:50 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="976C19CB-C378-D386-95D7-0C189430C0A2"/>
+<colUsage columnID="A445FA29-3484-2C3A-19C2-33BD450EA033"/>
+<colUsage columnID="C9E801BC-94A5-9582-6C73-AF9BA962F90A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA62A80E-615F-0A27-4792-DD9C7735CEBE" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="IDX_TV_SCHEDULE1">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_TV_SCHEDULE1</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:50 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="976C19CB-C378-D386-95D7-0C189430C0A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E16A6DFC-5213-A1E3-86DB-6BFC1C0250FC" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="IDX_TV_SCHEDULE2">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_TV_SCHEDULE2</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:50 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9250ABDB-0E1A-9DEC-AAF6-F9B8A7A8F1DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1A10BBF-FA3A-9357-64BB-889278FF256C" name="FK_TV_SCHEDULE1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:21:16 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="976C19CB-C378-D386-95D7-0C189430C0A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="053EED6C-93EA-65A5-1043-818741100DA9" name="FK_TV_SCHEDULE2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:21:16 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9250ABDB-0E1A-9DEC-AAF6-F9B8A7A8F1DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

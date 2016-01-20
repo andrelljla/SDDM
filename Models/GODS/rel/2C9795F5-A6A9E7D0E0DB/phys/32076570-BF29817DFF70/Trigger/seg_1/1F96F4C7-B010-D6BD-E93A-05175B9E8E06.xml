@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TBSYS_DTLS_GROUPS_CF_UPD_TRG" directorySegmentName="seg_1" id="1F96F4C7-B010-D6BD-E93A-05175B9E8E06">
+<sourceDDLFile>OE_Used_TB_Tables.sql</sourceDDLFile>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 16:34:02 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<actions>UPDATE</actions>
+<body>declare&lt;br&gt;user_id NVARCHAR2(20);&lt;br&gt;begin&lt;br&gt;  :new.CTDB_UPD_DATETIME := sysdate;&lt;br&gt;  log_pkg.GET_USER_NAME(user_id);&lt;br&gt;  :new.CTDB_LAST_UPDATOR := user_id;&lt;br&gt;END ;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>34CAD8E7-3CBA-FD7E-5E67-E05684DD27E6</owner>
+<table>49A0165D-CD80-6525-A84B-1272203E97C3</table>
+</TriggerOraclev10g>

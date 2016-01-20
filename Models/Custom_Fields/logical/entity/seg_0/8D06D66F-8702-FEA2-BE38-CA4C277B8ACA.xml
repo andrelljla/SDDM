@@ -1,0 +1,336 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8D06D66F-8702-FEA2-BE38-CA4C277B8ACA" name="Customer Custom Fields">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>DCB2D23E-8EF8-2C3C-1280-9E0A5F3B9628</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Account ID" id="6C341E58-8D5E-7F10-2337-D430FBD5C677">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>7869FAC9-7529-D2C5-89BC-047364C1E0B4</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<referedAttribute>E6C86B16-3A42-C46F-4D0C-C9C35BAB04EA</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Effective Date" id="EC857693-3952-AA6F-3085-41BE8B38A7B0">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>71817561-2A77-427B-9DBF-0BCA74284090</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer Promotion" id="84CAD047-F3B0-C249-F303-388A84850EE7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>CUS01</commentInRDBMS>
+<generatorID>6D499EB0-1950-ABF8-860B-95230ED98B5E</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer SCASS" id="6D97DDAD-5A7A-89E3-FE44-1B219AC057C5">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>CUS02</commentInRDBMS>
+<generatorID>C99135A1-FF30-6648-7247-2C917295DBD3</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TCF CUS MULTI1" id="146064E1-D481-6A66-899C-6E1993A98D68">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>CUS05</commentInRDBMS>
+<generatorID>45CCD175-21FC-DEBD-CD47-476F3C6F50D0</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Gfathered Bundled Internet Ind" id="629D2BF8-A5A5-79EC-1F33-CDAE6E421D0B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>From CUS05/TCF_CUS_MULTI1</commentInRDBMS>
+<generatorID>3C07A68B-77D6-C9B3-023E-85FCC0150DBE</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="D Ring Migration" id="36BB4C24-C35E-B1D8-2A1A-A857E687C5FD">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>From CUS05/TCF_CUS_MULTI1</commentInRDBMS>
+<generatorID>CDA23533-5FB7-8046-71AF-9D80EDDB8926</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Low Income Broadband Ind" id="6338B32E-772D-4D31-CA25-0951210841A8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>CUS07</commentInRDBMS>
+<generatorID>1020B7C2-D3CA-B6F6-D011-EBF1E6554CED</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TCF CUS MULTI2" id="7F61C29F-A970-8A73-7484-5167CE67D9D9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>CUS08</commentInRDBMS>
+<generatorID>097688CD-DDA6-95CF-3334-0FEFD932276E</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos1" id="A08875B3-4EA2-CF18-3ABB-58E9B91FB78D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 1</commentInRDBMS>
+<generatorID>79CF9E3C-869C-4024-0963-179450277FD4</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos2" id="7CC68B9F-EE9B-1A12-FFF8-1F97DE37CB67">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 2</commentInRDBMS>
+<generatorID>E731D4DD-D84C-8058-7193-F6C125852CBA</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos3" id="BF083CB5-A3E6-2BB9-C96A-B34E9F42A8D8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 3</commentInRDBMS>
+<generatorID>153678E9-5CDA-E8F6-9AA4-C5055959003C</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos4" id="FA331B13-76A7-38A0-09DA-8E9C558A10AA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 4</commentInRDBMS>
+<generatorID>164AA980-9CCB-C1FE-14E4-2806C360169B</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos5" id="EA566B38-4536-B33D-C54B-535BF88FC523">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 1</commentInRDBMS>
+<generatorID>B3FF4AFD-08EE-7179-41E1-B987F3A4FEA3</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos6" id="17F235C6-5399-7A5D-820E-65B7FF1F9B71">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 2</commentInRDBMS>
+<generatorID>8AA0091D-7DBB-7092-CED0-B11F4F2BEBDE</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos7" id="1D1C8594-B0C6-D2B5-BF58-D07F5D1C03A7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 3</commentInRDBMS>
+<generatorID>9ADA60C3-F24F-A8D2-7D30-43B0021BB589</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos8" id="D634AC17-6051-1C57-DC42-ED5C940DB584">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 4</commentInRDBMS>
+<generatorID>644CFD4E-6FE6-4E54-6724-97B31A185B4E</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer CF08 Pos9" id="C39E586F-3DDE-9044-501C-4C1269D73A25">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>From CUS08/TCF_CUS_MULTI2, Position 4</commentInRDBMS>
+<generatorID>F4874FE6-2944-C145-A12E-13E4FBBCD6DD</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer Credit Class" id="5BAFA1BC-97E0-F4E3-ACDC-D808E4426238">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<commentInRDBMS>CUS09</commentInRDBMS>
+<generatorID>6B2A6E33-A741-2B5B-DF37-DAEDB42BC447</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="955E4A28-B072-916A-AD30-32022B19346B" name="Customer Custom Fields PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>100DBFF4-D15C-BAD1-DE34-8BA8DF09E288</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EC857693-3952-AA6F-3085-41BE8B38A7B0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

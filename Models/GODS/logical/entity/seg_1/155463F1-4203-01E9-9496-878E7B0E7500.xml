@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="155463F1-4203-01E9-9496-878E7B0E7500" name="Related Account">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-11 19:21:55 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Account R\elated From ID" id="B400B7A1-46A1-D1CC-2FDC-AFDB054A538E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-11 19:22:15 UTC</createdTime>
+<generatorID>43D3BFE1-28EC-0043-6392-2C40E28C8AA4</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>1588AD6E-BF72-71CF-7DB3-C374933CDCF1</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Account Related To ID" id="8C504F16-4CCA-F453-A66A-330882554753">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-11 19:22:40 UTC</createdTime>
+<generatorID>5896E75E-C420-C4B0-9E12-CFA47959CFB9</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>1588AD6E-BF72-71CF-7DB3-C374933CDCF1</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Effective Date" id="BBC930F5-25E6-718A-31AA-2EAAC6DF82D1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-11 19:24:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="End Date" id="2A1F0CC5-83A0-D8D0-0390-665ED6D9A504">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-11 19:24:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Is Active" id="10B9D48D-B7C1-4830-C55E-F06B3FCD5F3B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-11 19:24:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM2022950</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code" id="C544061A-AA1C-E911-4B12-EA1340382D45">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-11 19:27:45 UTC</createdTime>
+<generatorID>26C0E26E-5FDB-2903-1224-D73D85CA33BF</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>A2144690-F25C-7BB5-8B59-9450270352A7</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>53757E19-4D1C-7D48-82B8-B547D384EF3A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3924B03B-B438-4875-3BB6-3EDA26ABCF95" name="Related Account PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-11 19:22:15 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B400B7A1-46A1-D1CC-2FDC-AFDB054A538E</attributeRef>
+<attributeRef>8C504F16-4CCA-F453-A66A-330882554753</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

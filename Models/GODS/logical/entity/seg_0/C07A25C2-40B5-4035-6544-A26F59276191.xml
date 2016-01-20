@@ -1,0 +1,206 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C07A25C2-40B5-4035-6544-A26F59276191" name="Party Telephone Address">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:56:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Telephone Number" id="513F275B-752C-C7D9-1655-F1C44333DF59">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 22:01:39 UTC</createdTime>
+<comment>Limited to North American telephone numbers</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Party ID" id="89ED1180-685A-DC78-8FD1-D6F8C014F03F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 22:00:57 UTC</createdTime>
+<generatorID>661451FE-3BF0-C48F-8F47-16703D19A6B2</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>8A190E45-0310-C654-4A57-7ECE035EB164</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telephone Area Code" id="1E449744-65BB-A936-5FEA-B4E99C67D989">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:56:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telephone Exchange Number" id="F65970A7-C409-DF07-F2CF-F46CA6EBA6BB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:58:55 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telephone Line Number" id="39480B9F-040A-113D-5ABF-CE695450093C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:59:27 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telephone Address Type Code" id="D137DB1D-893F-35C9-C977-FA2039E15744">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:56:30 UTC</createdTime>
+<generatorID>B5F84AE8-1E38-BFB4-EC95-BDF0C44ECB02</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>1779B8E7-9823-D5A7-5BE6-FAF7C8DEFEA3</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>53757E19-4D1C-7D48-82B8-B547D384EF3A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Preference Sequence" id="7785958E-23D1-FE97-EC26-E718AC01208B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:56:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Effective Date" id="5D9C6A0D-24FB-1FF5-4B4D-932114259B86">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:56:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="End Date" id="CEB5784C-72DC-A093-1820-EFFBF39BA16E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:56:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Is Active" id="EBEBA9C2-7ED3-8171-6C0B-4EB8365F3A16">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:56:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM2022950</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Document Link" id="71379A02-E4BA-F0D3-EBF2-F65F06E38BB5">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:56:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT052</logicalDatatype>
+<domain>DOM2025190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comment" id="34344C3F-778D-F676-6463-A78CEA692B00">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 21:56:30 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>088C8227-2A17-7B49-31AB-6F32AB32A61B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B4F4E519-E7EF-04C0-4C15-6B19397A9C31" name="Telephone Address PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 22:02:13 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>513F275B-752C-C7D9-1655-F1C44333DF59</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="4538B22E-9FFB-0A46-EB75-388A875E3129" name="Telephone Number Assignment UK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-10 22:05:55 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<newElementsIDs>661451FE-3BF0-C48F-8F47-16703D19A6B2,513F275B-752C-C7D9-1655-F1C44333DF59,5D9C6A0D-24FB-1FF5-4B4D-932114259B86</newElementsIDs>
+<usedAttributes>
+<attributeRef>89ED1180-685A-DC78-8FD1-D6F8C014F03F</attributeRef>
+<attributeRef>513F275B-752C-C7D9-1655-F1C44333DF59</attributeRef>
+<attributeRef>5D9C6A0D-24FB-1FF5-4B4D-932114259B86</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

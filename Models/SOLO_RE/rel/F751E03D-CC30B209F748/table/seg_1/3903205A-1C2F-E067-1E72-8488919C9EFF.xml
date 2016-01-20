@@ -1,0 +1,353 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="3903205A-1C2F-E067-1E72-8488919C9EFF" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="T_BILLING_PROD_INST_PRC">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_BILLING_PROD_INST_PRC</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:07:24 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BILLING_PROD_INST_ID" id="898281E7-FAE3-0720-0DB6-E5477D5DFF47">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>BILLING_PROD_INST_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3C3B460-F1CF-158E-5ACC-DF877949FDCA" referredColumn="5E88C689-9281-5545-E9FB-1A73950063F3"/>
+</associations>
+</Column>
+<Column name="BILLING_PRICE_CD" id="FC87C2F9-27CA-52B5-684C-A87064E52EA2">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>BILLING_PRICE_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="560FAFA8-DA6A-024C-1A8E-F2EF30FEFFE0" referredColumn="06275BD2-9374-82DA-F21D-0CF4EA5C93A1"/>
+</associations>
+</Column>
+<Column name="SOURCE_SYSTEM_ID" id="B5703874-43FA-C7D7-751C-F0022302F4E3">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>SOURCE_SYSTEM_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_SOURCE_TYPE_CD" id="4E043D50-798F-FF5D-3D98-AC99DA17C9A4">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>DATA_SOURCE_TYPE_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4230A9A0-2027-DE31-4557-7AD2C62A3561" referredColumn="706BEE8D-9BC1-1224-57C0-9A5F7F87A697"/>
+</associations>
+</Column>
+<Column name="PRICE_TYPE_CD" id="D0E3CE69-E32B-2EBD-8E3E-5D9F6E2D1045">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>PRICE_TYPE_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BILLING_PROD_INST_PRC_AMT" id="47949B89-D52F-AF3C-07D3-0E50ECEE0A8B">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>BILLING_PROD_INST_PRC_AMT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,13,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BLG_PROD_INST_PRC_VLD_ST_DTTM" id="0F30CF82-6237-22D8-6D30-CCE4A9022048">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>BLG_PROD_INST_PRC_VLD_ST_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BLG_PROD_INST_PRC_VLD_END_DTTM" id="8CC67A1B-4B0A-D426-D011-67996E75AFBF">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>BLG_PROD_INST_PRC_VLD_END_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BILLING_PROD_DSCNT_ID" id="AD14D1A4-62DD-ADD1-DC90-9164CFF57E52">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>BILLING_PROD_DSCNT_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EAA3625F-C35C-2BB4-D425-366EF7DD2743" referredColumn="8D169CDB-EB76-722E-3BF5-C5CD5A3EDFD5"/>
+</associations>
+</Column>
+<Column name="BILLING_PROD_DSCNT_CD" id="990FCAF7-FFD3-BFEC-57D4-F31687763716">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>BILLING_PROD_DSCNT_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECORD_STAT" id="6999CD21-61DF-04B0-2B13-EBAA9EA517D8">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>RECORD_STAT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DTTM" id="59808346-7E74-31B1-28B5-35B9CF59DF32">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>CREATED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="0EBDD8C9-DCD5-B05A-B509-2CE2AF2C0F40">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DTTM" id="D21DBC7F-85A4-AAA5-91A5-CF0A30EFB232">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>MODIFIED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="51B66755-4FEC-926F-5774-9106BAA7F116">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_BILLING_PROD_INST_PRC</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:09 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="938C27FD-7E99-F9DD-8045-CB7B283E4D69" name="PK_BILLING_PROD_INST_PRC">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_BILLING_PROD_INST_PRC</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:11:14 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="898281E7-FAE3-0720-0DB6-E5477D5DFF47"/>
+<colUsage columnID="FC87C2F9-27CA-52B5-684C-A87064E52EA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A3192F5-CF93-252D-7F4E-8C56812E51B4" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="PK_BILLING_PROD_INST_PRC">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_BILLING_PROD_INST_PRC</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:16 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="898281E7-FAE3-0720-0DB6-E5477D5DFF47"/>
+<colUsage columnID="FC87C2F9-27CA-52B5-684C-A87064E52EA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20535550-F71D-9461-0CDD-2E94635964C1" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="IDX_BILLING_PROD_INST_PRC1">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_BILLING_PROD_INST_PRC1</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:16 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD14D1A4-62DD-ADD1-DC90-9164CFF57E52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04051685-DC9B-0F67-9B44-5D3E4C4116E1" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="IDX_BILLING_PROD_INST_PRC2">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_BILLING_PROD_INST_PRC2</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:16 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="898281E7-FAE3-0720-0DB6-E5477D5DFF47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE34C57B-9505-4127-6333-1FE3A4FB1FC3" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="IDX_BILLING_PROD_INST_PRC3">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_BILLING_PROD_INST_PRC3</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:16 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC87C2F9-27CA-52B5-684C-A87064E52EA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4ADE50FB-6AB3-A772-DD66-703A3C25B36C" name="FK_BILLING_PROD_INST_PRC1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:21:15 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC87C2F9-27CA-52B5-684C-A87064E52EA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDDC9A2D-D800-573A-EB07-9107EFB6BF03" name="FK_BILLING_PROD_INST_PRC2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:21:15 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD14D1A4-62DD-ADD1-DC90-9164CFF57E52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1BF9EE8F-22F3-8CA1-3ABB-BE55FA8D06F2" name="FK_BILLING_PROD_INST_PRC3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:21:15 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="898281E7-FAE3-0720-0DB6-E5477D5DFF47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75CAA628-4A55-C71E-A1F6-7EF1F454B8BF" name="FK_BILLING_PROD_INST_PRC4">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:21:15 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E043D50-798F-FF5D-3D98-AC99DA17C9A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

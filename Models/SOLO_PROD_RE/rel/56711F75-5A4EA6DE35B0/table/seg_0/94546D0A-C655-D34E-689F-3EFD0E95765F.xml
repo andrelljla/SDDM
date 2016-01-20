@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94546D0A-C655-D34E-689F-3EFD0E95765F" schemaObject="B5DA1D80-BC1F-DEEB-A262-CA58037BF88D" name="MV_SERVICEABILITY_FLAG">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>MV_SERVICEABILITY_FLAG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:27:54 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<typeID>4</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<materializedQueryTable>true</materializedQueryTable>
+<userDefinedSQL>SELECT strt_add.street_address_id,&lt;br/&gt;         DECODE (&lt;br/&gt;            MAX (&lt;br/&gt;               DECODE (srv.connection_status_cd,  &apos;N&apos;, 1,  &apos;A&apos;, 2,  &apos;D&apos;, 3,  0)),&lt;br/&gt;            1, &apos;N&apos;,&lt;br/&gt;            2, &apos;A&apos;,&lt;br/&gt;            3, &apos;D&apos;,&lt;br/&gt;            NULL)&lt;br/&gt;            AS connection_status_cd,&lt;br/&gt;         MAX (srv.NODE_NM) AS NODE_NM,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;ANA_FLAG&apos;, 1, 0)) ana_flag,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;DIG_FLAG&apos;, 1, 0)) dig_flag,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;HSD_FLAG&apos;, 1, 0)) hsd_flag,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;VOD_FLAG&apos;, 1, 0)) vod_flag,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;HDTV_FLAG&apos;, 1, 0)) hdtv_flag,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;DVR_FLAG&apos;, 1, 0)) dvr_flag,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;TEL_FLAG&apos;, 1, 0)) tel_flag&lt;br/&gt;    FROM chtr.t_street_address strt_add&lt;br/&gt;         INNER JOIN chtr.t_serviceability_prd_ref_cd b&lt;br/&gt;            ON (strt_add.serviceability_cd = b.serviceability_cd&lt;br/&gt;                AND b.data_source_type_cd = strt_add.data_source_type_cd)&lt;br/&gt;         INNER JOIN chtr.t_street_address_servicability srv&lt;br/&gt;            ON (strt_add.street_address_id = srv.street_address_id)&lt;br/&gt;GROUP BY strt_add.street_address_id</userDefinedSQL>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STREET_ADDRESS_ID" id="C6E9837F-B3F5-8C84-8CBD-825E2AFA7BC3">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>MV_SERVICEABILITY_FLAG</sourceObjSchema>
+<sourceObjName>STREET_ADDRESS_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONNECTION_STATUS_CD" id="A86D3AB4-224E-2FA2-C0A2-1FCB3BDDB43B">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>MV_SERVICEABILITY_FLAG</sourceObjSchema>
+<sourceObjName>CONNECTION_STATUS_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NODE_NM" id="B15DA79A-4F7A-DEA1-47C7-838805F8ED71">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>MV_SERVICEABILITY_FLAG</sourceObjSchema>
+<sourceObjName>NODE_NM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANA_FLAG" id="1D8C23AD-E73E-B920-2337-DDA720B36B97">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>MV_SERVICEABILITY_FLAG</sourceObjSchema>
+<sourceObjName>ANA_FLAG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIG_FLAG" id="B46188D6-D754-3EEE-FC32-2821615E5F4C">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>MV_SERVICEABILITY_FLAG</sourceObjSchema>
+<sourceObjName>DIG_FLAG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HSD_FLAG" id="D1C215C6-ACCE-3A99-66E0-323D7CD79363">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>MV_SERVICEABILITY_FLAG</sourceObjSchema>
+<sourceObjName>HSD_FLAG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VOD_FLAG" id="6642A143-0508-D080-B21E-D26A6EBD1BCC">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>MV_SERVICEABILITY_FLAG</sourceObjSchema>
+<sourceObjName>VOD_FLAG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HDTV_FLAG" id="9180130B-DBC3-4387-A989-07540914DF8B">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>MV_SERVICEABILITY_FLAG</sourceObjSchema>
+<sourceObjName>HDTV_FLAG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DVR_FLAG" id="55A55B75-B0FE-BF89-B088-398A7729E7D2">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>MV_SERVICEABILITY_FLAG</sourceObjSchema>
+<sourceObjName>DVR_FLAG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEL_FLAG" id="DFE16627-895B-B91B-482B-21BBFF661156">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>MV_SERVICEABILITY_FLAG</sourceObjSchema>
+<sourceObjName>TEL_FLAG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="3CD4DDCE-2634-48D3-132E-AE1401CFC169" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="T_ON_DEMAND_PROGRAM">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_ON_DEMAND_PROGRAM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:07:35 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ON_DEMAND_CONTENT_ID" id="C520FCF8-A186-5DA0-6FC1-8ED48E487B5C">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ON_DEMAND_PROGRAM</sourceObjSchema>
+<sourceObjName>ON_DEMAND_CONTENT_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:04 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02D9239F-6809-466D-FC65-F81694C29D9B" referredColumn="7BD9E68D-7709-9141-B90C-E5BA032C458F"/>
+</associations>
+</Column>
+<Column name="RECORD_STAT" id="C550B285-5794-C30C-BF02-1D1A8BE06E09">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ON_DEMAND_PROGRAM</sourceObjSchema>
+<sourceObjName>RECORD_STAT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:05 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DTTM" id="E9868E06-554A-C01C-09C4-4461A528BCCA">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ON_DEMAND_PROGRAM</sourceObjSchema>
+<sourceObjName>CREATED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:05 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="D8E26F31-BF1A-3ECD-2ABC-14CE4A48BE59">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ON_DEMAND_PROGRAM</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:05 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DTTM" id="58E651EB-F99A-D1C9-A4CF-C09B319D5E8A">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ON_DEMAND_PROGRAM</sourceObjSchema>
+<sourceObjName>MODIFIED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:05 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="3AD49E80-2305-129E-ECED-A7818FEF6186">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_ON_DEMAND_PROGRAM</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:09:05 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8171DA8-289F-E4C1-DF3E-4A09D36F7145" name="PK_ON_DEMAND_PROGRAM">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_ON_DEMAND_PROGRAM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:12:08 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C520FCF8-A186-5DA0-6FC1-8ED48E487B5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C047E76-777B-157D-4DC1-5F86814AA834" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="PK_ON_DEMAND_PROGRAM">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_ON_DEMAND_PROGRAM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:31 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C520FCF8-A186-5DA0-6FC1-8ED48E487B5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8652862C-DA24-7BC2-3998-9DC2C8EDC4B4" name="FK_ON_DEMAND_PROGRAM1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:21:16 UTC</createdTime>
+<ownerDesignName>SOLO_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C520FCF8-A186-5DA0-6FC1-8ED48E487B5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

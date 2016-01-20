@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="A5A65875-95FD-8E8A-6F36-AAC3947C7743" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="T_INBOUND_CALL_AVAYA_XREF">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_INBOUND_CALL_AVAYA_XREF</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:07:32 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CALL_ID" id="0A090070-6871-FEA4-24C0-091DC6460AEB">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_INBOUND_CALL_AVAYA_XREF</sourceObjSchema>
+<sourceObjName>CALL_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:48 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INBOUND_CALL_ID" id="3759DA0A-3DB4-27B0-D242-CED7273E4AF4">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_INBOUND_CALL_AVAYA_XREF</sourceObjSchema>
+<sourceObjName>INBOUND_CALL_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:48 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34335403-EA67-2E4F-D38F-F34F07191C6F" referredColumn="783D9FD1-9D57-A9D7-95AF-EF3F6C8D2B5B"/>
+</associations>
+</Column>
+<Column name="RECORD_STAT" id="86071B63-5FED-FC79-AC90-B94458D8143A">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_INBOUND_CALL_AVAYA_XREF</sourceObjSchema>
+<sourceObjName>RECORD_STAT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:48 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DTTM" id="2584D6C5-AF5D-C272-3E27-DBB28CEB0E29">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_INBOUND_CALL_AVAYA_XREF</sourceObjSchema>
+<sourceObjName>CREATED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:48 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="0F9C0C30-5987-CB23-E526-E3D4193B1798">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_INBOUND_CALL_AVAYA_XREF</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:48 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DTTM" id="A2CE05E0-B137-4914-00AD-803FC90D43A1">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_INBOUND_CALL_AVAYA_XREF</sourceObjSchema>
+<sourceObjName>MODIFIED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:48 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="4CA4037B-E5D3-EAD5-E71A-9128C930CB4A">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_INBOUND_CALL_AVAYA_XREF</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:48 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7FCD0551-ECB0-5BE6-E9E6-A13055E26C1D" name="PK_INBOUND_CALL_AVAYA_XREF">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_INBOUND_CALL_AVAYA_XREF</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:11:52 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A090070-6871-FEA4-24C0-091DC6460AEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="815059FE-9BC0-FDEB-26F8-E6E53CF864A7" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="PK_INBOUND_CALL_AVAYA_XREF">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_INBOUND_CALL_AVAYA_XREF</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:27 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A090070-6871-FEA4-24C0-091DC6460AEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="162584D3-F847-9E4F-A550-388EEF8A79FC" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="IDX_INBOUND_CALL_AVAYA_XREF1">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_INBOUND_CALL_AVAYA_XREF1</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:27 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3759DA0A-3DB4-27B0-D242-CED7273E4AF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7428D7DE-0E17-45B7-F51C-D120DFE2A871" name="FK_INBOUND_CALL_AVAYA_XREF1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:21:16 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3759DA0A-3DB4-27B0-D242-CED7273E4AF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,391 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<EntityView class="oracle.dbtools.crest.model.design.logical.EntityView" directorySegmentName="seg_0" id="E0A33A26-9188-76FB-BD0F-09D541BAC45F" name="VW ACCOUNT DETIAL">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:32 UTC</createdTime>
+<generatorID>EF5E2EC9-1C1F-1BD8-CF95-2A85143C889D</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<userDefined>true</userDefined>
+<userDefinedSQL>CREATE OR REPLACE VIEW VW_ACCOUNT_DETIAL&lt;br/&gt;AS &lt;br/&gt;SELECT a.account_id account_id, a.account_num biller_account_num,&lt;br/&gt;          a.data_source_type_cd biller_code, a.account_type_cd account_type,&lt;br/&gt;          ca.party_id party_id, i.name_prefix_txt name_prefix,&lt;br/&gt;          DECODE (a.account_type_cd,&lt;br/&gt;                  &apos;BUSN&apos;, a.account_nm,&lt;br/&gt;                  i.given_nm&lt;br/&gt;                 ) given_nm,&lt;br/&gt;          i.middle_nm, i.family_nm, i.name_suffix_txt name_suffix,&lt;br/&gt;          ssa.source_street_address_id service_address_id,&lt;br/&gt;          sa.serviceability_cd, ssa.address_line_1_txt service_address_line_1,&lt;br/&gt;          ssa.address_line_2_txt service_address_line_2,&lt;br/&gt;          ssa.address_line_3_txt service_address_line_3,&lt;br/&gt;          ssa.carrier_route_txt service_address_carrier_route,&lt;br/&gt;          ssa.city_nm service_address_city,&lt;br/&gt;          ssa.territory_cd service_address_state,&lt;br/&gt;          postal_code_txt service_address_postal_code,&lt;br/&gt;          DECODE (valid_address_ind,&lt;br/&gt;                  0, &apos;N&apos;,&lt;br/&gt;                  1, &apos;Y&apos;&lt;br/&gt;                 ) clean_service_address_flag,&lt;br/&gt;          contact_email, contact_phone_num, service_email,&lt;br/&gt;          TO_CHAR (NULL) service_phone,&lt;br/&gt;          GREATEST&lt;br/&gt;             (NVL (aa.modified_dttm, aa.created_dttm),&lt;br/&gt;              NVL (a.modified_dttm, a.created_dttm),&lt;br/&gt;              NVL (ca.modified_dttm, ca.created_dttm),&lt;br/&gt;              NVL (sa.modified_dttm, sa.created_dttm),&lt;br/&gt;              NVL (ssa.modified_dttm, ssa.created_dttm),&lt;br/&gt;              NVL (contact_email.contact_email_modified_dttm,&lt;br/&gt;                   TO_DATE (&apos;01-JAN-1900&apos;, &apos;DD-MON-YYYY&apos;)&lt;br/&gt;                  ),&lt;br/&gt;              NVL (contact_ph_num.contact_ph_num_modified_dttm,&lt;br/&gt;                   TO_DATE (&apos;01-JAN-1900&apos;, &apos;DD-MON-YYYY&apos;)&lt;br/&gt;                  ),&lt;br/&gt;              NVL (service_email.service_email_modified_dttm,&lt;br/&gt;                   TO_DATE (&apos;01-JAN-1900&apos;, &apos;DD-MON-YYYY&apos;)&lt;br/&gt;                  )&lt;br/&gt;             ) modified_dttm&lt;br/&gt;     FROM chtr.t_account_address aa INNER JOIN chtr.t_account a&lt;br/&gt;          ON (    a.account_id = aa.account_id&lt;br/&gt;              AND aa.address_usage_type_cd = &apos;SRVC&apos;&lt;br/&gt;             )&lt;br/&gt;          INNER JOIN chtr.t_party_account ca&lt;br/&gt;          ON (ca.account_id = a.account_id)&lt;br/&gt;        AND ca.record_stat = &apos;A&apos;&lt;br/&gt;        AND ca.party_account_role_cd = &apos;RESP&apos;&lt;br/&gt;          INNER JOIN chtr.t_street_address sa&lt;br/&gt;          ON (sa.street_address_id = aa.address_id)&lt;br/&gt;          INNER JOIN chtr.t_source_street_address ssa&lt;br/&gt;          ON (ssa.source_street_address_id = sa.street_address_id)&lt;br/&gt;          LEFT OUTER JOIN chtr.t_individual i ON (ca.party_id =&lt;br/&gt;                                                               i.individual_id&lt;br/&gt;                                                 )&lt;br/&gt;          LEFT OUTER JOIN&lt;br/&gt;          (SELECT ea.elec_address_txt contact_email, pa_email.party_id,&lt;br/&gt;                  ROW_NUMBER () OVER (PARTITION BY pa_email.party_id ORDER BY ea.elec_address_id)&lt;br/&gt;                                                                          rno,&lt;br/&gt;                  GREATEST&lt;br/&gt;                     (NVL (pa_email.modified_dttm, pa_email.created_dttm),&lt;br/&gt;                      NVL (ea.modified_dttm, ea.created_dttm)&lt;br/&gt;                     ) contact_email_modified_dttm&lt;br/&gt;             FROM chtr.t_party_address pa_email JOIN chtr.t_elec_address ea&lt;br/&gt;                  ON (ea.elec_address_id = pa_email.address_id)&lt;br/&gt;            WHERE ea.elec_address_subtype_cd = &apos;ELEC&apos;&lt;br/&gt;              AND pa_email.address_usage_type_cd = &apos;EML&apos;) contact_email&lt;br/&gt;          ON (contact_email.party_id = ca.party_id)&lt;br/&gt;          LEFT OUTER JOIN&lt;br/&gt;          (SELECT ea_servemail.elec_address_txt service_email,&lt;br/&gt;                  aa_servemail.account_id,&lt;br/&gt;                  ROW_NUMBER () OVER (PARTITION BY aa_servemail.account_id ORDER BY ea_servemail.elec_address_id)&lt;br/&gt;                                                                          rno,&lt;br/&gt;                  GREATEST&lt;br/&gt;                     (NVL (aa_servemail.modified_dttm,&lt;br/&gt;                           aa_servemail.created_dttm&lt;br/&gt;                          ),&lt;br/&gt;                      NVL (ea_servemail.modified_dttm,&lt;br/&gt;                           ea_servemail.created_dttm&lt;br/&gt;                          )&lt;br/&gt;                     ) service_email_modified_dttm&lt;br/&gt;             FROM chtr.t_account_address aa_servemail JOIN chtr.t_elec_address ea_servemail&lt;br/&gt;                  ON (ea_servemail.elec_address_id = aa_servemail.address_id)&lt;br/&gt;            WHERE ea_servemail.elec_address_subtype_cd = &apos;ELEC&apos;&lt;br/&gt;              AND aa_servemail.address_usage_type_cd = &apos;EMAIL&apos;) service_email&lt;br/&gt;          ON (service_email.account_id = a.account_id)&lt;br/&gt;          LEFT OUTER JOIN&lt;br/&gt;          (SELECT pn.phone_num contact_phone_num, pa_phone.party_id,&lt;br/&gt;                  GREATEST&lt;br/&gt;                     (NVL (pa_phone.modified_dttm, pa_phone.created_dttm),&lt;br/&gt;                      NVL (pn.modified_dttm, pn.created_dttm)&lt;br/&gt;                     ) contact_ph_num_modified_dttm&lt;br/&gt;             FROM chtr.t_party_address pa_phone JOIN chtr.t_phone_num pn&lt;br/&gt;                  ON (pn.telephone_num_id = pa_phone.address_id)&lt;br/&gt;                  JOIN t_address a ON pa_phone.address_id = a.address_id&lt;br/&gt;            WHERE a.address_subtype_cd = &apos;PHN&apos;&lt;br/&gt;              AND pa_phone.address_usage_type_cd = &apos;HMPH&apos;) contact_ph_num&lt;br/&gt;          ON contact_ph_num.party_id = ca.party_id&lt;br/&gt;        AND service_email.rno = 1&lt;br/&gt;        AND contact_email.rno = 1</userDefinedSQL>
+<validSQL>false</validSQL>
+<viewType>EntityView</viewType>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ACCOUNT_ID" id="8D36AEC6-987E-4C8B-C745-8BDFB60C79B2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>FD0B3579-6FEC-8F13-4CB5-1908D66A49F6</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ACCOUNT_ID</alias>
+<dataType>NUMBER (19)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="BILLER_ACCOUNT_NUM" id="0A23E28C-7FA7-4282-B8AD-8B5A35A9C5A8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>0705FBA4-D682-4A2A-C2CE-218715B86FC5</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>BILLER_ACCOUNT_NUM</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="BILLER_CODE" id="4709E9A2-44D3-7B6B-B9C4-54E4C035D5D3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>772AAE14-C9CA-CCC9-F627-7814F42CDB6D</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>BILLER_CODE</alias>
+<dataType>VARCHAR2 (3)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ACCOUNT_TYPE" id="AC2D0DEF-1566-C26E-C7B9-BA74A05836C2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>84B20D8B-C7C5-4887-09F7-940BAFAD633F</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ACCOUNT_TYPE</alias>
+<dataType>VARCHAR2 (5)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="PARTY_ID" id="3F012C58-9075-6FBB-0542-A40B790039DE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>DE3C2954-9EF8-C9FB-C325-08BCF2F9DD60</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PARTY_ID</alias>
+<dataType>NUMBER (19)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="NAME_PREFIX" id="273AD4DE-6D41-A054-4FFA-3BD779C49F05">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>8B1ED45F-8EAC-AC87-6C0D-CB8CF8CAF4F5</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NAME_PREFIX</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="GIVEN_NM" id="25317E32-3E56-8632-271F-2D346985C1C8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>F1F70A6C-2BF8-2AD3-5434-ADD0B949369C</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>GIVEN_NM</alias>
+<dataType>VARCHAR2 (250)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="MIDDLE_NM" id="394E8244-722A-52B2-E0F2-9C0F922174E5">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>42F8A6CF-3572-C181-6C89-6DD2762BF573</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MIDDLE_NM</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="FAMILY_NM" id="7D130929-9903-4552-BADA-18E80E548430">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>0739FB38-7CE9-6B87-0EE2-EB4847136DBE</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>FAMILY_NM</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="NAME_SUFFIX" id="BB7114E1-6957-DAA0-A366-134122F43956">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>1EACF0D4-AF5A-E3B6-E902-9816A35AE188</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NAME_SUFFIX</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SERVICE_ADDRESS_ID" id="1E9B325B-C443-54B3-CC14-E804ABF8F33E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>22DD6F7E-902A-E7E3-1970-344CE380C978</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SERVICE_ADDRESS_ID</alias>
+<dataType>NUMBER (19)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SERVICEABILITY_CD" id="85EC4C14-0115-AADF-6C07-E51B85C5FDD9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>6DA044F3-F424-C006-0BA9-5C552C66EF80</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SERVICEABILITY_CD</alias>
+<dataType>VARCHAR2 (5)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SERVICE_ADDRESS_LINE_1" id="C39BAD67-1B7A-3687-95DF-10D7B075A464">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>BAE9C595-7D4F-D5D6-354C-299B22ADA6EB</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SERVICE_ADDRESS_LINE_1</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SERVICE_ADDRESS_LINE_2" id="712551BC-B005-6E20-3559-ACC383AFB2C3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>D1A41983-E6D0-4A99-6C07-D443118FC1A1</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SERVICE_ADDRESS_LINE_2</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SERVICE_ADDRESS_LINE_3" id="6B860177-BB0C-419F-90C7-090AC20546CE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>C6D10FC6-90E2-030D-4A7E-77E838CE53C4</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SERVICE_ADDRESS_LINE_3</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SERVICE_ADDRESS_CARRIER_ROUTE" id="E7255644-1ABA-216A-6DC7-3285048A326D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>E9B56362-ED46-F4E5-BCF9-4FB2D0A88B4E</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SERVICE_ADDRESS_CARRIER_ROUTE</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SERVICE_ADDRESS_CITY" id="B8A9D2E3-338B-9F6A-61F0-E62119D2E3D9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>B4845BC5-B673-DCC8-774C-026250635851</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SERVICE_ADDRESS_CITY</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SERVICE_ADDRESS_STATE" id="028F6FEE-1FBA-9DB2-BB7A-A1382D0C8B16">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>04448B79-C11C-D44D-A151-A792E5D9D75F</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SERVICE_ADDRESS_STATE</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SERVICE_ADDRESS_POSTAL_CODE" id="A849907C-3CFB-8328-D14D-03558DBF6B43">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>0B613287-1EC3-58CE-E07E-EF7FDE9B3467</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SERVICE_ADDRESS_POSTAL_CODE</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="CLEAN_SERVICE_ADDRESS_FLAG" id="B39C4546-7F29-E713-6E63-3A9BD788871A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>96FD2A99-F3A2-066B-17DA-CDFE6E101CFD</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>CLEAN_SERVICE_ADDRESS_FLAG</alias>
+<dataType>VARCHAR2 (1)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="CONTACT_EMAIL" id="F588A097-529F-0C07-A228-81AE123045D2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>5AD8B638-CD09-409F-CB02-07D2045D0308</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>CONTACT_EMAIL</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="CONTACT_PHONE_NUM" id="244EC16E-E0F1-CAEB-9DE7-DF1BD0658D80">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>F94E2156-61E4-6C4F-333D-EF6E41328066</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>CONTACT_PHONE_NUM</alias>
+<dataType>VARCHAR2 (50)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SERVICE_EMAIL" id="F7C36C5C-1B2F-9339-13B8-421DB6F040BA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>02EE320A-4684-B876-983E-18032B0DF9BF</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SERVICE_EMAIL</alias>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SERVICE_PHONE" id="70CA416E-8A60-D3C9-0462-AA3247C96253">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>94A52AD6-3F52-C402-A110-59F031F799E8</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SERVICE_PHONE</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="MODIFIED_DTTM" id="E1B43430-DDE4-BEF0-9344-FE057A93F1E2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 14:33:33 UTC</createdTime>
+<generatorID>75EE8A5E-72D7-A916-40D5-1614B479369A</generatorID>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<engineerTo>
+<item key="F751E03D-C8A7-4CF2-7EA7-CC30B209F748" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MODIFIED_DTTM</alias>
+<dataType>TIMESTAMP(6)</dataType>
+<reference>false</reference>
+<viewID>E0A33A26-9188-76FB-BD0F-09D541BAC45F</viewID>
+</viewElement>
+</viewElements>
+</EntityView>

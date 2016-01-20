@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F1CCC52F-3DD9-B2D7-AE99-785799190EA6" name="Account">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>14DB7CCC-4B5B-356E-4E5B-D47B2FE837A7</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Account ID" id="E6C86B16-3A42-C46F-4D0C-C9C35BAB04EA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>A5732837-DB75-CD5A-B0A5-2DE1718FD674</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Biller Account Number" id="5D1B083F-ECFE-7133-D1B2-E82FD97F4A1D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>CEB0243C-419E-CD24-D7A3-2A4AFADD1085</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Party ID" id="35E6BCA3-7721-5C21-F47D-C1B7C67FD234">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>11BFD902-0DBF-918C-1918-FB6B4F2C296A</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<referedAttribute>F7B7C836-315A-0B37-22CD-54BEE08F806C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Service Address ID" id="D96286FC-FC5B-87C6-B390-5BE992582614">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>A03E17E2-B453-A85B-3A16-4F57586FDFA5</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<referedAttribute>E5407213-9F6F-BAED-5D41-9D4BF6D5455C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="62F884E2-583D-38BA-D14F-78C072334D36" name="Account PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 16:50:40 UTC</createdTime>
+<generatorID>012AC6F4-F504-5C56-F2A5-42F61D8F6737</generatorID>
+<ownerDesignName>Custom_Fields</ownerDesignName>
+<engineerTo>
+<item key="8613CB27-DC33-C0CA-643A-604DDAF82B03" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E6C86B16-3A42-C46F-4D0C-C9C35BAB04EA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

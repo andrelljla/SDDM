@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="BB1BD015-5FEC-8A7D-3363-331C287DC434" name="Account Electronic Address">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:09:18 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="C15A3A8C-0452-349F-70D5-4E11D54C09A3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:11:47 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Electronic Address Type Code" id="64BBA108-60A1-AACF-F3EA-93E05EA6919D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:10:01 UTC</createdTime>
+<generatorID>155BA769-35DD-4EAD-C335-5356C7D9DC8D</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>A3DC3484-56E2-E6C7-1B1B-D5F9F893983E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>53757E19-4D1C-7D48-82B8-B547D384EF3A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Electronic Address Value" id="DE961E1D-F1BF-CE26-9B14-F7D4F062DE9C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:09:18 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Preference Sequence" id="E5DC4275-DC33-8908-D8CF-1E1BBEA98092">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:09:18 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Effective Date" id="4261F13B-29FF-BC29-2CA6-74D7F688758C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:09:18 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="End Date" id="99094B1C-9864-4D31-59F7-DDF8E6885302">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:09:18 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Is Active" id="704A5983-A3DF-D369-69D4-B9994935734F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:09:18 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM2022950</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Document Link" id="BAB93B5A-2C5D-6AE8-119D-EC064889CD83">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:09:18 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT052</logicalDatatype>
+<domain>DOM2025190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comment" id="E1C37BA3-5031-4BEE-BB82-A828E51053BD">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:09:18 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>088C8227-2A17-7B49-31AB-6F32AB32A61B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Account ID" id="E92173BB-C4E2-5638-C6C3-023835A2A3F1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:11:18 UTC</createdTime>
+<generatorID>F21803ED-9D13-6E71-F536-25B6D3C6F571</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>1588AD6E-BF72-71CF-7DB3-C374933CDCF1</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DFD8A4BA-5027-E8AF-AD47-147FA41F031B" name="Electronic Address PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-14 21:09:18 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DE961E1D-F1BF-CE26-9B14-F7D4F062DE9C</attributeRef>
+<attributeRef>4261F13B-29FF-BC29-2CA6-74D7F688758C</attributeRef>
+<attributeRef>C15A3A8C-0452-349F-70D5-4E11D54C09A3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

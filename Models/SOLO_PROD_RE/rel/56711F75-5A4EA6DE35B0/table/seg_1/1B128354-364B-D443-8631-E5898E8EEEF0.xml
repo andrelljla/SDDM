@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="1B128354-364B-D443-8631-E5898E8EEEF0" schemaObject="B5DA1D80-BC1F-DEEB-A262-CA58037BF88D" name="T_MSG_LOG_20151118">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_MSG_LOG_20151118</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:00 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MSG_ID" id="73C6195B-4ED6-8946-D2B8-6BD921145CEC">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MSG_LOG_20151118</sourceObjSchema>
+<sourceObjName>MSG_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:44 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MSG_TYPE" id="6FE6D81C-1DCE-E5ED-4222-6234B6863DA5">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MSG_LOG_20151118</sourceObjSchema>
+<sourceObjName>MSG_TYPE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:44 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;I&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MSG_DTTM" id="753AFDD8-CBD8-106F-4FC0-6C49F25DD023">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MSG_LOG_20151118</sourceObjSchema>
+<sourceObjName>MSG_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:44 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PGM_NAME" id="2FAFCD1C-A352-49D7-E2B1-5CDB6A521654">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MSG_LOG_20151118</sourceObjSchema>
+<sourceObjName>PGM_NAME</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:44 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PGM_TYPE" id="736A38E3-FF56-D65A-CE5D-A5064BE8B3CD">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MSG_LOG_20151118</sourceObjSchema>
+<sourceObjName>PGM_TYPE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:44 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PGM_LINENO" id="185CA15B-6BF4-5C51-31EE-FF0DD7422088">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MSG_LOG_20151118</sourceObjSchema>
+<sourceObjName>PGM_LINENO</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:44 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MSG" id="D0E879BF-A70D-083B-F3AF-931A30D590BA">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MSG_LOG_20151118</sourceObjSchema>
+<sourceObjName>MSG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:44 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2048 BYTE</dataTypeSize>
+<ownDataTypeParameters>2048 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROCESS_ID" id="77FCF16A-19DD-E03B-E333-54004D3C4C81">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MSG_LOG_20151118</sourceObjSchema>
+<sourceObjName>PROCESS_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:44 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A5DBD0A-06F1-EFB7-66E4-C9AE30BC365E" schemaObject="B5DA1D80-BC1F-DEEB-A262-CA58037BF88D" name="IDX_MSG_LOG">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_MSG_LOG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:29:27 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77FCF16A-19DD-E03B-E333-54004D3C4C81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

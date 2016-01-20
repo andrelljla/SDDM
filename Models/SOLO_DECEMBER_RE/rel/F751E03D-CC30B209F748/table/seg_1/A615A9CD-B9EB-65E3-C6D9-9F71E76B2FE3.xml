@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="A615A9CD-B9EB-65E3-C6D9-9F71E76B2FE3" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="T_COVERAGE_AREA">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_COVERAGE_AREA</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:07:27 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COVERAGE_AREA_CD" id="443F83C1-CE59-4473-0D64-211BC38A9550">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_COVERAGE_AREA</sourceObjSchema>
+<sourceObjName>COVERAGE_AREA_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:26 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COVERAGE_AREA_NM" id="AFADD62E-3E30-6C84-E9DF-FB6219444012">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_COVERAGE_AREA</sourceObjSchema>
+<sourceObjName>COVERAGE_AREA_NM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:26 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COVERAGE_AREA_DESC" id="3652E455-E196-8341-9ED5-FE0EF31CC94A">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_COVERAGE_AREA</sourceObjSchema>
+<sourceObjName>COVERAGE_AREA_DESC</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:26 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOGRAPHICAL_AREA_ID" id="9598387B-F1BE-37DB-E73B-7F207D782AF6">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_COVERAGE_AREA</sourceObjSchema>
+<sourceObjName>GEOGRAPHICAL_AREA_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:26 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E703B32C-E1D5-40B1-B2B0-5DAF01486D43" referredColumn="F3774701-D0F0-A5EA-CA3D-65A2BCA2026D"/>
+</associations>
+</Column>
+<Column name="RECORD_STAT" id="FE051151-1F17-8FD0-B83D-3534D8458F31">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_COVERAGE_AREA</sourceObjSchema>
+<sourceObjName>RECORD_STAT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:26 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DTTM" id="9B347A75-1301-0C13-4A93-5E443EC94C9A">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_COVERAGE_AREA</sourceObjSchema>
+<sourceObjName>CREATED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:26 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="1D7D5412-A54D-8B87-A21E-DDD240600EDD">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_COVERAGE_AREA</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:26 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DTTM" id="56B2193F-FDA8-1FB7-48E0-8FF43E1C4E97">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_COVERAGE_AREA</sourceObjSchema>
+<sourceObjName>MODIFIED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:26 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="4AE515CC-F772-8BD5-AB14-0D393C1E025B">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_COVERAGE_AREA</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:08:26 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7762BEF9-393C-B741-24F5-8BBB280A0F69" name="PK_COVERAGE_AREA">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_COVERAGE_AREA</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:11:31 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="443F83C1-CE59-4473-0D64-211BC38A9550"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="745966A9-A825-377A-2A58-BEA79558706F" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="PK_COVERAGE_AREA">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_COVERAGE_AREA</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:21 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="443F83C1-CE59-4473-0D64-211BC38A9550"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01D77997-57A1-7EC7-ED76-24ACD4921B85" schemaObject="FA693F2C-EF1B-3E65-88D8-7194D19EDCEE" name="IDX_COVERAGE_AREA1">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>IDX_COVERAGE_AREA1</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:10:21 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9598387B-F1BE-37DB-E73B-7F207D782AF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C449D88B-A89F-DF34-1ACE-EA50B2AC5A04" name="FK_COVERAGE_AREA1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:21:16 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9598387B-F1BE-37DB-E73B-7F207D782AF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

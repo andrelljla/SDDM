@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="FFD9FED9-9C7F-4084-A616-90777AC2ECAD" name="Offer Component">
+<createdBy>jandrews</createdBy>
+<createdTime>2016-01-18 17:40:32 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Offer Component ID" id="011F14D5-695C-4C1D-1369-0BAA965354AE">
+<createdBy>jandrews</createdBy>
+<createdTime>2016-01-18 17:40:58 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Offer Hierarchy Master ID" id="2F453E24-2C7C-5B2C-C089-C7C4377B7AA0">
+<createdBy>jandrews</createdBy>
+<createdTime>2016-01-18 17:49:47 UTC</createdTime>
+<generatorID>AAA7C9DF-558C-C601-C47C-6B55899B147B</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>462726EB-6974-D80E-F589-95A14CF92F0F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Component ID" id="FDC3F74D-34EE-4DF3-A2F6-A9587B268634">
+<createdBy>jandrews</createdBy>
+<createdTime>2016-01-18 17:50:03 UTC</createdTime>
+<generatorID>7035CED6-E419-9281-228F-87EF803D4FB7</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>4447DAF6-0489-C020-9EC1-E57281F3A16D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3630AADB-40FB-6533-FB5C-EAE5F7CE1126" name="Offer Component PK">
+<createdBy>jandrews</createdBy>
+<createdTime>2016-01-18 17:41:10 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>011F14D5-695C-4C1D-1369-0BAA965354AE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

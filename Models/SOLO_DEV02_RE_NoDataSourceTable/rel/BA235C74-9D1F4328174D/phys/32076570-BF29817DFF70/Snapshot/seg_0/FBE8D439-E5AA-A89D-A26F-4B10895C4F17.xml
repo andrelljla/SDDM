@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SnapshotOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.SnapshotOraclev11g" name="MV_SERVICEABILITY_FLAG" directorySegmentName="seg_0" id="FBE8D439-E5AA-A89D-A26F-4B10895C4F17">
+<sourceConnName>SOLO_DEV02</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>MV_SERVICEABILITY_FLAG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-17 21:58:36 UTC</createdTime>
+<ownerDesignName>SOLO_DEV02_RE_NoDataSourceTable</ownerDesignName>
+<schemaObject>C9EAF95F-C45A-0C97-8B9B-D176A8F8B7F1</schemaObject>
+<action>ON DEMAND</action>
+<defaultSegment>NO</defaultSegment>
+<refresh>YES</refresh>
+<refreshType>FORCE</refreshType>
+<subquery>SELECT strt_add.street_address_id,&lt;br/&gt;         DECODE (&lt;br/&gt;            MAX (&lt;br/&gt;               DECODE (srv.connection_status_cd,  &apos;N&apos;, 1,  &apos;A&apos;, 2,  &apos;D&apos;, 3,  0)),&lt;br/&gt;            1, &apos;N&apos;,&lt;br/&gt;            2, &apos;A&apos;,&lt;br/&gt;            3, &apos;D&apos;,&lt;br/&gt;            NULL)&lt;br/&gt;            AS connection_status_cd,&lt;br/&gt;         MAX (srv.NODE_NM) AS NODE_NM,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;ANA_FLAG&apos;, 1, 0)) ana_flag,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;DIG_FLAG&apos;, 1, 0)) dig_flag,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;HSD_FLAG&apos;, 1, 0)) hsd_flag,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;VOD_FLAG&apos;, 1, 0)) vod_flag,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;HDTV_FLAG&apos;, 1, 0)) hdtv_flag,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;DVR_FLAG&apos;, 1, 0)) dvr_flag,&lt;br/&gt;         MAX (DECODE (b.product_summary_cd, &apos;TEL_FLAG&apos;, 1, 0)) tel_flag&lt;br/&gt;    FROM chtr.t_street_address strt_add&lt;br/&gt;         INNER JOIN chtr.t_serviceability_prd_ref_cd b&lt;br/&gt;            ON (strt_add.serviceability_cd = b.serviceability_cd&lt;br/&gt;                AND b.data_source_type_cd = strt_add.data_source_type_cd)&lt;br/&gt;         INNER JOIN chtr.t_street_address_servicability srv&lt;br/&gt;            ON (strt_add.street_address_id = srv.street_address_id)&lt;br/&gt;GROUP BY strt_add.street_address_id</subquery>
+<subqueryChanged>false</subqueryChanged>
+<subqueryNeedsMigration>false</subqueryNeedsMigration>
+<tablespace>B6142FB8-0394-4C9F-8114-D1787D7EA9DB</tablespace>
+<useIndex>YES</useIndex>
+<with>ROWID</with>
+</SnapshotOraclev11g>

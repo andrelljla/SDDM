@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="82BEEB03-7B85-7DB4-7C11-A80205588FE6" name="Serviceability">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:44:57 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Product ID" id="33CBDF9F-B08A-AD31-EA57-0C615CA6B4F9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:45:14 UTC</createdTime>
+<generatorID>8C9A50C9-1FCD-CF85-D80E-546FC57834C9</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>B791E8DC-192F-DB9F-C988-9DD5145DFEE2</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Product Is Serviceable" id="17395B0C-012E-1628-3D86-5E24CCAD2CB9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:46:14 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>9301CC34-9D3E-C0F9-38F2-937A2DF5AA3F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Effective Date" id="34A003BA-9F92-507F-2578-DBBC16D6084D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:46:09 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="End Date" id="88449A40-F1B0-603D-57D3-7875A87F98D2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:46:09 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Is Active" id="65F5545D-366D-EB83-4671-B4B0E7418310">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:46:09 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM2022950</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Document Link" id="56876884-2ED5-0C7E-AB8A-9C619AF33A2D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:46:09 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT052</logicalDatatype>
+<domain>DOM2025190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comment" id="250E50DC-A072-7F16-6984-B46D2E1410B9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:46:09 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>088C8227-2A17-7B49-31AB-6F32AB32A61B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Location Node ID" id="BF71B002-4556-7C98-248B-9C8DB3EE141D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-11 17:46:06 UTC</createdTime>
+<generatorID>75040D66-14E3-829A-2706-71406614C01C</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>D281DE13-2C96-A123-FD17-37A983607861</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DC8CFE82-9E6C-D58D-EF31-CA6648835CDA" name="Serviceability PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:45:14 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>33CBDF9F-B08A-AD31-EA57-0C615CA6B4F9</attributeRef>
+<attributeRef>BF71B002-4556-7C98-248B-9C8DB3EE141D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

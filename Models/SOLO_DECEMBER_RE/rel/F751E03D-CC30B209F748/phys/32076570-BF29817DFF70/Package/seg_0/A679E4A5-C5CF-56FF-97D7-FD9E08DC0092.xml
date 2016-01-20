@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<PackageOracle class="oracle.dbtools.crest.model.design.storage.oracle.PackageOracle" name="DA_BILLING_PRODUCT_GROUP" directorySegmentName="seg_0" id="A679E4A5-C5CF-56FF-97D7-FD9E08DC0092">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>DA_BILLING_PRODUCT_GROUP</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:14:02 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<owner>5AF9E3FC-7A76-C437-3E83-BF29D7EA2FC7</owner>
+<source>CREATE OR REPLACE PACKAGE CHTR.DA_BILLING_PRODUCT_GROUP&lt;br/&gt;/* Generated on 20-JAN-15 03.39.40.910577000 PM -06:00 */&lt;br/&gt;AS&lt;br/&gt; &lt;br/&gt;   PROCEDURE add (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,detail_product_group_nm IN VARCHAR2&lt;br/&gt;      ,summary_product_group_nm IN VARCHAR2&lt;br/&gt;      ,lob_nm IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   );&lt;br/&gt; &lt;br/&gt;   PROCEDURE del (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,detail_product_group_nm IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   );&lt;br/&gt; &lt;br/&gt;END da_billing_product_group;</source>
+<body class="oracle.dbtools.crest.model.design.storage.oracle.PackageBodyOracle" name="DA_BILLING_PRODUCT_GROUP" id="A679E4A5-C5CF-56FF-97D7-FD9E08DC0092">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>DA_BILLING_PRODUCT_GROUP</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:14:03 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<owner>5AF9E3FC-7A76-C437-3E83-BF29D7EA2FC7</owner>
+<source>CREATE OR REPLACE PACKAGE BODY CHTR.DA_BILLING_PRODUCT_GROUP&lt;br/&gt;/* Generated on 20-JAN-15 03.39.40.931655000 PM -06:00 */&lt;br/&gt;AS&lt;br/&gt; &lt;br/&gt;   PROCEDURE add (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,detail_product_group_nm IN VARCHAR2&lt;br/&gt;      ,summary_product_group_nm IN VARCHAR2&lt;br/&gt;      ,lob_nm IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   )&lt;br/&gt;   IS&lt;br/&gt;   BEGIN&lt;br/&gt; &lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;begin da_billing_product_group.add, parms=&apos; || detail_product_group_nm || &apos;|&apos; || summary_product_group_nm || &apos;|&apos; || lob_nm || &apos;|&apos; || audit_user || &apos;|&apos;);&lt;br/&gt;      INSERT INTO chtr.t_billing_product_group a&lt;br/&gt;      (&lt;br/&gt;         a.detail_product_group_nm&lt;br/&gt;         ,a.summary_product_group_nm&lt;br/&gt;         ,a.lob_nm&lt;br/&gt;         ,a.record_stat&lt;br/&gt;         ,a.created_dttm&lt;br/&gt;         ,a.created_by&lt;br/&gt;         ,a.modified_dttm&lt;br/&gt;         ,a.modified_by&lt;br/&gt;      )&lt;br/&gt;      VALUES&lt;br/&gt;      (&lt;br/&gt;         add.detail_product_group_nm&lt;br/&gt;         ,add.summary_product_group_nm&lt;br/&gt;         ,add.lob_nm&lt;br/&gt;         ,&apos;A&apos;&lt;br/&gt;         ,SYSTIMESTAMP&lt;br/&gt;         ,add.audit_user&lt;br/&gt;         ,NULL&lt;br/&gt;         ,NULL&lt;br/&gt;      );&lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;end da_billing_product_group.add&apos;);&lt;br/&gt; &lt;br/&gt;   END add;&lt;br/&gt; &lt;br/&gt;   PROCEDURE del (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,detail_product_group_nm IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   )&lt;br/&gt;   IS&lt;br/&gt;   BEGIN&lt;br/&gt; &lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;begin da_billing_product_group.del, parms=&apos; || detail_product_group_nm || &apos;|&apos; || audit_user || &apos;|&apos;);&lt;br/&gt;      UPDATE chtr.t_billing_product_group a&lt;br/&gt;      SET a.record_stat = &apos;D&apos;&lt;br/&gt;          ,a.modified_dttm = SYSTIMESTAMP&lt;br/&gt;          ,a.modified_by = del.audit_user&lt;br/&gt;      WHERE a.detail_product_group_nm = del.detail_product_group_nm&lt;br/&gt;      ;&lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;end da_billing_product_group.del&apos;);&lt;br/&gt; &lt;br/&gt;   END del;&lt;br/&gt; &lt;br/&gt;END da_billing_product_group;</source>
+</body>
+</PackageOracle>

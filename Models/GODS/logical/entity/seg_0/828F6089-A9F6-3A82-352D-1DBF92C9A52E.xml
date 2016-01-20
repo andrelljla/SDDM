@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="828F6089-A9F6-3A82-352D-1DBF92C9A52E" name="Location Node Relationship">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 15:08:22 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Location Hierarchy Master ID" id="BA3AF85B-C28B-DF35-2BAD-0DB103FDE04F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 15:49:59 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ancestor Location Node ID" id="CFC6995D-8A54-7D64-D572-DF5F498DE281">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 15:09:09 UTC</createdTime>
+<generatorID>5456ECC3-537A-8991-E0E7-EAE171564BC0</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>DDEE4648-6AEA-A7C7-7E28-27BB09C4699E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descendant Location Node ID" id="6B3F213C-6B88-E00A-FF51-4A9F47743E52">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 15:09:54 UTC</createdTime>
+<generatorID>88718A3C-D886-9BBC-CD81-FF10A23589E3</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>DDEE4648-6AEA-A7C7-7E28-27BB09C4699E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Path Length" id="314DCA71-BAF8-D621-2963-A61638D69B04">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 15:08:46 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Effective Date" id="E25E8AC8-4CEC-8F53-E5FA-4432C64DE618">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 15:09:01 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="End Date" id="12BA6E50-3CFA-1C90-774E-E4C2E781A16B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 15:09:01 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Is Active" id="472E9656-F533-B295-41B4-2B1F1716E255">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 15:09:01 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM2022950</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Document Link" id="0E13A1F9-20FB-C8E9-0A05-39E2A6730421">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 15:09:01 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT052</logicalDatatype>
+<domain>DOM2025190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comment" id="0F626E10-CAC0-7605-1284-D4F3F62EFCA4">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 15:09:01 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>088C8227-2A17-7B49-31AB-6F32AB32A61B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2D55C50B-2059-8971-8DDD-E7F9A24E2E5D" name="Location Node Relationship PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-16 15:09:09 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>5456ECC3-537A-8991-E0E7-EAE171564BC0,88718A3C-D886-9BBC-CD81-FF10A23589E3,BA3AF85B-C28B-DF35-2BAD-0DB103FDE04F</newElementsIDs>
+<usedAttributes>
+<attributeRef>CFC6995D-8A54-7D64-D572-DF5F498DE281</attributeRef>
+<attributeRef>6B3F213C-6B88-E00A-FF51-4A9F47743E52</attributeRef>
+<attributeRef>BA3AF85B-C28B-DF35-2BAD-0DB103FDE04F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

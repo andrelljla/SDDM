@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<PackageOracle class="oracle.dbtools.crest.model.design.storage.oracle.PackageOracle" name="DA_PARTY_ROLE_CD" directorySegmentName="seg_3" id="0CC1CD30-BB63-4DB9-35BD-CC3C2A9C302E">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>DA_PARTY_ROLE_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:15:38 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<owner>5AF9E3FC-7A76-C437-3E83-BF29D7EA2FC7</owner>
+<source>CREATE OR REPLACE PACKAGE CHTR.DA_PARTY_ROLE_CD&lt;br/&gt;/* Generated on 20-JAN-15 03.40.07.360159000 PM -06:00 */&lt;br/&gt;AS&lt;br/&gt; &lt;br/&gt;   PROCEDURE add (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,party_role_cd IN VARCHAR2&lt;br/&gt;      ,role_desc IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   );&lt;br/&gt; &lt;br/&gt;   PROCEDURE del (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,party_role_cd IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   );&lt;br/&gt; &lt;br/&gt;END da_party_role_cd;</source>
+<body class="oracle.dbtools.crest.model.design.storage.oracle.PackageBodyOracle" name="DA_PARTY_ROLE_CD" id="0CC1CD30-BB63-4DB9-35BD-CC3C2A9C302E">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>DA_PARTY_ROLE_CD</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-08-11 13:15:38 UTC</createdTime>
+<ownerDesignName>SOLO_DECEMBER_RE</ownerDesignName>
+<owner>5AF9E3FC-7A76-C437-3E83-BF29D7EA2FC7</owner>
+<source>CREATE OR REPLACE PACKAGE BODY CHTR.DA_PARTY_ROLE_CD&lt;br/&gt;/* Generated on 20-JAN-15 03.40.07.369559000 PM -06:00 */&lt;br/&gt;AS&lt;br/&gt; &lt;br/&gt;   PROCEDURE add (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,party_role_cd IN VARCHAR2&lt;br/&gt;      ,role_desc IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   )&lt;br/&gt;   IS&lt;br/&gt;   BEGIN&lt;br/&gt; &lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;begin da_party_role_cd.add, parms=&apos; || party_role_cd || &apos;|&apos; || role_desc || &apos;|&apos; || audit_user || &apos;|&apos;);&lt;br/&gt;      INSERT INTO chtr.t_party_role_cd a&lt;br/&gt;      (&lt;br/&gt;         a.record_stat&lt;br/&gt;         ,a.created_dttm&lt;br/&gt;         ,a.created_by&lt;br/&gt;         ,a.modified_dttm&lt;br/&gt;         ,a.modified_by&lt;br/&gt;         ,a.party_role_cd&lt;br/&gt;         ,a.role_desc&lt;br/&gt;      )&lt;br/&gt;      VALUES&lt;br/&gt;      (&lt;br/&gt;         &apos;A&apos;&lt;br/&gt;         ,SYSTIMESTAMP&lt;br/&gt;         ,add.audit_user&lt;br/&gt;         ,NULL&lt;br/&gt;         ,NULL&lt;br/&gt;         ,add.party_role_cd&lt;br/&gt;         ,add.role_desc&lt;br/&gt;      );&lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;end da_party_role_cd.add&apos;);&lt;br/&gt; &lt;br/&gt;   END add;&lt;br/&gt; &lt;br/&gt;   PROCEDURE del (&lt;br/&gt;      process_rec IN pkg_logging.t_process_rec&lt;br/&gt;      ,party_role_cd IN VARCHAR2&lt;br/&gt;      ,audit_user IN VARCHAR2&lt;br/&gt;   )&lt;br/&gt;   IS&lt;br/&gt;   BEGIN&lt;br/&gt; &lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;begin da_party_role_cd.del, parms=&apos; || party_role_cd || &apos;|&apos; || audit_user || &apos;|&apos;);&lt;br/&gt;      UPDATE chtr.t_party_role_cd a&lt;br/&gt;      SET a.record_stat = &apos;D&apos;&lt;br/&gt;          ,a.modified_dttm = SYSTIMESTAMP&lt;br/&gt;          ,a.modified_by = del.audit_user&lt;br/&gt;      WHERE a.party_role_cd = del.party_role_cd&lt;br/&gt;      ;&lt;br/&gt;      chtr.pkg_logging.log_debug (process_rec, &apos;end da_party_role_cd.del&apos;);&lt;br/&gt; &lt;br/&gt;   END del;&lt;br/&gt; &lt;br/&gt;END da_party_role_cd;</source>
+</body>
+</PackageOracle>

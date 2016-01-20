@@ -1,0 +1,449 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="2E1889E7-E51F-07EB-FADB-1AC6E8B5D045" schemaObject="B5DA1D80-BC1F-DEEB-A262-CA58037BF88D" name="T_MEC_ORDER_HEADER">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_MEC_ORDER_HEADER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:00 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEC_ORDER_ID" id="154BFAD3-6654-4270-FC38-807980F3BF2A">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>MEC_ORDER_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>Provides a unique identification to the order, and links to the base table of the order unit. This attribute creates the relationship between the Order table, and its base table - Order Unit. Therefore, it acts both as a primary key in the Order table and as a foreign key to the Order Unit table. Derived from the Amdocs ORDER table.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEC_ORDER_VERSION_NUM" id="2847B848-7B0A-E073-A436-293F9A2FCB5B">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>MEC_ORDER_VERSION_NUM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCOUNT_ID" id="4C3CFBCA-83F2-7A46-2822-62A3386A23A8">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>ACCOUNT_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D072824-7977-D955-EB3B-4D5DEB04E175" referredColumn="9A679182-E20E-D19F-51AB-1B127A1D4A53"/>
+</associations>
+</Column>
+<Column name="STATUS" id="73E5771C-727A-6A6B-EC46-7960E9F8449D">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>The orders execution status (active, finished, and so on.) The field holds the current status of the entire order, derived from the statuses of all its order actions. Valid values are: IN - Order in initialize stage EX - Order is being executed DO - Order was completed - done order TC - Order is to be cancelled CA - Order was cancelled </commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_MODE" id="EEAB7340-7D9D-8E3F-1660-AC9D4C86940B">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>ORDER_MODE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>The order execution mode (Delivery, Proposal, or Retroactive).</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENTITY_TYPE" id="9764878A-A290-1FED-EF48-357E3089A312">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>ENTITY_TYPE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>Name of the Entity class for inheritance facilities</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SERVICE_REQ_DATE" id="51C64525-5147-0E36-8173-B2BDF9C0BA35">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>SERVICE_REQ_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>The date requested by the customer for completion of the order unit.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATION_DATE" id="0C3EF958-B992-3BD6-89FF-387EE2081FD4">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>CREATION_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>The date on which the order unit was created.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APPLICATION_DATE" id="69E26788-F0FE-90BF-DE60-AB914F34B046">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>APPLICATION_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>The date on which a customer initiated negotiations for the order unit. The source for this attribute may be the date appearing on a letter from a customer.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALES_REP_ID" id="E21B8E7E-9476-C49B-0ECD-32EFA1968FCE">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>SALES_REP_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>Represents the order units owner within the communication service provider. This is a reference to a user ID in USR.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REFERENCE_NUMBER" id="9B56DAB6-76F7-6341-0D05-780FE88058CB">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>REFERENCE_NUMBER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>A reference number for the customer to refer to the order unit.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXT_REF_NUM" id="7C6350D9-F5A9-8E6A-D7EC-A0B6DD2E17DF">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>EXT_REF_NUM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>The external reference number.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUST_ORDER_REF" id="A3CBD1DA-9C21-7713-3A5B-E6F3CA8E4C6F">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>CUST_ORDER_REF</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>The order reference number as received from the customer.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PORTING_INDICATOR" id="ECE8C047-D07C-7F23-9053-0FB312B11DB2">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>PORTING_INDICATOR</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>Indicates whether the order includes Number Porting order actions.</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORIGINAL_SALES_CHANNEL" id="A4D5BCCC-3E39-7890-F86D-38E0113D4FF2">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>ORIGINAL_SALES_CHANNEL</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>Represents the channel via which the order was initiated (can be from several origins).</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURRENT_SALES_CHANNEL" id="FBC31825-6E1A-E865-36E1-E4DB10DEE391">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>CURRENT_SALES_CHANNEL</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<commentInRDBMS>Represents the current sales channel</commentInRDBMS>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BILLER_SYSTEM_DESIGNATION" id="C27C5FF1-E6E8-0271-3E7D-67AA5400A694">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>BILLER_SYSTEM_DESIGNATION</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LSR_VALIDATION_STATUS" id="E29A215C-B6CC-5080-A743-7DB8F10DE3A1">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>LSR_VALIDATION_STATUS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOP_BILL_DATE" id="CADE0233-B732-0FC5-95F8-1D5026539B28">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>STOP_BILL_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUSPEND_START_DATE" id="60923ED7-085D-8754-82F6-813F3CBC9999">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>SUSPEND_START_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUSPEND_END_DATE" id="794E2AC8-EB01-AC50-2BFF-21609AA8614D">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>SUSPEND_END_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECORD_STAT" id="16ADF4F5-E1F0-7818-0A72-1FCC50D7F68F">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>RECORD_STAT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DTTM" id="44B2D449-A75D-415A-E74B-096EAA3794B1">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>CREATED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="255364C6-AD08-3CFD-6348-50317BD5728A">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DTTM" id="87F10DD2-0AD9-64B9-C1B6-4F2B7084572E">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>MODIFIED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="EA6CC176-034E-FA5E-9C85-DE1972568F04">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>T_MEC_ORDER_HEADER</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:28:42 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F1F33808-D3F2-F11A-2955-6E402DDBE438" name="PK_MEC_ORDER_HEADER">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_MEC_ORDER_HEADER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:30:05 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="154BFAD3-6654-4270-FC38-807980F3BF2A"/>
+<colUsage columnID="2847B848-7B0A-E073-A436-293F9A2FCB5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2479ED79-2B1D-9332-AA2B-DF53181EA198" schemaObject="B5DA1D80-BC1F-DEEB-A262-CA58037BF88D" name="PK_MEC_ORDER_HEADER">
+<sourceConnName>SOLO_Prod</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_MEC_ORDER_HEADER</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:29:27 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="154BFAD3-6654-4270-FC38-807980F3BF2A"/>
+<colUsage columnID="2847B848-7B0A-E073-A436-293F9A2FCB5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3948B82-416D-4509-4944-6E32438CA856" name="FK_MEC_ORDER_HEADER">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-14 16:31:09 UTC</createdTime>
+<ownerDesignName>SOLO_PROD_RE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C3CFBCA-83F2-7A46-2822-62A3386A23A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

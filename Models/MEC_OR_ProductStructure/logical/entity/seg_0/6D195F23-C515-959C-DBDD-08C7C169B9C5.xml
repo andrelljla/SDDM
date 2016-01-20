@@ -1,0 +1,916 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6D195F23-C515-959C-DBDD-08C7C169B9C5" name="OE Assigned Product Table">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 20:57:33 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="AP_ID" id="5343D24F-36B9-876C-75AA-13B8948BB80E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 20:58:04 UTC</createdTime>
+<comment>The primary key field of the assigned product item derived from the base entity - ApVersion.</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AP_VERSION_ID" id="3865C756-89B2-D152-6E4A-326CB5F77E58">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 20:58:35 UTC</createdTime>
+<comment>The second field of the primary key of ApItem derived from the base entity ApVersion.</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CP_CONTROL_FLD_BASIC" id="D96F87F4-F78C-E424-271B-3937327E3C8E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 20:59:30 UTC</createdTime>
+<comment>Several fields that are automatically included with this table. (Partial Name = CONTROL_FLD_BASIC)</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FINAL_STATUS" id="7F994B9E-F84B-FAEC-85DF-9088B535D36E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:14:48 UTC</createdTime>
+<comment>The final status of an ordered item version when its order action is completed. This status takes into consideration the final status of previous versions of the item. The final status is taken into account when checking whether a specific order action is allowed on an assigned product.</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INSTALL_ADDRESS_ID" id="6C4DB3BA-B19E-2CA8-2CC9-16663D4F38E3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:15:58 UTC</createdTime>
+<comment>The installation address of the item.</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM_LEVEL" id="E4111DDA-5E45-4764-84E4-A10BB550DA7D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:17:53 UTC</createdTime>
+<comment>The level of an assigned product item, that is, whether it is a main item or a regular item. Note, that if the item is a technical component, only one main item corresponding to the main component of the product as defined in the product catalog can exist for an assigned product. </comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM_DEF_ID" id="A7DEA4E6-0392-7310-F384-C4C9EE4CB412">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:18:07 UTC</createdTime>
+<comment>The item definition in the product catalog, upon which the ApItem is based.  This item definition can refer to one of the following definitions: PCComponentDefinition,&lt;br/&gt;PCCommitmentTerm,&lt;br/&gt;PCPricePlan, &lt;br/&gt;PCSLA,&lt;br/&gt;PCOffer.</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM_DEF_VER" id="29B7FB9D-22EB-F676-FC77-197AC3669DCF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:20:12 UTC</createdTime>
+<comment>A unique identifier of the version of the item definition in the product catalog, according to which this item was created.</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT_DEF_ID" id="D862C41B-76D7-E149-BAC0-261A12926934">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:24:25 UTC</createdTime>
+<comment>The product definition in The product catalog.  Populated only for main items..</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT_DEF_VER" id="4EC6822B-E272-9A84-1D19-66B1C2393047">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:24:25 UTC</createdTime>
+<comment>A unique identifier of the version of the product definition in the product catalog, according to which this product was created.</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SERVICE_ID" id="A0C4AEED-1ACC-4F06-F575-7F0D50FCD5DF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:16 UTC</createdTime>
+<comment>A unique identifier of the service item. The formats for this attribute can differ, depending on the template and the established service type (for example, 972-3-7546813 for a subscription number).  Because the user identifies assigned product items by their service type and service ID, the ApItem base entity stores the Service ID attribute to allow common access to this attribute for all derived items.</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SERVICE_TYPE" id="1053741F-D9C6-9310-17AF-950AE3D3A1A5">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:24 UTC</createdTime>
+<comment>The type of the service or product.</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MAIN_IND" id="B1DE16FE-4DDA-5017-7C75-84314ECFB831">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:38:28 UTC</createdTime>
+<comment>Indicates whether an item is a main component or a regular component. Valid values are: 1 - Main 0 - Not main</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MAIN_ITEM_ID" id="D46F53A1-295D-3DB3-6F2C-6A4D0E194D59">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:24 UTC</createdTime>
+<comment>The object that is the main item of this item.</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REASON" id="225F0800-BB5B-B7ED-6814-7021C4F257BD">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:25 UTC</createdTime>
+<comment>From a predefined list of&lt;br/&gt;values, specifies the&lt;br/&gt;reason for activating the&lt;br/&gt;specific order action.</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROVIDER" id="43FD6D0A-5563-2EC2-5743-5EF5DCD22695">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:25 UTC</createdTime>
+<comment>The provider of this item.</comment>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROV_DATE" id="F7977FB1-BBFD-CFD3-9157-C5DD0C2457D6">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:26 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENTITY_TYPE" id="2D83B0C3-8197-16DC-5947-1BE20AF2A5B9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:27 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REQ_EXP_DATE" id="75FCEC86-450D-E0F3-67F3-BAB47AB6BF8C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:29 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MIGRATED_PROD_ID" id="C640BA7B-7FD3-6F9D-7506-46D1EC76CEE2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:30 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MIGRATED_TO_ITEM" id="B256B0A6-C1D1-88A4-55F7-174A8F7DA7DF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:31 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROV_SERVICE_ID" id="350E1276-2181-2252-AA12-DA15F8C4B635">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:37 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACTION_TYPE" id="BBF812D7-EF03-F5C1-2690-BC2C92B55540">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:38 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BULK_QUANTITY" id="C7484886-6F9D-21F4-890E-BC2F63026ADC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:39 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BULK_INDICATOR" id="13BAFCE7-1E11-D751-1E51-6AAB0E3761DE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:47 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COMMITTED_IND" id="CC8ABC00-84AA-E01A-2B02-F60BAB4D04E7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:48 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_ID" id="4FE16E8C-8C9D-4BF0-1D55-6647DF7B96EC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:49 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATE" id="F887ACF5-1FF9-6ECE-63F8-72085C17C8F3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:49 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER_MODE" id="B7124DE8-D413-1EA2-98AD-3A0DC63423B9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:50 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATUS" id="DF957862-2FD8-D8C9-3BDB-6106F90B5543">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:51 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER_ACTION_ID" id="0B4B001B-9714-EDE0-B0EF-2596D34B4E2F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:26:52 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="START_DATE" id="22C1A444-2D75-0712-EF15-26A56A7CF783">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:00 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="END_DATE" id="8B2104FD-59CE-1FC7-E308-C1AA83439EE7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:01 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LAST_SCHED_DATE" id="33022519-6C72-CEBE-3D52-AB25CC9B5B13">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:02 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AP_ID_DOMINANT" id="61F4B119-65BF-7EB0-4D3D-824DAB2A16C5">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:04 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PC_RELATION_ID" id="A8FD8603-9626-0437-F79A-9F3C1EACD492">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:11 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PC_RELATION_VER" id="9E988013-CAAE-6819-81DB-3F3B00EAB0C8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:13 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ALL_CHANGED_ATTR" id="98017A4B-8930-2589-3398-F02BBF57C34C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:14 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONSTANT_SUBS" id="A2720B5B-E0BC-C9DC-A360-1C67D24E5C79">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:15 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM_ATRS_LIST" id="9E3D64E1-620D-E547-4331-2AFB5CDEF3DF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:19 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RELATION_ATRS_LIST" id="EBF5F3A9-8A2B-13BB-BC9F-144B67B59D5B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:26 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PURPOSE" id="9DE04CC0-84AE-8898-AA5A-3923DE9CF7B3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:27 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOCATION_ID" id="D65CDE9C-4BDC-8394-131D-72BF05F3F2A9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:27 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EFFECTIVE_PCVER" id="4A882B70-3DBB-E87B-7E43-7F3BB6FFEFEA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:28 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SECRET_IND" id="627FE496-7C65-50E7-3542-5E7D707D4CF8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:29 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONNECTION_TITLE" id="7F837F61-638C-8F6D-2175-9953BD1F8989">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:30 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONNECTION_F_NAME" id="1B967F3A-71F3-3C24-8697-A308AEBFF63A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:31 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONNECTION_L_NAME" id="528F2B1C-7C9A-48AC-AC75-FA589A95863C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:32 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SITE_ID" id="2921B810-DAB1-1441-55E7-ABD62EBFE103">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:32 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TEMPORARY_IND" id="714EFA84-02C9-8F3C-3DF4-5A18AA31F4E7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:33 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CORRECTED_AP" id="0343B2E9-E32E-01F2-6CE8-4C17B48E93A4">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:39 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUB_TREE_CREATED" id="281A23A1-872C-6C50-1A92-3C3588CE1748">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:40 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUBSCRIBER_ID" id="BE18C283-744A-7F95-1CE0-7C26857D9A77">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:40 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BILL_START_DATE" id="C6C8404C-6977-BC2B-B5D9-1386965ABD79">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:41 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PARENT_SEL_GROUP_RELATI ON_ID" id="8A0AA879-9F02-F058-5028-C44C653D7136">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:42 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EXTERNAL_ID" id="C116032E-1999-DDC8-C25D-A3A61F1216B3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:42 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRIMARY_IDENTIFIER" id="C8FA6F78-98F8-DC0C-E071-43446E9488BB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:50 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADD_ON_OFFER_DEF_ID" id="2D0BAB50-1474-AD9E-615B-E2F1004A8B35">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:51 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADD_ON_OFFER_DEF_VER" id="64A7115A-8724-34D7-D8AB-7EE73961D6CF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:52 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TEMPORARY_ID" id="D94BA56F-0300-A4DD-AD3D-60DFE7183D8B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:52 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DERIVED_FROM" id="B20EE543-A5F5-C445-C4AB-6170269AC4BA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:53 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DERIVED_STATUS" id="3841A966-27DD-A19E-8BCF-788A46DE208F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:54 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUB_STATUS" id="E60B33CF-6A30-9C67-6A29-E35CFDAD02EB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:54 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM_ACTION_TYPE" id="9D656343-4BEA-DD53-F502-828ED4150181">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:27:55 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUB_GROUPING_DATA" id="42898573-41C1-A478-B23F-15C8CC494446">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:28:03 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="APM_MODIFIER_ID" id="7BCA64CF-D308-5062-867A-43C6C85D05EE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:28:04 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OFFER_DEF_ID" id="688AB8F3-F8D1-3955-B850-5C9E56FB9625">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:28:05 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OFFER_DEF_VER" id="2E5057AA-AA8D-8464-13AF-C5D330F0DA51">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:28:06 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ROOT_CUSTOMER_ID" id="E8914A6B-D99B-9B90-B0FD-C7106CF4B80A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:28:06 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUB_STATE" id="AA527923-C582-C1C2-9AAD-5E6BD0ED1B57">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:28:07 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BUNDLE_VER_ID" id="F0909741-4CE4-93C5-8CA3-4F97C6383D02">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:28:14 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NEW_STATUS_MODE" id="DE3682D8-C79B-857E-4314-01252E23A219">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:28:15 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT_TYPE" id="53C063F9-3CDB-EC36-793C-60595CDD42F7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:28:15 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TEMPLATE_ID" id="385BD15A-4684-154C-63F9-FAE38C380999">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:28:15 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TEMPLATE_VER" id="4C0F6189-BEDC-9B25-9399-1BF006E8F4C1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 22:28:17 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F46FEF96-6FDE-E7CA-3646-1685BE5142AD" name="OE Assigned Product Table PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-07-13 20:58:31 UTC</createdTime>
+<ownerDesignName>MEC_OR_ProductStructure</ownerDesignName>
+<engineerTo>
+<item key="1B5A02A7-391D-1DF2-DCCE-DC5A0F5C8DA9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5343D24F-36B9-876C-75AA-13B8948BB80E</attributeRef>
+<attributeRef>3865C756-89B2-D152-6E4A-326CB5F77E58</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7492DDAA-0F7B-E90A-AFB6-C3FE6C876BC7" name="Account Associated Parties">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:58:00 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Account ID" id="D75BF423-E5A3-A715-C766-112156AC6A61">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:58:33 UTC</createdTime>
+<generatorID>2303E533-DE89-D28F-1BB5-404F97C0B8F1</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>1588AD6E-BF72-71CF-7DB3-C374933CDCF1</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Party ID" id="18CEFE24-E483-0EEA-B34D-7ED807A248EB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:59:00 UTC</createdTime>
+<generatorID>5123A5D0-40B7-56A1-AFFF-4C3F616905EC</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>8A190E45-0310-C654-4A57-7ECE035EB164</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Document Link" id="AA389C08-6EB9-FE01-8546-7B75C13AD22E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:59:47 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT052</logicalDatatype>
+<domain>DOM2025190</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comment" id="7CD319F1-39A3-DEFB-852A-F102DA8AEF79">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:59:47 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>088C8227-2A17-7B49-31AB-6F32AB32A61B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code" id="CC26D283-3E9E-9F3D-1AE4-E172FD54D4D0">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-11 19:26:05 UTC</createdTime>
+<generatorID>7D22660A-CB25-5AC9-661B-D2BAC4EEB0AD</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>26EBFD54-0B97-49A2-7D12-4C658E7BF6C0</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>53757E19-4D1C-7D48-82B8-B547D384EF3A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4DFBB2BB-D1AD-ED1D-9312-496BC973C575" name="Account Associated Parties PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2015-12-15 14:58:33 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D75BF423-E5A3-A715-C766-112156AC6A61</attributeRef>
+<attributeRef>18CEFE24-E483-0EEA-B34D-7ED807A248EB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
