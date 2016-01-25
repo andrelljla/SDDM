@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="8553E430-A3EC-6A6C-B8D7-2FF5B1B473EA" name="Offer Compnent Relationship">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="8553E430-A3EC-6A6C-B8D7-2FF5B1B473EA" name="Offer Component Relationship">
 <createdBy>jandrews</createdBy>
 <createdTime>2016-01-18 17:36:52 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
@@ -15,6 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Offer Component Relationship ID" id="85D0615B-9694-771F-BD48-47C9013643A8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 18:33:47 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="Offer Component From ID" id="4E7E2865-2651-E94D-3542-929FF8317128">
 <createdBy>jandrews</createdBy>
 <createdTime>2016-01-18 17:46:25 UTC</createdTime>
@@ -119,7 +131,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="1EEDEC6D-9247-47AB-762C-EBB05896FD11" name="Offer Hierarchy Relationship PK">
+<identifier id="1EEDEC6D-9247-47AB-762C-EBB05896FD11" name="Offer Component Relationship PK">
 <createdBy>jandrews</createdBy>
 <createdTime>2016-01-18 17:36:52 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
@@ -127,6 +139,18 @@
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>85D0615B-9694-771F-BD48-47C9013643A8</newElementsIDs>
+<usedAttributes>
+<attributeRef>85D0615B-9694-771F-BD48-47C9013643A8</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="60547069-DA1F-302E-51B4-7639D5545112" name="Offer Component Relationship UK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 18:35:48 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
 <newElementsIDs>8B2498B3-FD71-B7C2-B95E-77E0BE6A3D0F,1846B113-4EBE-6D3E-B1EC-888816F74886,D3A74BE7-F5DB-CC01-2ABE-B65560D8B806</newElementsIDs>
 <usedAttributes>
 <attributeRef>8B2498B3-FD71-B7C2-B95E-77E0BE6A3D0F</attributeRef>

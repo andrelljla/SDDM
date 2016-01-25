@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="CE87CA9C-AB3D-4E77-641B-2480599E32C7" name="Order Status Type">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="EDE0FEFE-E74E-0DE8-9A4D-9E430CBC60E2" name="Account Offer Relationship">
 <createdBy>jandrews1</createdBy>
-<createdTime>2016-01-11 19:49:50 UTC</createdTime>
+<createdTime>2016-01-25 18:48:59 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
@@ -15,67 +15,58 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Code" id="82A95A91-798A-59D9-E4C5-CDA21EBCF26F">
+<Attribute name="Account Offer Relationship ID" id="0E2163CF-92C2-7109-DFF2-677A0F984AD5">
 <createdBy>jandrews1</createdBy>
-<createdTime>2016-01-11 19:49:50 UTC</createdTime>
+<createdTime>2016-01-25 18:49:34 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
 </engineerTo>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>53757E19-4D1C-7D48-82B8-B547D384EF3A</domain>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Description" id="14D9B736-7F11-901A-A9FC-07167768A956">
+<Attribute name="Account ID" id="39C403F9-B21D-E955-863C-817F7C14D216">
 <createdBy>jandrews1</createdBy>
-<createdTime>2016-01-11 19:49:50 UTC</createdTime>
+<createdTime>2016-01-25 18:50:04 UTC</createdTime>
+<generatorID>53E921DC-5FC4-859A-7D8B-9B7B7A6825E9</generatorID>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
 </engineerTo>
+<referedAttribute>1588AD6E-BF72-71CF-7DB3-C374933CDCF1</referedAttribute>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>C137EFAA-243D-D80C-7FFB-06FEE32C06AD</domain>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Product Order Eligible" id="9EE9C409-6F69-2E7C-74CF-24A15B06A1CA">
+<Attribute name="Offer Component Relationship ID" id="B45D300B-1D22-B0FC-6D1C-17A5330CCC03">
 <createdBy>jandrews1</createdBy>
-<createdTime>2016-01-25 17:32:18 UTC</createdTime>
+<createdTime>2016-01-25 18:50:37 UTC</createdTime>
+<generatorID>6A4B84C2-26AB-8152-8E18-561C6EB2499C</generatorID>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
 </engineerTo>
+<referedAttribute>85D0615B-9694-771F-BD48-47C9013643A8</referedAttribute>
 <use>0</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<domain>DOM2022950</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Work Order Eligible" id="B34DDE8D-FA0E-810C-C46D-D210C43EDF5C">
-<createdBy>jandrews1</createdBy>
-<createdTime>2016-01-25 17:32:18 UTC</createdTime>
-<ownerDesignName>GODS</ownerDesignName>
-<engineerTo>
-<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<domain>DOM2022950</domain>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="28CDD241-E05C-00E0-A05E-1F9FF3F05870" name="Order Status Type PK">
+<identifier id="7E8E4412-2620-1524-0C6F-3D2E60BDA9B1" name="Account Offer Relationship PK">
 <createdBy>jandrews1</createdBy>
-<createdTime>2016-01-11 19:49:50 UTC</createdTime>
+<createdTime>2016-01-25 18:49:53 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
 </engineerTo>
 <pk>true</pk>
-<newElementsIDs>82A95A91-798A-59D9-E4C5-CDA21EBCF26F</newElementsIDs>
 <usedAttributes>
-<attributeRef>82A95A91-798A-59D9-E4C5-CDA21EBCF26F</attributeRef>
+<attributeRef>0E2163CF-92C2-7109-DFF2-677A0F984AD5</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

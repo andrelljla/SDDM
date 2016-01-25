@@ -1,0 +1,991 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="33F223C8-CB91-C7C4-2615-9C8B95F5B86E" name="OE Assigned Product Table">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="AP_ID" id="9E07B31E-7052-75FB-79FA-3873AF73E0F1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>The primary key field of the assigned product item derived from the base entity - ApVersion.</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>5343D24F-36B9-876C-75AA-13B8948BB80E</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AP_VERSION_ID" id="D99EC238-4BEF-E7BA-7AED-ACF51AF8129A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>The second field of the primary key of ApItem derived from the base entity ApVersion.</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>3865C756-89B2-D152-6E4A-326CB5F77E58</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CP_CONTROL_FLD_BASIC" id="7454141C-0302-A133-4570-951049CAE66E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>Several fields that are automatically included with this table. (Partial Name = CONTROL_FLD_BASIC)</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>D96F87F4-F78C-E424-271B-3937327E3C8E</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FINAL_STATUS" id="B8B7EF66-00A0-8793-1BD4-7828CF197913">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>The final status of an ordered item version when its order action is completed. This status takes into consideration the final status of previous versions of the item. The final status is taken into account when checking whether a specific order action is allowed on an assigned product.</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>7F994B9E-F84B-FAEC-85DF-9088B535D36E</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INSTALL_ADDRESS_ID" id="D79FE62F-096D-4EEB-3F8F-23C91B84DA88">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>The installation address of the item.</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>6C4DB3BA-B19E-2CA8-2CC9-16663D4F38E3</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM_LEVEL" id="1205B06B-28FF-02AD-50A0-6B4D89D16A2E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>The level of an assigned product item, that is, whether it is a main item or a regular item. Note, that if the item is a technical component, only one main item corresponding to the main component of the product as defined in the product catalog can exist for an assigned product. </comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>E4111DDA-5E45-4764-84E4-A10BB550DA7D</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM_DEF_ID" id="7B0469ED-E117-82F8-8F10-351EB6F90F92">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>The item definition in the product catalog, upon which the ApItem is based.  This item definition can refer to one of the following definitions: PCComponentDefinition,&lt;br/&gt;PCCommitmentTerm,&lt;br/&gt;PCPricePlan, &lt;br/&gt;PCSLA,&lt;br/&gt;PCOffer.</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>A7DEA4E6-0392-7310-F384-C4C9EE4CB412</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM_DEF_VER" id="13FFFA13-D2D6-6BEF-B15C-3E3F0A059660">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>A unique identifier of the version of the item definition in the product catalog, according to which this item was created.</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>29B7FB9D-22EB-F676-FC77-197AC3669DCF</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT_DEF_ID" id="AE786F2E-08FA-93B4-0DA1-39CC73587977">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>The product definition in The product catalog.  Populated only for main items..</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>D862C41B-76D7-E149-BAC0-261A12926934</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT_DEF_VER" id="BE85FF7E-0254-5BBC-8582-BBFAB5EEFFEF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>A unique identifier of the version of the product definition in the product catalog, according to which this product was created.</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>4EC6822B-E272-9A84-1D19-66B1C2393047</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SERVICE_ID" id="638CADC7-8D83-217E-29B1-DA026B95A904">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>A unique identifier of the service item. The formats for this attribute can differ, depending on the template and the established service type (for example, 972-3-7546813 for a subscription number).  Because the user identifies assigned product items by their service type and service ID, the ApItem base entity stores the Service ID attribute to allow common access to this attribute for all derived items.</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>A0C4AEED-1ACC-4F06-F575-7F0D50FCD5DF</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SERVICE_TYPE" id="33F4F1CF-647F-2DE0-C283-618645D2F388">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>The type of the service or product.</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>1053741F-D9C6-9310-17AF-950AE3D3A1A5</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MAIN_IND" id="DB050870-720E-F0F2-A0F3-975DCAA8B396">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>Indicates whether an item is a main component or a regular component. Valid values are: 1 - Main 0 - Not main</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>B1DE16FE-4DDA-5017-7C75-84314ECFB831</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MAIN_ITEM_ID" id="8FBCDAEB-7AA4-3E3B-22F0-C97613215318">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>The object that is the main item of this item.</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>D46F53A1-295D-3DB3-6F2C-6A4D0E194D59</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REASON" id="3357E006-28F8-345F-2E89-D2A6DBB1B6BB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>From a predefined list of&lt;br/&gt;values, specifies the&lt;br/&gt;reason for activating the&lt;br/&gt;specific order action.</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>225F0800-BB5B-B7ED-6814-7021C4F257BD</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROVIDER" id="4C1AAEAE-5DF1-85C1-1CFC-AD197FC05871">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<comment>The provider of this item.</comment>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>43FD6D0A-5563-2EC2-5743-5EF5DCD22695</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROV_DATE" id="5D33AB39-95B3-2770-69F6-463ED0D61106">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>F7977FB1-BBFD-CFD3-9157-C5DD0C2457D6</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENTITY_TYPE" id="E2E9B060-AC7C-C76A-0DAF-9E75D8C285CD">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>2D83B0C3-8197-16DC-5947-1BE20AF2A5B9</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REQ_EXP_DATE" id="4D7D840B-BBC0-A598-8F78-77A559ABF6E3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>75FCEC86-450D-E0F3-67F3-BAB47AB6BF8C</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MIGRATED_PROD_ID" id="4170B20D-3F0E-F864-0DE5-08EFBC5B9115">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>C640BA7B-7FD3-6F9D-7506-46D1EC76CEE2</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MIGRATED_TO_ITEM" id="8C53D105-06B8-D71E-B9A7-CC0F390F7460">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>B256B0A6-C1D1-88A4-55F7-174A8F7DA7DF</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROV_SERVICE_ID" id="BD5D26A4-7194-E06F-743F-BFA5A6136BD7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>350E1276-2181-2252-AA12-DA15F8C4B635</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACTION_TYPE" id="4219F384-0F06-4CFA-1C6F-96CB58AB3A9B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>BBF812D7-EF03-F5C1-2690-BC2C92B55540</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BULK_QUANTITY" id="0A3514A6-890D-0F34-FD60-71D2B9326D0B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>C7484886-6F9D-21F4-890E-BC2F63026ADC</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BULK_INDICATOR" id="82825ECF-D4ED-8FC3-81F1-43BB8D7631A5">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>13BAFCE7-1E11-D751-1E51-6AAB0E3761DE</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COMMITTED_IND" id="E5E67AFF-27F6-ABB8-95B7-D72348A74D63">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>CC8ABC00-84AA-E01A-2B02-F60BAB4D04E7</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_ID" id="36DAA26E-4CCB-43E2-B963-A0C50F3DC9F6">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>4FE16E8C-8C9D-4BF0-1D55-6647DF7B96EC</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATE" id="95D54225-AB8A-5277-6126-D8F603C7B40C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>F887ACF5-1FF9-6ECE-63F8-72085C17C8F3</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER_MODE" id="A66AFFBA-3090-9148-82F5-5A792B7A87CC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>B7124DE8-D413-1EA2-98AD-3A0DC63423B9</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATUS" id="3F074398-6348-5DAE-2142-238C60E77A50">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>DF957862-2FD8-D8C9-3BDB-6106F90B5543</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER_ACTION_ID" id="6A29FE9F-54F3-7C47-4895-F8BB93711C5E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>0B4B001B-9714-EDE0-B0EF-2596D34B4E2F</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="START_DATE" id="0DD14E20-E234-6B16-0BF9-2F0D08E5CB8E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>22C1A444-2D75-0712-EF15-26A56A7CF783</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="END_DATE" id="B50BC885-D932-540B-E9F7-EE15F056FF7F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>8B2104FD-59CE-1FC7-E308-C1AA83439EE7</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LAST_SCHED_DATE" id="0BDE92AE-E719-0A16-6C20-E64A971399CB">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>33022519-6C72-CEBE-3D52-AB25CC9B5B13</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AP_ID_DOMINANT" id="E987DDE4-87E3-6B53-070C-170DF3BBE20C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>61F4B119-65BF-7EB0-4D3D-824DAB2A16C5</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PC_RELATION_ID" id="F119ED21-EEE8-BDC7-9CD8-20D77E6CA0E2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>A8FD8603-9626-0437-F79A-9F3C1EACD492</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PC_RELATION_VER" id="2EA0C1B5-4B8E-FA6D-CE60-7C99CF44A17D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>9E988013-CAAE-6819-81DB-3F3B00EAB0C8</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ALL_CHANGED_ATTR" id="63DCCCE1-4211-6540-52AB-0EB1624621D1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>98017A4B-8930-2589-3398-F02BBF57C34C</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONSTANT_SUBS" id="49038089-ECDE-C2B8-65D5-0606798F4E47">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>A2720B5B-E0BC-C9DC-A360-1C67D24E5C79</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM_ATRS_LIST" id="C02B73A9-64A3-3D58-EB7B-8694A4943469">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>9E3D64E1-620D-E547-4331-2AFB5CDEF3DF</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RELATION_ATRS_LIST" id="C7ED9EB9-8AD7-8552-7D9F-8907E71C469F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>EBF5F3A9-8A2B-13BB-BC9F-144B67B59D5B</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PURPOSE" id="F6CF24FC-D533-CE03-D1CA-1C0D6C46D92C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>9DE04CC0-84AE-8898-AA5A-3923DE9CF7B3</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOCATION_ID" id="B835F934-1CCF-CC7D-F8F0-34170F05E854">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>D65CDE9C-4BDC-8394-131D-72BF05F3F2A9</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EFFECTIVE_PCVER" id="53A71D88-8E35-C79D-2AFF-66846E2EEF97">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>4A882B70-3DBB-E87B-7E43-7F3BB6FFEFEA</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SECRET_IND" id="C5D15C22-6C82-7155-FEBB-603894F6905E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>627FE496-7C65-50E7-3542-5E7D707D4CF8</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONNECTION_TITLE" id="6FD1BFBC-3AAC-DAD2-0B24-B9A32B08610B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>7F837F61-638C-8F6D-2175-9953BD1F8989</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONNECTION_F_NAME" id="FAC74565-0F92-E619-A6A8-B0C370410D68">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>1B967F3A-71F3-3C24-8697-A308AEBFF63A</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONNECTION_L_NAME" id="552DA904-4A40-8B1C-5A63-35D75C1C451D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>528F2B1C-7C9A-48AC-AC75-FA589A95863C</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SITE_ID" id="D699CC8A-DEF3-54ED-9F0D-0716D010D00C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>2921B810-DAB1-1441-55E7-ABD62EBFE103</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TEMPORARY_IND" id="76C643F3-E55C-7079-B480-5F14C5FB79C5">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>714EFA84-02C9-8F3C-3DF4-5A18AA31F4E7</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CORRECTED_AP" id="2C8EB931-4CC8-AB8E-6739-59C05D4D6A3C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>0343B2E9-E32E-01F2-6CE8-4C17B48E93A4</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUB_TREE_CREATED" id="698234FE-B175-97CF-9A06-03FADC73C83D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>281A23A1-872C-6C50-1A92-3C3588CE1748</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUBSCRIBER_ID" id="81E0BA66-7603-9CE3-4E36-7BB1B1729379">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>BE18C283-744A-7F95-1CE0-7C26857D9A77</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BILL_START_DATE" id="9F9DFD77-B862-12CD-2D5B-3E7D32CEA2C9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>C6C8404C-6977-BC2B-B5D9-1386965ABD79</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PARENT_SEL_GROUP_RELATI ON_ID" id="7E3CC031-99D7-E003-0BA2-E7CF1F36CC7E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>8A0AA879-9F02-F058-5028-C44C653D7136</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EXTERNAL_ID" id="459D42E0-6093-89CA-389B-811B0F100B31">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>C116032E-1999-DDC8-C25D-A3A61F1216B3</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRIMARY_IDENTIFIER" id="82EB64CC-71EE-CE7B-B4A8-82B2BE4AC910">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>C8FA6F78-98F8-DC0C-E071-43446E9488BB</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADD_ON_OFFER_DEF_ID" id="2CC8706B-52A6-0487-934C-BCE1DC6CAC70">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>2D0BAB50-1474-AD9E-615B-E2F1004A8B35</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADD_ON_OFFER_DEF_VER" id="F6DBED20-F899-0753-03AD-2AA9D6C74786">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>64A7115A-8724-34D7-D8AB-7EE73961D6CF</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TEMPORARY_ID" id="F4BBCAE3-2650-CB0F-9F29-089DA7F054C1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>D94BA56F-0300-A4DD-AD3D-60DFE7183D8B</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DERIVED_FROM" id="E65BE09D-E252-513E-80FD-FCB3A4E34E3A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>B20EE543-A5F5-C445-C4AB-6170269AC4BA</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DERIVED_STATUS" id="CB2835F6-01C7-19E7-3F29-E3C575F37F02">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>3841A966-27DD-A19E-8BCF-788A46DE208F</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUB_STATUS" id="3D7089E4-0E79-0986-38FF-1E5CD861924B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>E60B33CF-6A30-9C67-6A29-E35CFDAD02EB</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM_ACTION_TYPE" id="74D5F6B2-7B7A-AAD9-04B7-712E2245CE1A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>9D656343-4BEA-DD53-F502-828ED4150181</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUB_GROUPING_DATA" id="E9F06D66-053B-6ECB-AE85-9FD586E2870A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>42898573-41C1-A478-B23F-15C8CC494446</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="APM_MODIFIER_ID" id="3FFBA10F-BDD6-770B-DDD0-EAB73C501BA0">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>7BCA64CF-D308-5062-867A-43C6C85D05EE</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OFFER_DEF_ID" id="210E4E85-BD22-29F5-E49F-43A97AD7F290">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>688AB8F3-F8D1-3955-B850-5C9E56FB9625</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OFFER_DEF_VER" id="164F80A9-3531-C3EE-F6C3-8156E44FE144">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>2E5057AA-AA8D-8464-13AF-C5D330F0DA51</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ROOT_CUSTOMER_ID" id="516EF7E4-4F25-D35F-E573-BB83E97EF0E6">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>E8914A6B-D99B-9B90-B0FD-C7106CF4B80A</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUB_STATE" id="09B2F20B-8C43-BF26-D151-09E1CC8787EF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>AA527923-C582-C1C2-9AAD-5E6BD0ED1B57</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BUNDLE_VER_ID" id="224B1BA8-8622-5DB0-659D-32426146040B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>F0909741-4CE4-93C5-8CA3-4F97C6383D02</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NEW_STATUS_MODE" id="8B556414-DD2A-ABD7-30B1-FB43857E9097">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>DE3682D8-C79B-857E-4314-01252E23A219</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT_TYPE" id="ABF8ED5B-EFF8-4FD1-464B-750592E15F5D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>53C063F9-3CDB-EC36-793C-60595CDD42F7</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TEMPLATE_ID" id="C1B09771-7CEA-5CDB-37C3-3BE6E04DCC7C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>385BD15A-4684-154C-63F9-FAE38C380999</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TEMPLATE_VER" id="2CB1593D-BF73-9E77-4A35-F7B963334700">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<importedID>4C0F6189-BEDC-9B25-9399-1BF006E8F4C1</importedID>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FF637615-97C7-90DC-EF34-59A0E46BF671" name="OE Assigned Product Table PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 17:44:19 UTC</createdTime>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9E07B31E-7052-75FB-79FA-3873AF73E0F1</attributeRef>
+<attributeRef>D99EC238-4BEF-E7BA-7AED-ACF51AF8129A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

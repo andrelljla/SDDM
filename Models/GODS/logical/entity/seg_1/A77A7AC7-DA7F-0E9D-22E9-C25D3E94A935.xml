@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="C1338119-453A-7E06-36B7-65153800E938" name="Component Attribute">
-<createdBy>jandrews</createdBy>
-<createdTime>2016-01-18 17:36:52 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="A77A7AC7-DA7F-0E9D-22E9-C25D3E94A935" name="Relationship Attribute">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 18:28:59 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID" id="12EF104A-B86C-E083-5074-2ECB27E66F6D">
+<Attribute name="ID" id="BDAAAD22-D1AB-50ED-45C8-54D8C8F22D95">
 <createdBy>jandrews1</createdBy>
-<createdTime>2016-01-25 18:30:11 UTC</createdTime>
+<createdTime>2016-01-25 18:35:10 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
@@ -27,10 +27,24 @@
 <domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Attribute Type Code" id="2EEE911E-E113-2042-35DD-B0DB3C0369BF">
-<createdBy>jandrews</createdBy>
-<createdTime>2016-01-18 17:36:52 UTC</createdTime>
-<generatorID>2D8311FE-F305-77FB-D824-92B2298BB2BA</generatorID>
+<Attribute name="Offer Component Relationship ID" id="BBA824F0-5FCE-9950-FEC3-F752CB75680E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 18:34:10 UTC</createdTime>
+<generatorID>3C73C938-1920-B91A-2481-52A493228C05</generatorID>
+<ownerDesignName>GODS</ownerDesignName>
+<engineerTo>
+<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
+</engineerTo>
+<referedAttribute>85D0615B-9694-771F-BD48-47C9013643A8</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Attribute Type Code" id="02352FD8-3372-96B6-1B31-F7D6500315EC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 18:32:34 UTC</createdTime>
+<generatorID>2BBAD267-7FCE-C55A-B759-86070D0A22F0</generatorID>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
@@ -41,23 +55,9 @@
 <domain>53757E19-4D1C-7D48-82B8-B547D384EF3A</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Component ID" id="C0AC361F-5C2A-64C8-57A7-1FA5995313D4">
+<Attribute name="Effective Date" id="574F24A1-39BA-FA9A-EF9A-884A089C99AA">
 <createdBy>jandrews1</createdBy>
-<createdTime>2016-01-25 18:23:47 UTC</createdTime>
-<generatorID>CC585025-F888-14C2-4283-B672F001DA5B</generatorID>
-<ownerDesignName>GODS</ownerDesignName>
-<engineerTo>
-<item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
-</engineerTo>
-<referedAttribute>4447DAF6-0489-C020-9EC1-E57281F3A16D</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Effective Date" id="8F9C6B5E-4C4A-3AD6-7975-30E886ABEB17">
-<createdBy>jandrews</createdBy>
-<createdTime>2016-01-18 17:36:52 UTC</createdTime>
+<createdTime>2016-01-25 18:29:27 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
@@ -67,9 +67,9 @@
 <domain>DOM3000001</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="End Date" id="6A14656B-DD07-620A-CCCB-7B384E2FB1D1">
-<createdBy>jandrews</createdBy>
-<createdTime>2016-01-18 17:36:52 UTC</createdTime>
+<Attribute name="End Date" id="ED53F053-7CD0-D7D3-ABAA-C38841910765">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 18:29:27 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
@@ -80,9 +80,9 @@
 <domain>DOM3000001</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Is Active" id="32EFFF94-E5EC-8275-7455-4AEDA0735764">
-<createdBy>jandrews</createdBy>
-<createdTime>2016-01-18 17:36:52 UTC</createdTime>
+<Attribute name="Is Active" id="3CCD3464-BD1C-3390-5B01-C90EA403DD00">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 18:29:27 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
@@ -92,9 +92,9 @@
 <domain>DOM2022950</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Document Link" id="7BC9CD6A-D930-F285-B0BE-369654B5870A">
-<createdBy>jandrews</createdBy>
-<createdTime>2016-01-18 17:36:52 UTC</createdTime>
+<Attribute name="Document Link" id="2BF55A92-5679-CE1B-5BA8-76238CD50359">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 18:29:27 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
@@ -105,9 +105,9 @@
 <domain>DOM2025190</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Comment" id="DAFF552F-F667-2055-7C35-C700335A3E28">
-<createdBy>jandrews</createdBy>
-<createdTime>2016-01-18 17:36:52 UTC</createdTime>
+<Attribute name="Comment" id="7709D7E0-F59A-E562-2AF0-0F95E38C1EBC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 18:29:27 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
@@ -120,31 +120,31 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="4D4D9876-E44C-57DA-8B00-DFC44FFD62B7" name="Component Attribute PK">
-<createdBy>jandrews</createdBy>
-<createdTime>2016-01-18 17:36:52 UTC</createdTime>
+<identifier id="B7EE273D-80CB-1C38-8162-BAB741B2ECE1" name="Relationship Attribute PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-01-25 18:34:59 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
 </engineerTo>
 <pk>true</pk>
-<newElementsIDs>12EF104A-B86C-E083-5074-2ECB27E66F6D</newElementsIDs>
+<newElementsIDs>BDAAAD22-D1AB-50ED-45C8-54D8C8F22D95</newElementsIDs>
 <usedAttributes>
-<attributeRef>12EF104A-B86C-E083-5074-2ECB27E66F6D</attributeRef>
+<attributeRef>BDAAAD22-D1AB-50ED-45C8-54D8C8F22D95</attributeRef>
 </usedAttributes>
 </identifier>
-<identifier id="D11DE357-68BE-14B5-E5AC-207E2CE2D300" name="Component Attribute UK">
+<identifier id="5A2A92C7-4CF0-8BCD-48E7-2FC2CE51CE92" name="Relationship Attribute UK">
 <createdBy>jandrews1</createdBy>
-<createdTime>2016-01-25 18:30:28 UTC</createdTime>
+<createdTime>2016-01-25 18:36:53 UTC</createdTime>
 <ownerDesignName>GODS</ownerDesignName>
 <engineerTo>
 <item key="2C9795F5-6744-BF02-0E89-A6A9E7D0E0DB" value="true"/>
 </engineerTo>
-<newElementsIDs>8F9C6B5E-4C4A-3AD6-7975-30E886ABEB17,2D8311FE-F305-77FB-D824-92B2298BB2BA,CC585025-F888-14C2-4283-B672F001DA5B</newElementsIDs>
+<newElementsIDs>3C73C938-1920-B91A-2481-52A493228C05,2BBAD267-7FCE-C55A-B759-86070D0A22F0,574F24A1-39BA-FA9A-EF9A-884A089C99AA</newElementsIDs>
 <usedAttributes>
-<attributeRef>8F9C6B5E-4C4A-3AD6-7975-30E886ABEB17</attributeRef>
-<attributeRef>2EEE911E-E113-2042-35DD-B0DB3C0369BF</attributeRef>
-<attributeRef>C0AC361F-5C2A-64C8-57A7-1FA5995313D4</attributeRef>
+<attributeRef>BBA824F0-5FCE-9950-FEC3-F752CB75680E</attributeRef>
+<attributeRef>02352FD8-3372-96B6-1B31-F7D6500315EC</attributeRef>
+<attributeRef>574F24A1-39BA-FA9A-EF9A-884A089C99AA</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
