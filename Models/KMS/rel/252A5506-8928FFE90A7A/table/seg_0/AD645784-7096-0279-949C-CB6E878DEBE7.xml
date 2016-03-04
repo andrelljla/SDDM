@@ -1,0 +1,231 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD645784-7096-0279-949C-CB6E878DEBE7" schemaObject="7894F3F2-B52A-9F03-CA7E-33E8AE1A5B82" name="BILLING_STATION">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>BILLING_STATION</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="billing_station_id" id="B9FD1088-5EF2-84DC-435B-4CAC170C33A4">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>BILLING_STATION</sourceObjSchema>
+<sourceObjName>billing_station_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="billing_station_code" id="19472545-B971-82A4-CE2E-64ADD8EC8F14">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>BILLING_STATION</sourceObjSchema>
+<sourceObjName>billing_station_code</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="billing_station_sub_code" id="B3B2B7C5-0FD9-00D2-6DD7-5F3ADCD5B8AD">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>BILLING_STATION</sourceObjSchema>
+<sourceObjName>billing_station_sub_code</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="billing_station_name" id="F7E193FF-FCCE-C05F-38B0-A77D71EE147C">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>BILLING_STATION</sourceObjSchema>
+<sourceObjName>billing_station_name</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bill_provider_id" id="865C38CB-4CD4-16F3-C5B2-C197D5E3C92F">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>BILLING_STATION</sourceObjSchema>
+<sourceObjName>bill_provider_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10C99497-59C6-DBBB-A6CA-295BE6A03176" referredColumn="C0871074-E46D-CD7A-F1B4-5D6694BAABCB"/>
+</associations>
+</Column>
+<Column name="division_id" id="FA937C6A-66B4-6613-8BE2-A572D35CC48C">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>BILLING_STATION</sourceObjSchema>
+<sourceObjName>division_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bill_mgt_field" id="BC9AA91F-8BCE-4525-C882-0CDB7C4329E8">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>BILLING_STATION</sourceObjSchema>
+<sourceObjName>bill_mgt_field</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="active" id="435ADD63-9B85-3A36-83AE-B2B7FD1ACEA7">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>BILLING_STATION</sourceObjSchema>
+<sourceObjName>active</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastmod_date" id="E4785F63-8DBC-A5D6-A2D3-962A0DF28256">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>BILLING_STATION</sourceObjSchema>
+<sourceObjName>lastmod_date</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ods_entity_id" id="A99BEAE2-F4D9-C273-1ECE-B49B94D8AC8F">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>BILLING_STATION</sourceObjSchema>
+<sourceObjName>ods_entity_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6783CB91-E1EB-4717-FBC9-60E9C2C0AE6E" name="PK_BILLING_STATION">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_BILLING_STATION</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9FD1088-5EF2-84DC-435B-4CAC170C33A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01C2C5A5-C400-1D17-CAE5-94DB1851ECD0" name="IDX_SYSTEM_CODE">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>IDX_SYSTEM_CODE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19472545-B971-82A4-CE2E-64ADD8EC8F14"/>
+<colUsage columnID="B3B2B7C5-0FD9-00D2-6DD7-5F3ADCD5B8AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7301C832-B3A4-55F5-CFDD-D86A392811BB" name="JLA_BILLING_STATION_BILLING_PROVIDER_FK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 17:12:16 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="865C38CB-4CD4-16F3-C5B2-C197D5E3C92F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="DF_BILLING_STATION_bill_mgt_field" directorySegmentName="seg_0" id="2282F64A-730C-EF18-7D90-F2D6DE8EA921">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>DF_BILLING_STATION_bill_mgt_field</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:29 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

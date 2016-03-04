@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E45810A6-2AEA-4FD1-6650-0CD9346332A4" schemaObject="7894F3F2-B52A-9F03-CA7E-33E8AE1A5B82" name="ROLE_HOURS">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>ROLE_HOURS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hour_id" id="4120EEFC-101F-CD32-F351-2E4179DC4226">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>ROLE_HOURS</sourceObjSchema>
+<sourceObjName>hour_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role_id" id="4BB17270-BBA3-E066-8935-725530FE0A3F">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>ROLE_HOURS</sourceObjSchema>
+<sourceObjName>role_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="weekday_id" id="45897C86-13A0-B0F4-FF3F-0C12A77B7227">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>ROLE_HOURS</sourceObjSchema>
+<sourceObjName>weekday_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1716FF85-2ABC-765C-0A83-4B3E4FAC4C44" referredColumn="CAD2CFEE-962E-C4B3-E177-DD9E02327137"/>
+</associations>
+</Column>
+<Column name="open_time" id="FE8772ED-3F67-0F70-BF72-D7BE6DCC93CD">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>ROLE_HOURS</sourceObjSchema>
+<sourceObjName>open_time</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="close_time" id="96FD1B8A-7516-393C-CA4F-933433D79021">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>ROLE_HOURS</sourceObjSchema>
+<sourceObjName>close_time</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="54BE67CB-E466-DA7B-4856-1EBE24725A31" name="pk_role_hours">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_role_hours</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4120EEFC-101F-CD32-F351-2E4179DC4226"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3F977CC-DC11-C736-A520-666A51C6E111" name="JLA_ROLE_HOURS_WEEKDAY_FK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:59:58 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45897C86-13A0-B0F4-FF3F-0C12A77B7227"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

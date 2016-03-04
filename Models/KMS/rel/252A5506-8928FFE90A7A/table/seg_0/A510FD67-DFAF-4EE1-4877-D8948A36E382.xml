@@ -1,0 +1,367 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A510FD67-DFAF-4EE1-4877-D8948A36E382" schemaObject="7894F3F2-B52A-9F03-CA7E-33E8AE1A5B82" name="RATE">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>RATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rate_id" id="25C3E3B1-49E0-B0C4-AAED-337108B8D252">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>rate_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category_id" id="69D3904A-F62F-0177-2E6F-021D73720618">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>category_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="027A39C1-18BC-DF60-0C08-48EBFA17AB68" referredColumn="412F62FD-58C5-BAF0-492C-88F6067C9B94"/>
+</associations>
+</Column>
+<Column name="name" id="591C3090-D52C-003F-C371-D09F60591F27">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>name</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>60</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,60,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="11ECE403-5F52-103D-D3F3-5E733FBF123B">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>description</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>2000</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,2000,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_contact_center" id="980E0295-73CD-11F2-E636-A2007D3AC802">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>create_contact_center</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_user_sid" id="B5027DD5-E3CD-B538-7314-66035F288FEB">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>create_user_sid</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,100,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_user_domain" id="960C199D-CAB9-F0E5-B2BA-DC24C2CCC14B">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>create_user_domain</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,30,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_user_account" id="8F2079C4-53C6-9195-006A-D48F62F667A2">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>create_user_account</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,30,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_date" id="AC532FE3-E9DE-A81B-8213-65AAF78251D9">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>create_date</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastmod_contact_center" id="6886C767-2A75-A812-2356-55F96D9FAD24">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>lastmod_contact_center</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastmod_user_sid" id="F28FDC24-804A-EC05-CB63-07CC1C72D53F">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>lastmod_user_sid</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,100,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastmod_user_domain" id="8AE30C96-944A-EEEA-0463-9AA35F0B8D85">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>lastmod_user_domain</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,30,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastmod_user_account" id="0BD7F857-BDE2-5559-EB25-09B0FCDA8FE8">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>lastmod_user_account</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,30,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastmod_date" id="FB2CC248-166D-3622-6419-FC6AD263394C">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>lastmod_date</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="active" id="7C9F0270-C332-FB71-6CCF-CC249A542F0C">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>active</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fee_type_id" id="54F60952-1E87-7954-C1FA-49BE09A61A13">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>fee_type_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_date" id="04604358-8225-2B6F-1B43-CAC333CD6082">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>start_date</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stop_date" id="63BD8FA3-8EA2-4907-7C3A-E49A78268F7F">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>stop_date</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sort_order" id="B5FA0A38-D94E-E91A-1C75-F8DED7828A7C">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE</sourceObjSchema>
+<sourceObjName>sort_order</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="629CFEAC-87ED-D8ED-702F-558BD72F8982" name="PK_RATE">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_RATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25C3E3B1-49E0-B0C4-AAED-337108B8D252"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA7A5E09-D835-0A4A-50C1-B4BF0B1DEE1E" name="JLA_RATE_RATE_CATEGORY_FK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 17:06:04 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69D3904A-F62F-0177-2E6F-021D73720618"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="DF__RATE__sort_order__08388C81" directorySegmentName="seg_0" id="95A8B3EF-58CC-F736-4906-4A470B4C7A6C">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>DF__RATE__sort_order__08388C81</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

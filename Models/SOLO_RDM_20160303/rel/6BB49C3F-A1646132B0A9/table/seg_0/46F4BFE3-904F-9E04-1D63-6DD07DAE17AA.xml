@@ -1,0 +1,539 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="46F4BFE3-904F-9E04-1D63-6DD07DAE17AA" schemaObject="A75EE0FE-D24A-A144-C283-9F99B81C29A1" name="T_RDM_ORDER_REASON_MAP">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>T_RDM_ORDER_REASON_MAP</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:19 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SOURCE_CODE" id="BD0A515A-210E-66B5-469D-E56CCD64E98E">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>SOURCE_CODE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTL_ID" id="FD9790C0-8B30-BA5A-5E3B-8979D4FD2F82">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>CTL_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMAIN_ID" id="9DEC6549-6143-EBE7-5B35-8056D2E1FAC4">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>DOMAIN_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODE_SET_ID" id="FDC21D0B-C2D8-EFED-755A-8EA07ECE383D">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>CODE_SET_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32DF57A0-9E25-6D6A-7BB3-4B8EBB9128D4" referredColumn="D14DB793-4B1F-366F-CF79-74FF258BF6CA"/>
+<colAssociation fkAssociation="9514C215-A8E3-3D5D-4B84-8C4CE44551F3" referredColumn="EC1D3707-3C21-AF69-7D9C-C104D85A49DB"/>
+</associations>
+</Column>
+<Column name="RDM_ID" id="0019A114-8075-5A79-04CC-3D8DEB0D5DC2">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>RDM_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32DF57A0-9E25-6D6A-7BB3-4B8EBB9128D4" referredColumn="322FBD73-F71A-6327-AAA5-CEF907A3542B"/>
+</associations>
+</Column>
+<Column name="DESCRIPTION" id="CB263655-0BC8-7B32-8475-5B34183A0B58">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1024 BYTE</dataTypeSize>
+<ownDataTypeParameters>1024 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="6E9F03D9-8800-E1C2-C29E-91DCC8E81356">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>START_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="B1050BD0-5441-68C8-17ED-2872DD395DB9">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>END_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECORD_DELETED_FLAG" id="DA2A6B2E-1659-1DBE-B0D2-B5D855DE99CC">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>RECORD_DELETED_FLAG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROCESS_NAME" id="121036D3-CA0B-C721-B7C0-8643E5209510">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>PROCESS_NAME</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROCESS_ID" id="322AEBEE-7D39-72C0-5F0F-E77339645DA3">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>PROCESS_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATE_PROCESS_NAME" id="25F8D089-A82F-D5FD-7B83-12FE968F327D">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>UPDATE_PROCESS_NAME</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATE_PROCESS_ID" id="0E1A3706-9C12-BE8C-B0B1-F6A5537049E0">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>UPDATE_PROCESS_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOURCE_CODE_VALUE_ID" id="77D7AB16-3969-FCF0-00C5-02FEA030078B">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>SOURCE_CODE_VALUE_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTHER_DESCRIPTION" id="701E31A1-A9CF-D12A-9437-32644F770FFA">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>OTHER_DESCRIPTION</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1024 BYTE</dataTypeSize>
+<ownDataTypeParameters>1024 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXT_ATTRB_1" id="77AA5ACD-F654-7FF3-CF14-840162477514">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>EXT_ATTRB_1</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXT_ATTRB_2" id="C086F92C-7C63-01C0-59C1-C503BEB80DE5">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>EXT_ATTRB_2</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXT_ATTRB_3" id="98CC9A11-4129-AEDD-C7FB-18EA2E879B30">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>EXT_ATTRB_3</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXT_ATTRB_4" id="BE702F78-F63C-BC9A-A7B7-41E0CF8102C3">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>EXT_ATTRB_4</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXT_ATTRB_5" id="37050727-EC97-FCE8-2201-34398269533A">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>EXT_ATTRB_5</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXT_ATTRB_DATE_1" id="E72594D2-616E-B890-F441-41F2B2C72AA3">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>EXT_ATTRB_DATE_1</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXT_ATTRB_DATE_2" id="1FB76388-EE5A-ADB2-8360-D2ABCA6FA719">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>EXT_ATTRB_DATE_2</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXT_ATTRB_DEC_1" id="247FEDF0-2435-ED62-16B2-3E1BC03D5265">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>EXT_ATTRB_DEC_1</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,18,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXT_ATTRB_DEC_2" id="495430F3-9521-F21F-41C4-5B4E5FD16A6A">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>EXT_ATTRB_DEC_2</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,18,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXT_ATTRB_DEC_3" id="AD23F4E2-2634-7722-0939-ADEDED1EE1DE">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>EXT_ATTRB_DEC_3</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,18,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STANDARDIZATIONLEVEL" id="C57C6387-B786-168C-7178-ACEF1D1EFD5A">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>STANDARDIZATIONLEVEL</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ISDEFAULT" id="AFFC9293-4176-73D5-2594-C887BAA3C85C">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>ISDEFAULT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECORD_STAT" id="E39FCBFA-2C12-A7C3-CE39-57C44D5ECF18">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>RECORD_STAT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DTTM" id="D20C822F-EBEE-C528-F1A7-6501952ED8C0">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>CREATED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="442F3410-6A96-1C69-8162-97B1B43ECB0F">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DTTM" id="75942885-EC08-770D-BC34-1C15F907EEA3">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>MODIFIED_DTTM</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="081CF211-A95B-59D0-6B71-846DDE8D65E6">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>T_RDM_ORDER_REASON_MAP</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:21 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2DCAB361-B02B-A010-DE34-6CAF6E2B74C5" name="PK_RDM_ORDER_REASON_MAP">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_RDM_ORDER_REASON_MAP</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:23 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD0A515A-210E-66B5-469D-E56CCD64E98E"/>
+<colUsage columnID="FD9790C0-8B30-BA5A-5E3B-8979D4FD2F82"/>
+<colUsage columnID="FDC21D0B-C2D8-EFED-755A-8EA07ECE383D"/>
+<colUsage columnID="0019A114-8075-5A79-04CC-3D8DEB0D5DC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCB3B627-1F62-3292-3E59-4A8ABE6CA5CC" schemaObject="A75EE0FE-D24A-A144-C283-9F99B81C29A1" name="PK_RDM_ORDER_REASON_MAP">
+<sourceConnName>SOLO Dev01</sourceConnName>
+<sourceObjSchema>CHTR</sourceObjSchema>
+<sourceObjName>PK_RDM_ORDER_REASON_MAP</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:22 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD0A515A-210E-66B5-469D-E56CCD64E98E"/>
+<colUsage columnID="FD9790C0-8B30-BA5A-5E3B-8979D4FD2F82"/>
+<colUsage columnID="FDC21D0B-C2D8-EFED-755A-8EA07ECE383D"/>
+<colUsage columnID="0019A114-8075-5A79-04CC-3D8DEB0D5DC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9376F09-90B8-7DE5-000B-5A56E6E76E2E" name="FK_RDM_ORDER_REASON_MAP1">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:24 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0019A114-8075-5A79-04CC-3D8DEB0D5DC2"/>
+<colUsage columnID="FDC21D0B-C2D8-EFED-755A-8EA07ECE383D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBD22484-BEBE-8AFE-4A64-DBA384DEB4CB" name="FK_RDM_ORDER_REASON_MAP2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-04 18:41:24 UTC</createdTime>
+<ownerDesignName>SOLO_RDM_20160303</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDC21D0B-C2D8-EFED-755A-8EA07ECE383D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

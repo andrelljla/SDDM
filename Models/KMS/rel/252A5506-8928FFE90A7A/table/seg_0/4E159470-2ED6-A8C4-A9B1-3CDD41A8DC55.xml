@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E159470-2ED6-A8C4-A9B1-3CDD41A8DC55" schemaObject="7894F3F2-B52A-9F03-CA7E-33E8AE1A5B82" name="RATE_CATEGORY">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>RATE_CATEGORY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="category_id" id="412F62FD-58C5-BAF0-492C-88F6067C9B94">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_CATEGORY</sourceObjSchema>
+<sourceObjName>category_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category_name" id="1D29DF63-4BBB-F9A3-9019-AD2F5B1D6BB4">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_CATEGORY</sourceObjSchema>
+<sourceObjName>category_name</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,50,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="display_order" id="BA2EBFCD-A341-804B-ED6C-D8B51A849F97">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_CATEGORY</sourceObjSchema>
+<sourceObjName>display_order</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category_description" id="F813EF7A-9DBB-B798-A285-1CD749F681AE">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_CATEGORY</sourceObjSchema>
+<sourceObjName>category_description</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>500</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,500,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61D9EC50-952E-0E09-6F03-CEAA333FE3A6" name="PK_RATE_CATEGORY">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_RATE_CATEGORY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="412F62FD-58C5-BAF0-492C-88F6067C9B94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="DF_RATE_CATEGORY_sort_order" directorySegmentName="seg_0" id="1064598A-38C1-B650-2A1A-8F83D04E2546">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>DF_RATE_CATEGORY_sort_order</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:28 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

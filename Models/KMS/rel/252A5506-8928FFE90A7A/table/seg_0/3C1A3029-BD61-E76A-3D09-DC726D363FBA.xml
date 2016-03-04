@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C1A3029-BD61-E76A-3D09-DC726D363FBA" name="PHONE_GROUP_FTA">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PHONE_GROUP_FTA</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<schemaObject>7894F3F2-B52A-9F03-CA7E-33E8AE1A5B82</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="group_id" id="FE63A825-E724-02E5-09B5-456832637860">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP_FTA</sourceObjSchema>
+<sourceObjName>group_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<delegate>346EC587-A6DE-9179-0B0E-FEA5EB3CE686</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="961146D8-1D2A-0CC2-E65A-D0F672C690E2" referredColumn="346EC587-A6DE-9179-0B0E-FEA5EB3CE686"/>
+</associations>
+</Column>
+<Column name="source_fta_code" id="198D44EF-36E7-9B49-3B6E-E80784B5C826">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP_FTA</sourceObjSchema>
+<sourceObjName>source_fta_code</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<delegate>0203BFB2-0BD3-7278-EFE6-DCCC6474D0B2</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69037EDA-5807-D34B-95E5-CE8D6CFE0D0A" referredColumn="0203BFB2-0BD3-7278-EFE6-DCCC6474D0B2"/>
+</associations>
+</Column>
+<Column name="billing_station_id" id="78037E1E-4987-0A25-110E-3BDCA72B4742">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP_FTA</sourceObjSchema>
+<sourceObjName>billing_station_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<delegate>07DE2EB6-41B4-7BD7-4531-49CAF4D0C028</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69037EDA-5807-D34B-95E5-CE8D6CFE0D0A" referredColumn="07DE2EB6-41B4-7BD7-4531-49CAF4D0C028"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF990D01-E10E-1DFC-5DED-77095D0760DA" name="PK_PHONE_GROUP_FTA">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_PHONE_GROUP_FTA</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE63A825-E724-02E5-09B5-456832637860"/>
+<colUsage columnID="198D44EF-36E7-9B49-3B6E-E80784B5C826"/>
+<colUsage columnID="78037E1E-4987-0A25-110E-3BDCA72B4742"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3161B58F-9E08-713A-EE8E-4CF4DA175E60" name="FK_PHONE_GROUP_FTA_PHONE_GROUP">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:30 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE63A825-E724-02E5-09B5-456832637860"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A7D5965-472A-E952-32DF-50FCA9FA9461" name="FK_PHONE_GROUP_FTA_SOURCE_FTA_CODE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:30 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="198D44EF-36E7-9B49-3B6E-E80784B5C826"/>
+<colUsage columnID="78037E1E-4987-0A25-110E-3BDCA72B4742"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

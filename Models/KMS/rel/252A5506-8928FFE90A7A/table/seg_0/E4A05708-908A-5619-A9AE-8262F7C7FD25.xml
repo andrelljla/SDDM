@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4A05708-908A-5619-A9AE-8262F7C7FD25" schemaObject="7894F3F2-B52A-9F03-CA7E-33E8AE1A5B82" name="RATE_CODE">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>RATE_CODE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:26 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code_id" id="D573F326-9E70-F56E-7BD6-6644463A3069">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_CODE</sourceObjSchema>
+<sourceObjName>code_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:26 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rate_id" id="11704F29-0C2F-B757-7DB6-90455DFC1DAC">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_CODE</sourceObjSchema>
+<sourceObjName>rate_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:26 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6966F9B4-52C8-FDF6-4905-A0906EBE9A05" referredColumn="25C3E3B1-49E0-B0C4-AAED-337108B8D252"/>
+</associations>
+</Column>
+<Column name="code_type_id" id="A77687C1-F0DE-7E2D-3FF6-95F328201EB2">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_CODE</sourceObjSchema>
+<sourceObjName>code_type_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:26 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC4A9A9B-CCCD-7B6A-74E2-043BA47D3AEE" referredColumn="B4C9D11C-39C1-09D1-6A8A-47A4DA486B86"/>
+</associations>
+</Column>
+<Column name="name" id="45548CCA-3B8C-3181-1E4F-FD4A5E007D3B">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_CODE</sourceObjSchema>
+<sourceObjName>name</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:26 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>60</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,60,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="9ACC3E57-2069-90BC-07B2-284E7E9069AC">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_CODE</sourceObjSchema>
+<sourceObjName>description</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:26 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>2000</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,2000,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="0D4DFD53-2017-3262-E685-F9DDEC31374A">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_CODE</sourceObjSchema>
+<sourceObjName>quantity</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:26 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="20466CFD-E8E1-3147-A863-5C4FCBFBFC0E" name="PK_RATE_CODE">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_RATE_CODE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:27 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D573F326-9E70-F56E-7BD6-6644463A3069"/>
+<colUsage columnID="11704F29-0C2F-B757-7DB6-90455DFC1DAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8509F553-A957-BB61-D690-3765902DAC01" name="JLA_RATE_CODE_RATE_CODE_TYPE_FK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 17:03:47 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A77687C1-F0DE-7E2D-3FF6-95F328201EB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CDAA5433-CBC6-0437-216C-F7EC34FEF7F0" name="JLA_RATE_CODE_RATE_FK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 17:04:44 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11704F29-0C2F-B757-7DB6-90455DFC1DAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

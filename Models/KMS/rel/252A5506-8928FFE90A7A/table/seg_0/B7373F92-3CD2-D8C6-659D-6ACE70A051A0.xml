@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7373F92-3CD2-D8C6-659D-6ACE70A051A0" schemaObject="7894F3F2-B52A-9F03-CA7E-33E8AE1A5B82" name="LINEUP_DETAIL_EXT">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>LINEUP_DETAIL_EXT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LINEUP_ID" id="11DDC7F1-749D-4AD0-E0DF-BCBD76EE263E">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL_EXT</sourceObjSchema>
+<sourceObjName>LINEUP_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SERVICE_LEVEL_ID" id="BADB36C7-BD37-6E20-F4E9-F1DB79B216DE">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL_EXT</sourceObjSchema>
+<sourceObjName>SERVICE_LEVEL_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROGRAM_ID" id="E2C2981A-C008-307A-36A0-98F865C1B105">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL_EXT</sourceObjSchema>
+<sourceObjName>PROGRAM_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONV_CHANNEL" id="E0831748-8FC1-96A2-C8A4-8E0E7CD43DA8">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL_EXT</sourceObjSchema>
+<sourceObjName>CONV_CHANNEL</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRAP_ADDRESS" id="31B63E89-3B12-7947-8F3C-01D0F59E7465">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL_EXT</sourceObjSchema>
+<sourceObjName>TRAP_ADDRESS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8DA33814-95C3-92D8-6B3D-38736112A56E" name="PK_LINEUP_DETAIL_EXT">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_LINEUP_DETAIL_EXT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:25 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11DDC7F1-749D-4AD0-E0DF-BCBD76EE263E"/>
+<colUsage columnID="BADB36C7-BD37-6E20-F4E9-F1DB79B216DE"/>
+<colUsage columnID="E2C2981A-C008-307A-36A0-98F865C1B105"/>
+<colUsage columnID="E0831748-8FC1-96A2-C8A4-8E0E7CD43DA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

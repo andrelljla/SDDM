@@ -1,0 +1,274 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="72AA2927-67D4-EA57-5C29-F44DDF15EBC2" name="PHONE_GROUP">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PHONE_GROUP</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<schemaObject>7894F3F2-B52A-9F03-CA7E-33E8AE1A5B82</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="group_id" id="346EC587-A6DE-9179-0B0E-FEA5EB3CE686">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>group_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="group_type_id" id="83FA6B38-6DC6-871A-AA1D-B0D027BED3D0">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>group_type_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<delegate>4DC7CACD-4B16-DD7B-6FFE-CE3DEDD2BD40</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0EC7577-BAD7-B995-D650-263843AC05E6" referredColumn="4DC7CACD-4B16-DD7B-6FFE-CE3DEDD2BD40"/>
+</associations>
+</Column>
+<Column name="name" id="59EB9421-7CE9-4857-AB9C-99FC16BDD473">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>name</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="CC04D2AA-D4E0-8F4D-6C2C-4A1E0C85B182">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>description</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>500</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>500</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_contact_center" id="6D54B2FA-3B16-BAE3-33D4-F50084CA003E">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>create_contact_center</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_user_sid" id="F77350AE-14B8-0922-4F9C-9411FC1DDEBC">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>create_user_sid</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_user_domain" id="CEE7B505-8896-399D-9D68-308F93A460B7">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>create_user_domain</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_user_account" id="31BC9484-6050-A7DB-931C-73A3231EEAC7">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>create_user_account</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_date" id="EB7E3B66-86C0-1A57-8A5D-5C2355D04D5C">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>create_date</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastmod_contact_center" id="00A7E9A5-F635-9FAE-F833-721596DF1D04">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>lastmod_contact_center</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastmod_user_sid" id="87144D51-544A-31CA-A268-151FCA882619">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>lastmod_user_sid</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastmod_user_domain" id="06BE1447-AFF5-ED8D-C8BE-F4094CABB5F8">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>lastmod_user_domain</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastmod_user_account" id="79669289-60B7-118E-0C73-852700DD2738">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>lastmod_user_account</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastmod_date" id="E3363624-7AC7-6EC7-3A12-AD74766956FD">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>lastmod_date</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="active" id="F7A8CBBC-A1D2-08A1-DEE0-427742B3069C">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>PHONE_GROUP</sourceObjSchema>
+<sourceObjName>active</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF536370-86FE-8E66-3F1D-6A3FD86B6668" name="PK_PHONE_GROUP">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_PHONE_GROUP</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:22 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="346EC587-A6DE-9179-0B0E-FEA5EB3CE686"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4296E37A-DCAA-DDD2-77DE-022719CB1883" name="FK_PHONE_GROUP_PHONE_GROUP_TYPE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:30 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83FA6B38-6DC6-871A-AA1D-B0D027BED3D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

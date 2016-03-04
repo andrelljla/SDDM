@@ -1,0 +1,509 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8572A537-A799-7B12-FCE6-97B52E15B26D" schemaObject="7894F3F2-B52A-9F03-CA7E-33E8AE1A5B82" name="LINEUP_DETAIL">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>LINEUP_DETAIL</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DETAIL_LINE" id="EF98B94E-39E0-03A0-B6DC-1FFE0476ED29">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>DETAIL_LINE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROGRAM_ID" id="02F2D0D5-914E-FC09-53ED-0CCB8F0DB48B">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>PROGRAM_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D85DED29-7FEE-6BBC-D931-791824E4DB14" referredColumn="E522FAD9-C8D8-D025-4956-6412C9AC6687"/>
+</associations>
+</Column>
+<Column name="LINEUP_ID" id="B5D00B7C-F534-FC30-D14C-21F0DE226833">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>LINEUP_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF27E845-A1E1-27D2-4B1B-16A7C4BA1FB5" referredColumn="29D9F970-7728-4A14-11B8-55EBADC01812"/>
+</associations>
+</Column>
+<Column name="LAST_CHANGE_DATE" id="747F3D11-DA22-6C44-4C7E-0CA3E80B4E63">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>LAST_CHANGE_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF27E845-A1E1-27D2-4B1B-16A7C4BA1FB5" referredColumn="2AC354D2-C012-2643-FAC5-FED0EC77F505"/>
+</associations>
+</Column>
+<Column name="SERVICE_LEVEL_ID" id="7608131F-EF23-A844-7B75-4E2C3282C6E5">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>SERVICE_LEVEL_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONV_CHANNEL" id="10BC7307-6AFC-E057-0466-C9BF0CF766FC">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>CONV_CHANNEL</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EIA_CHANNEL" id="8F8ECA39-39FE-6CEF-2798-02A15EF9C2DC">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>EIA_CHANNEL</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FREQUENCY" id="C34E82CB-D6D4-D7A6-DEB9-183C8729112D">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>FREQUENCY</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>53</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,53,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SATELLITE_ID" id="F3B72EB1-2A94-ED06-ED06-5E255A7A7B1B">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>SATELLITE_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSPONDER_ID" id="77974F9C-1D3B-DF4B-8618-6D8043B06154">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>TRANSPONDER_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURRENT_MONTH_SUBS" id="928B8DDB-57F8-C769-2599-1116965D4607">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>CURRENT_MONTH_SUBS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PREV_MONTH_SUBS" id="42456DFE-E7D0-13BD-933C-E6503FDFC9D3">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>PREV_MONTH_SUBS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHANNEL_CHANGE_DATE" id="03E4151C-3EAA-7262-4A45-B6C897BDFB27">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>CHANNEL_CHANGE_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHANNEL_END_DATE" id="D3A209AB-3B67-1878-5C7C-B5AFDB86AD9E">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>CHANNEL_END_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHANNEL_LAUNCH_DATE" id="E0111B6A-8822-8F8F-6DF5-32755B40FB10">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>CHANNEL_LAUNCH_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BASE_DATE" id="73803663-D61E-3987-4F28-016BD651D375">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>BASE_DATE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BASE_SUBS" id="DF6EEE4D-5F03-98AA-8478-68669535AB48">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>BASE_SUBS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMERCIAL_SUBS" id="E6495342-764F-2E26-C5AB-F761931DBD0A">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>COMMERCIAL_SUBS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURRENT_MONTH_BASIC_SUBS" id="1B3C25B9-BC3E-0C4F-4299-FBEA65793797">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>CURRENT_MONTH_BASIC_SUBS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PREV_MONTH_BASIC_SUBS" id="E1DE31B6-3405-F196-24AC-F64929409B77">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>PREV_MONTH_BASIC_SUBS</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PART_TIME_FLAG" id="C6A45DEF-684D-5875-E406-FA780DB62D60">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>PART_TIME_FLAG</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRAMBLER_ADDR_CODE" id="BA39237D-1383-F78B-8DA7-A4B7C105151E">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>DESCRAMBLER_ADDR_CODE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRAMBLER_SERIAL_NUMB" id="4E926335-AF76-1228-DED2-E525F6DB428E">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>DESCRAMBLER_SERIAL_NUMB</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,18,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIGNAL_TYPE" id="730220BD-A88C-18BC-8A35-8D5F0014B855">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>SIGNAL_TYPE</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,30,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MC_RTC" id="1F32E9ED-C7DE-6FF8-14F5-64348E009F2D">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>MC_RTC</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="greenberg_ch_lineupid" id="A12686F9-E268-73AC-2A18-29492D5F20EC">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>LINEUP_DETAIL</sourceObjSchema>
+<sourceObjName>greenberg_ch_lineupid</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,15,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB14BB31-8AA8-F34D-A389-BBA500E71781" name="PK_LINEUP_DETAIL">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_LINEUP_DETAIL</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF98B94E-39E0-03A0-B6DC-1FFE0476ED29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8C2CEBD-1352-01E6-934F-9330E1CA6096" name="IX_LINEUP_ID">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>IX_LINEUP_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:24 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5D00B7C-F534-FC30-D14C-21F0DE226833"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD1C4BE2-CC6F-0CC2-FFFE-F7F0A535C1D9" name="JLA_LINEUP_DETAIL_LINEUPS_FK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 17:11:00 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5D00B7C-F534-FC30-D14C-21F0DE226833"/>
+<colUsage columnID="747F3D11-DA22-6C44-4C7E-0CA3E80B4E63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21067FC9-A75C-B1D5-47C8-DED5B91243DA" name="JLA_LINEUP_DETAIL_CLU_PROGRAMMING_SERVICE_FK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 17:17:49 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02F2D0D5-914E-FC09-53ED-0CCB8F0DB48B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

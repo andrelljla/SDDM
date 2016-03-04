@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA1A6B7A-8E51-0819-D039-9E72C8B80A6A" schemaObject="7894F3F2-B52A-9F03-CA7E-33E8AE1A5B82" name="RATE_FEATURE_BENEFIT">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>RATE_FEATURE_BENEFIT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:27 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="feature_benefit_id" id="F58DD524-BD77-8EDB-D978-409FED70A363">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_FEATURE_BENEFIT</sourceObjSchema>
+<sourceObjName>feature_benefit_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:27 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rate_id" id="75DF10D9-1C78-A69F-FB14-562D707A7F7F">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_FEATURE_BENEFIT</sourceObjSchema>
+<sourceObjName>rate_id</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:27 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="feature_description" id="9F7CD865-B2BC-41F3-002D-D3DCFE0D0A32">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_FEATURE_BENEFIT</sourceObjSchema>
+<sourceObjName>feature_description</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:27 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>2000</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,2000,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="benefit_description" id="8283CF14-2C00-BC08-0A22-47823311CE46">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>RATE_FEATURE_BENEFIT</sourceObjSchema>
+<sourceObjName>benefit_description</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:27 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>2000</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,2000,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="91E49896-2F74-3320-6196-045035598A53" name="PK_RATE_FEATURE_BENEFIT">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_RATE_FEATURE_BENEFIT</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:27 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F58DD524-BD77-8EDB-D978-409FED70A363"/>
+<colUsage columnID="75DF10D9-1C78-A69F-FB14-562D707A7F7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A6198C8-DD27-04DE-0041-781CFBA7E3EE" name="IDX_RATE_ID">
+<sourceConnName>KMS Data</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>IDX_RATE_ID</sourceObjName>
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-03-03 16:22:27 UTC</createdTime>
+<ownerDesignName>KMS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75DF10D9-1C78-A69F-FB14-562D707A7F7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
