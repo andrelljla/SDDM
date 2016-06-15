@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED5DF170-07D6-7B60-A87B-D18BE2CA80D1" name="Resolvity Stage2">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED5DF170-07D6-7B60-A87B-D18BE2CA80D1" name="Resolvity Stage">
 <createdBy>jandrews1</createdBy>
 <createdTime>2016-02-08 16:39:18 UTC</createdTime>
 <ownerDesignName>RTCCA</ownerDesignName>
@@ -8,6 +8,15 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Termination" id="A8EA2606-F68E-68A2-76A6-052CEF9375C9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-02-08 16:43:25 UTC</createdTime>
+<ownerDesignName>RTCCA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="StartTime" id="0B3789D3-0441-EA76-0DF9-387882F51A23">
 <createdBy>jandrews1</createdBy>
 <createdTime>2016-02-08 16:43:25 UTC</createdTime>
@@ -16,50 +25,6 @@
 <use>0</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
 <domain>DOM2025100</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="StartTimeTZ" id="C11920F0-939A-9C54-D018-9C3C804141D1">
-<createdBy>jandrews1</createdBy>
-<createdTime>2016-02-08 16:43:25 UTC</createdTime>
-<ownerDesignName>RTCCA</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>3 BYTE</dataTypeSize>
-<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="EndTime" id="711DCDE3-FB27-DF47-A8BA-9D75CF78E2E4">
-<createdBy>jandrews1</createdBy>
-<createdTime>2016-02-08 16:43:25 UTC</createdTime>
-<ownerDesignName>RTCCA</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<domain>DOM2025100</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="EndTimeTZ" id="E5C478B5-2FFD-797F-7EE7-6780BACA2A34">
-<createdBy>jandrews1</createdBy>
-<createdTime>2016-02-08 16:43:25 UTC</createdTime>
-<ownerDesignName>RTCCA</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>3 BYTE</dataTypeSize>
-<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Termination" id="A8EA2606-F68E-68A2-76A6-052CEF9375C9">
-<createdBy>jandrews1</createdBy>
-<createdTime>2016-02-08 16:43:25 UTC</createdTime>
-<ownerDesignName>RTCCA</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -144,6 +109,17 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="EndTime" id="711DCDE3-FB27-DF47-A8BA-9D75CF78E2E4">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-02-08 16:43:25 UTC</createdTime>
+<ownerDesignName>RTCCA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>DOM2025100</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="PSID" id="9452D3E4-A136-A695-BC9A-36AB1564EB17">
 <createdBy>jandrews1</createdBy>
 <createdTime>2016-02-08 16:43:25 UTC</createdTime>
@@ -217,33 +193,6 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ConversationID" id="A03EC762-99F5-F5CC-45A1-3A10514D953C">
-<createdBy>jandrews1</createdBy>
-<createdTime>2016-02-08 16:43:25 UTC</createdTime>
-<ownerDesignName>RTCCA</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="SoloID" id="332A0959-B946-6B13-1C57-5C7E6E2851C5">
-<createdBy>jandrews1</createdBy>
-<createdTime>2016-02-08 16:43:25 UTC</createdTime>
-<ownerDesignName>RTCCA</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="SupportChannel" id="29BABA56-3561-D1E3-3A59-B53AE1D36C6F">
-<createdBy>jandrews1</createdBy>
-<createdTime>2016-02-08 16:43:25 UTC</createdTime>
-<ownerDesignName>RTCCA</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Topic" id="431092CA-5865-F55A-B4F6-9F0D2893E8CF">
 <createdBy>jandrews1</createdBy>
 <createdTime>2016-02-08 16:43:25 UTC</createdTime>
 <ownerDesignName>RTCCA</ownerDesignName>

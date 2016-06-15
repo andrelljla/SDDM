@@ -1,0 +1,849 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6260DE86-09B8-DBF8-3263-86A2F3042A34" name="T MEC APITEM">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>4F0D1027-7BDC-2046-820E-010C66FE064E</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="AP ID" id="5E997695-47FE-8FF3-FF25-281579FCD79B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The primary key field of the assigned product item derived from the base entity</commentInRDBMS>
+<generatorID>3AF53B48-7610-B2C3-E05E-FB1783E970B0</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AP VERSION ID" id="69A37170-16F3-B424-8732-14EDC94B36BA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The second field of the primary key </commentInRDBMS>
+<generatorID>D3C711AE-A305-6814-6BE4-96FA5F445BF3</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FINAL STATUS" id="4BD60CBE-367F-5812-02E7-D9EF21DA60AC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The final status of an ordered item version when its order action is completed. This status takes into consideration the final status of previous versions of the item. The final status is taken into account when checking whether a specific order action is allowed on an assigned product.</commentInRDBMS>
+<generatorID>F2C067E1-D873-FDE7-1F43-61E4DC7F8F52</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER ACTION ID" id="A235F56B-59DA-F1C8-E212-602DAC1406F3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>1FFFFE7A-1387-9654-3CAC-4945F0F75BB0</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OFFER DEF ID" id="79941828-244D-DD76-4268-04D777F9986B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>For main items - the catalog ID of the offer</commentInRDBMS>
+<generatorID>AF44334D-71E1-AD0A-31F0-C688610862CA</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OFFER DEF VER" id="DE26670D-AF9D-5388-6C85-7704D075DEF3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>For main items - the catalog version of the offer</commentInRDBMS>
+<generatorID>87A78EA9-5B63-6332-B2F8-7B91C2B5479F</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT DEF ID" id="E91815A6-AE85-1A50-6CA4-DC5A4458DBB5">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>1F1E8583-A0F9-95E8-35B3-38BE15DDB112</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT DEF VER" id="B81DD446-3D05-B5C0-2A14-3A765EAC4415">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>4E917F31-83EE-563B-9D9B-A000A9B316F6</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM DEF ID" id="D9E06CC4-0129-54FC-B504-D00116102D34">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>26EE39A9-724B-C58F-E5D1-4161C68A312F</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM DEF VER" id="26A7478A-1E2E-8654-2F81-EEF64A1E9410">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>2054DD10-1563-6094-D662-CA80B6F967EC</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM LEVEL" id="CCA099BE-6C60-0425-D185-9413EA21554F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The level of an assigned product item, that is, whether it is a main item or a regular item. Note, that if the item is a technical component, only one main item corresponding to the main component of the product as defined in the product catalog can exist for an assigned product.</commentInRDBMS>
+<generatorID>B5BB4FF0-D416-7434-E594-9CFF53250789</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PC RELATION ID" id="42A6F140-E2A5-8865-0650-1154E02C2BB2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>A unique identifier of the relation between the item and its dominant item. This column is populated if the type of relation is containment.  This field in logical FK to the RELATION_ID column in the (TBRELATION) table.</commentInRDBMS>
+<generatorID>ADF03C92-7293-F814-028B-102FE25AA5C7</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PC RELATION VER" id="6EC01CFC-DCAF-AF73-E7A2-43041CA10354">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The version of the relation between the item and its dominant item (according to the product catalog version).  This field in logical FK to the PCVERSION_ID column in the (TBRELATION) table.</commentInRDBMS>
+<generatorID>F5258C3B-2301-702E-08E3-27F4BFF393C5</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRICE PLAN DEF ID" id="ACED7615-2102-E22C-4AE1-FC0E01DCB9FE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>Added by JLA in extension design</commentInRDBMS>
+<generatorID>3E65B25E-32E9-99B8-655F-C91FFEE281F3</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRICE PLAN DEF VER" id="D7FFBBC7-7B95-41F0-5EE4-3BC1BCAB5212">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>Added by JLA in extension design</commentInRDBMS>
+<generatorID>125ED194-495F-3E21-83DE-66FC5EF1FE37</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<deprecated>true</deprecated>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEC ORDER ID" id="F855516F-CA06-39FD-5CBD-4D3548F2F14C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>Added by JLA in extension design</commentInRDBMS>
+<generatorID>3B6D6876-CCF7-5131-75CC-CDF44484C822</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E20DFFFB-7449-66D7-7A21-406B907AEC37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEC ORDER VERSION NUM" id="72855479-96F8-67D6-E94F-4E20D08037AE">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>3B6D6876-CCF7-5131-75CC-CDF44484C822</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3EA5998B-C821-EBA7-8D07-53A0167000AD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="START DATE" id="71F242D6-E9C9-49B7-2E16-DEC917DCA640">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>For an assigned version, the FromDate specifies the beginning date of the period in which the version is effective. For a version in the state of Ordered, the field may be empty, or represents the due date of the order action according to specific application logic. Date Mask: YYYYMMDD</commentInRDBMS>
+<generatorID>69A70346-9708-36D9-2D39-365F824E3CBE</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="END DATE" id="16964F95-536D-9D42-A86A-A5DACF25ED2A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The date from which this assigned product version is no longer effective. It is populated only when there is a more current version for that assigned product (in which case this date is the START_DATE of the next version), or when the assigned product is no longer active (Ceased). Date Mask: YYYYMMDD</commentInRDBMS>
+<generatorID>3F14062C-EE0E-BAD2-1E66-B10EFF28BEAE</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SERVICE ID" id="27AF41C2-A528-C90A-90B8-282503ED0945">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>A unique identifier of the service item. The formats for this attribute can differ, depending on the template and the established service type (for example, 972-3-7546813 for a subscription number). Because the user identifies assigned product items by their service type and service ID, the ApItem base entity stores the Service ID attribute to allow common access to this attribute for all derived items.</commentInRDBMS>
+<generatorID>4D3E633A-FFD9-8DE0-7215-BF0E72CAC323</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SERVICE TYPE" id="121A148B-4420-FBF4-BD27-2ED981F4FA26">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The type of the service or product.</commentInRDBMS>
+<generatorID>18E23AC5-1FA1-C70C-B538-3B1E27467659</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MAIN IND" id="315E640C-471F-9F47-969E-43C1FC1B2AC6">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>Indicates whether an item is a main component or a regular component. Valid values are: 1 - Main 0 - Not main</commentInRDBMS>
+<generatorID>4066E8AE-12AB-BFB4-7FE1-DBB46262F866</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MAIN ITEM ID" id="BEAE16F3-9303-8B61-6FD5-ADE262FBA381">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The object that is the main item of this item.  Logical self-referential FK to the AP_ID colum.</commentInRDBMS>
+<generatorID>CC5A8C0A-97B9-0C31-7F4F-A5469813F5A0</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REASON" id="37929C75-C314-4448-7582-9E182B86B1DA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>From a predefined list of values, specifies the reason for activating the specific order action.</commentInRDBMS>
+<generatorID>21E26568-BA8A-C140-7976-CA706F5CDF7F</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROVIDER" id="5D976759-F4F8-BB94-339C-7FE022281DF4">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The provider of this item.</commentInRDBMS>
+<generatorID>86A6AB68-7C84-0DA4-D68B-2CA3591228DC</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROV DATE" id="65E0A55D-1F67-7DA7-3537-6BE9330C2090">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The date on which the product was provisioned. Date Mask: YYYYMMDD</commentInRDBMS>
+<generatorID>19F9B068-7D88-7FA7-EDD9-40E66BC422DB</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENTITY TYPE" id="BC285ECC-8B63-A4FD-D245-9491CE8866F3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The name of the entity class for inheritance facilities.</commentInRDBMS>
+<generatorID>EEE723B3-7257-68D4-EC6B-251FCE29D3C2</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MIGRATED PROD ID" id="61F9F5A9-102B-27AA-84E0-1153A84937B0">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>A unique identifier of the product this item was migrated from.</commentInRDBMS>
+<generatorID>48AF6BD0-461D-98FD-54A6-6D173061AC9A</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MIGRATED TO ITEM" id="36AEBBC6-986E-F0BB-3451-62824C55E37C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>A unique identifier of the item to which the item was migrated.</commentInRDBMS>
+<generatorID>4BBB89B5-C921-901A-6CE6-14431972B9D2</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROV SERVICE ID" id="A969BAD5-275E-EF3F-81D5-6EBF82AFE391">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>84D2E295-4B90-D151-C4F1-EFD27DCC465F</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACTION TYPE" id="08BA104A-33C4-70FA-DEB9-4D37FEBD1F66">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>For main items records, holds the order action type of the order action that created this item version. For non main item records, holds information on charge events created due to adding or removing optional items from the product configuration. This information is cleaned after it is used.</commentInRDBMS>
+<generatorID>6DC65E58-AA7C-A80B-1990-3DCEE03C4446</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATE" id="4BFC74A8-2261-5BE6-B660-3A38D1E4DD3B">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The state of the current version (Ordered, Cancelled or Assigned).</commentInRDBMS>
+<generatorID>6E37C728-6752-6804-CA7E-F1CBF67EE465</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER MODE" id="AA456984-2B85-B5EB-AF34-30233FC66EE8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>Holds the mode of the order in which this version was ordered (for example, Delivery, Proposal).</commentInRDBMS>
+<generatorID>BE1C0890-DEB8-C566-DFBF-2F29F28E9D26</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATUS" id="8DF1B2E6-B596-BC87-FB6F-5E1740398C7F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The status of the item (Active, Ceased or Suspended).</commentInRDBMS>
+<generatorID>9C738657-9203-3D79-ABE0-301F3DDA3979</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AP ID DOMINANT" id="F9ED2808-8AB8-969A-111D-A627320C2EB8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>0FD6D551-91EB-DE47-D9D3-F196AC526AAE</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ALL CHANGED ATTR" id="B5E4DFF9-67FB-5C8A-F67B-C77ABABFB50A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>Holds a string with the names of all the attributes that were changed by this version, separated with a semicolon ;.</commentInRDBMS>
+<generatorID>2E65FEE6-E3A7-E1F8-09C6-4F8D3082F000</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONSTANT SUBS" id="C9DC0327-654C-F4AC-6AAA-5711C2526F39">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>This column holds a string of the constant item object name separated with a semicolon (;).</commentInRDBMS>
+<generatorID>61051B85-63FD-D51B-5AD9-A1F7B2E3098B</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM ATRS LIST" id="71162DA0-0412-B6CB-053B-792E112EFCD6">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>This string holds information on the dynamic attribute defined on the item. The string includes the attribute name, value, and type if it is a date. The details of the attribute are separated by default by a plus sign (+), while the attributes in the list are separated by default by a semicolon (;).</commentInRDBMS>
+<generatorID>E18A9BFB-BA17-5235-BB1F-97813ED0D241</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RELATION ATRS LIST" id="08325969-537B-721C-F61A-7D4E098FE036">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>This string holds information on the dynamic attribute defined on the relation to the item. The string includes the attribute name, value, and type if it is a date. The details of the attribute are separated by default by a plus sign (+), while the attributes in the list are separated by default by a semicolon (;). </commentInRDBMS>
+<generatorID>47F45F93-AA37-1C27-4869-B9F768162844</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EFFECTIVE PCVER" id="3045F6B0-1F74-C5DD-2F07-842FE5705280">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The effective product catalog version.</commentInRDBMS>
+<generatorID>5D63C1F9-FBE1-F91C-D582-BF10F5A24466</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EXTERNAL ID" id="56FCD9D3-A677-073E-78F2-67EA7D792949">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>9B92D616-D42F-EEB6-C051-6FE2DE3EA306</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM ACTION TYPE" id="C9E3B8DC-D4D5-F313-631D-20988A9E3385">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The type of action which caused this item to be added or removed</commentInRDBMS>
+<generatorID>A61A647D-E8A6-7C2F-4098-5BDAEBD500C1</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACCOUNT ID" id="5AA26399-FB39-47CD-20A6-1A074F451521">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>Added by JLA in extension design&lt;br/&gt;</commentInRDBMS>
+<generatorID>A89CBEA5-187F-DE0D-3331-336AC9AC338A</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUANTITY" id="7A859039-1D8A-5C66-1660-88F115ED7FB8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The quantity of products ordered within this order action. Relevant for Provide requests only.</commentInRDBMS>
+<generatorID>AB240C43-05E9-9CA7-1CC3-F08EA0042018</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REASON ID" id="377C2593-9FF2-C63E-38BC-C505046AE36E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>A unique identifier of the reason related to the order action. </commentInRDBMS>
+<generatorID>BF11FF8C-2562-4FDE-F504-021614E01DD8</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REASON FREE TEXT" id="2C9A5624-F337-62A4-8078-DFEBB4F00C74">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<commentInRDBMS>The reason description that was describe by the user</commentInRDBMS>
+<generatorID>52E755F5-D349-9AC5-2E5F-84BCF78FD3DB</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ITEM ACTION CD" id="517809FE-65D9-C2C6-B730-4B3A13077605">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>69C214E0-12BA-D8B9-27F2-CD440EA19E27</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="D591EC85-17F4-C061-A104-5B259BE9BAF7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>C69CAE5C-29DB-3551-6C51-7229D249AA84</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="EC36FA68-F43F-85B3-C04A-51FA3BCD324A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>91BB9A40-C171-6D95-A3CB-EE7ABF99B021</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="F0136A4A-F7A2-DF55-5A99-EEB0EA0EC9D7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>7E91DC91-952C-FC33-8EBB-74B48C977CCE</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="D6A492EC-3F91-5C5E-D505-A2FFD0F9ED37">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>2DEE3D8E-1F91-23CF-70C2-2121FBB227F4</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="D09B6633-3ED8-BD86-8C75-90C483FE1904">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>6729FDA8-0E13-508E-CCF9-EA1106331E93</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D5282FB6-6C17-AE1B-1822-043C5C8AE459" name="PK MEC APITEM">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>3175C7D1-5B2C-9024-F5F6-2EE6504C2BAE</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5E997695-47FE-8FF3-FF25-281579FCD79B</attributeRef>
+<attributeRef>69A37170-16F3-B424-8732-14EDC94B36BA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

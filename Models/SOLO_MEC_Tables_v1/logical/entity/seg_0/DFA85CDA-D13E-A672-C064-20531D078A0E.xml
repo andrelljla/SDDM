@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DFA85CDA-D13E-A672-C064-20531D078A0E" name="Eligible Offer">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 19:12:41 UTC</createdTime>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Catalog Item ID" id="DD3DC69D-B4F5-D1EF-7865-9F1B585E26C8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 19:14:21 UTC</createdTime>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IsBundle" id="6DEBCB65-2882-372A-03F3-75932A2512FC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 19:14:00 UTC</createdTime>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>9301CC34-9D3E-C0F9-38F2-937A2DF5AA3F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOB Supported" id="8C574DCB-68BC-4F72-8D5D-9F083C88B607">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 19:35:17 UTC</createdTime>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Catalog Item Name" id="1DC1906B-64F3-731A-8659-FFADC9869725">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 19:14:26 UTC</createdTime>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A7F546A8-0180-5A2E-AFF9-0F7AFCB08E8E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Expired Indicator" id="5E644B9F-7DDB-F181-BA6F-D4A0D47C3138">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 19:25:10 UTC</createdTime>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>9301CC34-9D3E-C0F9-38F2-937A2DF5AA3F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="One Time Price Amount" id="2D105FD1-F625-01A6-8C47-C2846B1A1ED7">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 19:25:39 UTC</createdTime>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>DOM2025070</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Recurring Price Amount" id="1320B84B-14A5-A02C-858A-5F639CEB3312">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 19:25:53 UTC</createdTime>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>DOM2025070</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Recurring Price Frequency" id="AC261D39-5811-6C92-D433-9BB5BEFBFFBA">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 19:26:03 UTC</createdTime>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Price Currency" id="7506E8AB-8130-5F95-699F-9811497888FF">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 19:27:59 UTC</createdTime>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="98EC7D12-E84B-3FF4-409A-EFE960ABEF24" name="Eligible Offer PK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 19:14:48 UTC</createdTime>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DD3DC69D-B4F5-D1EF-7865-9F1B585E26C8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

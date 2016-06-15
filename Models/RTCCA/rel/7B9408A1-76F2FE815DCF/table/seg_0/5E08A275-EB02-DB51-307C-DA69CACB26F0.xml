@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E08A275-EB02-DB51-307C-DA69CACB26F0" name="Conversation TaskEvent">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-05-10 15:40:13 UTC</createdTime>
+<ownerDesignName>RTCCA</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Conversation ID" id="B1793BDD-9EC2-0430-1ADB-1C2D007BA2D5">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-05-10 15:41:03 UTC</createdTime>
+<ownerDesignName>RTCCA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10041</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BA2A03B-F519-78BF-A5BC-B97925023FF2" referredColumn="31DFD88C-D93B-4253-A8B3-0D4EBAC737FA"/>
+</associations>
+</Column>
+<Column name="Event Description" id="0DA7476F-7783-C164-E06B-9AAFCE9B6A8C">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-05-10 15:43:48 UTC</createdTime>
+<ownerDesignName>RTCCA</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2FCBA118-724C-3386-F381-E8FECD2D8E59</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Milestone DateTime" id="805053C7-671B-38A1-855D-205D9E70CDC2">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-05-10 15:41:56 UTC</createdTime>
+<ownerDesignName>RTCCA</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>DOM2025100</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Status Code" id="690D3BCC-AED5-7E36-4FA7-7186A0B94538">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-05-10 15:43:48 UTC</createdTime>
+<ownerDesignName>RTCCA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Reference Text" id="C02FDC82-A92E-EDC4-E7AC-9862FF518282">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-05-10 15:43:48 UTC</createdTime>
+<ownerDesignName>RTCCA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C137EFAA-243D-D80C-7FFB-06FEE32C06AD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="376CA1B3-0738-EE74-DF30-4DBD8E8493E6" name="Conversation_FK">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-05-10 15:41:03 UTC</createdTime>
+<ownerDesignName>RTCCA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1793BDD-9EC2-0430-1ADB-1C2D007BA2D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

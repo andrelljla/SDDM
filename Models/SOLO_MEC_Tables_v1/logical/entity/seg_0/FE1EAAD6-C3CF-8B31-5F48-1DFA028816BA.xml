@@ -1,0 +1,256 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FE1EAAD6-C3CF-8B31-5F48-1DFA028816BA" name="T MEC ORDER TRANSACTION">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>F2286EB1-FECA-F743-6718-FCAFDFD009D1</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="MEC ORDER ID" id="6E86D03C-C386-BC97-FA46-39C20EE047E9">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>863C5567-F515-5781-7851-8548625F8609</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<referedAttribute>E20DFFFB-7449-66D7-7A21-406B907AEC37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEC ORDER VERSION NUM" id="07BA6FB2-6308-9383-F8A2-3F388C96BAD0">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>863C5567-F515-5781-7851-8548625F8609</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<referedAttribute>3EA5998B-C821-EBA7-8D07-53A0167000AD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALL FIRST FLAG" id="3D2D4B3A-DFCE-1AAE-0690-C9BE08AE6357">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>BDDD09C9-D914-D7BD-CB10-E503DCC07FB6</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALL FIRST TN" id="135D5662-3635-832A-129B-09252B664C7F">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>B86C5E57-8BB2-DAC5-40C7-7BBA034BCE60</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DISCONNECT COMMENTS" id="98B0A9D4-F670-6883-8131-81FFE73D7D9E">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>0176D8B8-8091-3935-204A-094E27797615</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PORTED ACCOUNT NUM REQD FLAG" id="5BA11A2D-A3F3-37D9-6611-D1FB2CF55DF3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>A4834C0D-F1CF-CEEC-E2E2-1ECF94D9AFAE</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PORTED ACCOUNT PIN REQD FLAG" id="79E5ABD4-E805-8244-D5C3-8CECFB54B139">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>1AD72126-2E8F-A1D6-1F0F-31CF82225A3F</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PORTED CARRIER" id="BA6A312B-F494-306A-3E3C-CD4E3FCE44B3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>E5D8307E-D029-A7A0-3BCD-6F3BDFED54A9</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PORTED TN" id="30D3061B-891C-5FC3-BA50-1EF2D0083969">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>42E992DC-2E74-893D-7898-7284A51B0C81</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DISPATCH INSTRUCTIONS" id="1AB8CB11-7227-62E3-D759-16DD9E09151D">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>24064B92-CD2D-FDA7-7887-14A3690E0B8B</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TECHNICIAN INSTRUCTIONS" id="DE0B196C-FC37-8379-95D9-8E8EAEC40BF4">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>17575A16-4015-8229-B2E6-C11F53493FB2</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECORD STAT" id="1CF43E3D-1840-866D-52E7-8FA3BF183EDD">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>FACEECB5-9DD2-19F1-C1E2-70C4B7706BC1</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED DTTM" id="08FBECEE-B7DB-06FB-DACA-60B1CB1836E6">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>E8EFF686-6C27-F034-1ED6-2C219250B74A</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATED BY" id="BDF9791E-B3C2-B802-7EA8-87C340D5FFD8">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>F37C104A-9657-01D2-B311-830A105BC3B0</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED DTTM" id="B2CECCE2-7051-6C1D-A320-C9A934B61754">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>5C171DEF-CAD6-E57B-B1F8-07BFD056D710</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFIED BY" id="6E487D96-4431-673E-4B70-CE0536CD6F62">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-03 14:10:27 UTC</createdTime>
+<generatorID>B893200F-5259-7D69-911F-4E6E4ADE98DE</generatorID>
+<ownerDesignName>SOLO_MEC_Tables_v1</ownerDesignName>
+<engineerTo>
+<item key="045FE957-279B-C0E9-646F-F59FF633C651" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
