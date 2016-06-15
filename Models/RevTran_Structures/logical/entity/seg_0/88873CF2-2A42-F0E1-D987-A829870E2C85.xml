@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="88873CF2-2A42-F0E1-D987-A829870E2C85" name="Order Queue">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-14 18:42:01 UTC</createdTime>
+<ownerDesignName>RevTran_Structures</ownerDesignName>
+<engineerTo>
+<item key="E8728B38-83A6-2256-FC96-08851F0D1705" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Biller Account Number" id="85421F23-7793-62A2-6595-FFB407DE9129">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-14 18:42:01 UTC</createdTime>
+<ownerDesignName>RevTran_Structures</ownerDesignName>
+<engineerTo>
+<item key="E8728B38-83A6-2256-FC96-08851F0D1705" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Biller Order Number" id="F1B348D6-A23B-2E7E-1811-DF0CD4D1D086">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-14 18:42:13 UTC</createdTime>
+<ownerDesignName>RevTran_Structures</ownerDesignName>
+<engineerTo>
+<item key="E8728B38-83A6-2256-FC96-08851F0D1705" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Trigger Insert Datetime" id="0A373CFC-03C4-F3B2-E006-2D25A973C118">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-14 18:42:01 UTC</createdTime>
+<ownerDesignName>RevTran_Structures</ownerDesignName>
+<engineerTo>
+<item key="E8728B38-83A6-2256-FC96-08851F0D1705" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>DOM2025100</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Status" id="F966ABB1-B545-00D1-B285-64DAE2304B87">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-14 18:42:01 UTC</createdTime>
+<comment>Valid Values:&lt;br/&gt;  - NEW&lt;br/&gt;  - ETL_IN_PROCESS&lt;br/&gt;  - ETL_PROCESSED_WITH_IMPACT&lt;br/&gt;  - REVTRAN_PROCESSING&lt;br/&gt;  - COMPLETE&lt;br/&gt;  - ERROR</comment>
+<ownerDesignName>RevTran_Structures</ownerDesignName>
+<engineerTo>
+<item key="E8728B38-83A6-2256-FC96-08851F0D1705" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ETL Batch ID" id="CC31DB7C-1CB6-6959-3C5D-4B762A892160">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-14 18:42:01 UTC</createdTime>
+<ownerDesignName>RevTran_Structures</ownerDesignName>
+<engineerTo>
+<item key="E8728B38-83A6-2256-FC96-08851F0D1705" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BB212E0D-852C-86F1-5E1E-EB1A8E4222B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ETL Start Datetime" id="1FB4D1D2-691B-F723-BA9C-188B96668FDC">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-14 18:42:01 UTC</createdTime>
+<ownerDesignName>RevTran_Structures</ownerDesignName>
+<engineerTo>
+<item key="E8728B38-83A6-2256-FC96-08851F0D1705" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>DOM2025100</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ETL End Datetime" id="F10F883B-5E5A-ECE8-574F-010FA0DFE94A">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-14 18:42:01 UTC</createdTime>
+<ownerDesignName>RevTran_Structures</ownerDesignName>
+<engineerTo>
+<item key="E8728B38-83A6-2256-FC96-08851F0D1705" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>DOM2025100</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RevTran Start Datetime" id="42CE4185-6DCB-82D1-E102-0314A8874A50">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-14 18:42:01 UTC</createdTime>
+<ownerDesignName>RevTran_Structures</ownerDesignName>
+<engineerTo>
+<item key="E8728B38-83A6-2256-FC96-08851F0D1705" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>DOM2025100</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RevTran End Datetime" id="82E315C3-A542-EB48-DAD4-C13DDE57FBC3">
+<createdBy>jandrews1</createdBy>
+<createdTime>2016-06-14 18:42:01 UTC</createdTime>
+<ownerDesignName>RevTran_Structures</ownerDesignName>
+<engineerTo>
+<item key="E8728B38-83A6-2256-FC96-08851F0D1705" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>DOM2025100</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
