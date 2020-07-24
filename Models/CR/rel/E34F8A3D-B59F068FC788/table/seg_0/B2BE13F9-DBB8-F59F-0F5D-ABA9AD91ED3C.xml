@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2BE13F9-DBB8-F59F-0F5D-ABA9AD91ED3C" name="Addl_Customer_Contact_T">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 05:01:22 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Customer_ID" id="B9154DD5-4A66-CB24-EEC4-B96CFB3A6F83">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 05:01:22 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50E7F96C-33B1-0DF5-05BB-FAE4B904082F" referredColumn="D1DFF666-2CE1-9926-2DBD-AACFAB202A40"/>
+</associations>
+</Column>
+<Column name="TN_Country_Code" id="C34EE3C0-5A2A-1378-B9E0-E1ADE9EA3A82">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 05:03:39 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TN_Area_Code" id="E33079A3-D00E-DE87-4039-10D25B802413">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 05:03:39 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TN_Exchange" id="3AA59418-476F-C00B-0AFC-74056D23D168">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 05:03:39 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TN_Line_Number" id="5BE2A2B6-52E1-1E10-3F47-42C2ABC8F6DF">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 05:03:39 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TN_Extension" id="53CDAF70-1E26-80D8-0957-DD056A3499A1">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 05:03:39 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TN_Type_Code" id="F4A2ED73-729A-8BDC-CC1D-2EA06180540C">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 05:03:39 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eMail" id="11A00806-F665-14B6-E541-8A93F885BB47">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 05:03:39 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8E063719-DF82-998F-1739-34C68702DB73" name="Addl_Cust_Contact_Customer_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 05:01:22 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9154DD5-4A66-CB24-EEC4-B96CFB3A6F83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

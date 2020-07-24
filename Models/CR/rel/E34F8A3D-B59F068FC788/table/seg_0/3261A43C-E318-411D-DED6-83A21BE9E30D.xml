@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3261A43C-E318-411D-DED6-83A21BE9E30D" name="Addl_Customer_Address_T">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:33:39 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Customer_ID" id="F2169DE6-4B9C-D2F9-739C-96938023F4F7">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:34:16 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27EC3038-F771-D238-62BE-CF6399C0137F" referredColumn="D1DFF666-2CE1-9926-2DBD-AACFAB202A40"/>
+</associations>
+</Column>
+<Column name="Address_Line1" id="4CCAD1AA-81B6-4847-0AE9-37D7E11E70C9">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:37:30 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address_Line2" id="2EF0057D-0133-6C17-59BD-7BF06D54B5C6">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:37:30 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address_City" id="CEB56DE5-A9F4-3239-D9AC-B0DB8ABC4FC3">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:37:30 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address_State" id="735F3AEB-9C19-8793-3D02-6F16161C4BEC">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:37:30 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Postal_Code" id="C197A98E-BD8B-537C-FFD1-CEB002C24CA8">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:37:30 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address_Country_Code" id="4D578650-015C-C367-145B-0DC8674995A2">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:37:30 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B09BFB6B-A35C-5B8E-1349-F910E6D7E732" name="Addl_Cust_Addr_Customer_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:34:16 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2169DE6-4B9C-D2F9-739C-96938023F4F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

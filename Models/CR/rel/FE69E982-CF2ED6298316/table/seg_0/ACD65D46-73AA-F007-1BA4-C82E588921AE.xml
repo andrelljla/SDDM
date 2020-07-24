@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACD65D46-73AA-F007-1BA4-C82E588921AE" name="TASK_STATUS_HISTORY_T">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>table_31</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BU_Task_ID" id="8A0B1E48-1369-6A54-5540-3C8DC5AD97BF">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:17:50 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50EB5A00-19C8-DE44-E731-E64127925C51" referredColumn="4CFA37B2-803A-5B1B-1550-C5813A06E398"/>
+</associations>
+</Column>
+<Column name="TASK_STATUS_CD" id="3F537ED7-0EE1-8A39-F11D-8700B97B9EF8">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C42D1A9C-B1A4-9E22-90B8-36029817B90A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F337E6E-7690-5DD3-A00A-54ED388FC167" referredColumn="7FB53D76-E787-591A-2BD3-A08071FE3CA2"/>
+</associations>
+</Column>
+<Column name="Effective_DTM" id="3D66DBF1-A29D-C2F5-8662-5648AF5EE082">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-06-04 15:35:57 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="0DF0F067-1CAB-764B-6D4E-08F3B3BD218F">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED" id="C6A7EEEE-E333-F584-C30B-5D487E19CAB6">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3C7FF079-05E8-C759-BDE2-3F07D96C2212</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED_BY" id="C4B3C3CA-11C4-C111-971E-5D10FAD4ECDA">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED" id="5FC48DE2-A133-A2E7-DD8D-C66411A37EA3">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3C7FF079-05E8-C759-BDE2-3F07D96C2212</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_UTC" id="5960A6B2-3718-2F09-BF85-622452679BDF">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED_UTC" id="13EC31B3-4A92-5A31-D085-7AD982924583">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C42447EE-4151-3058-ABD2-F2B97C846462" name="TASK_STATUS_FK">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F537ED7-0EE1-8A39-F11D-8700B97B9EF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B4FB4D4-EFBD-4B74-A0E3-EAA28EA1985E" name="TASK_STATUS_BU_FK">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:17:50 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A0B1E48-1369-6A54-5540-3C8DC5AD97BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,777 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F40CBDB-5CCC-2823-D8D6-728072FCFF28" schemaObject="6B9D4343-1F4E-3CF8-6865-D983A3E80920" name="REQUEST_T">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>09EAE165-CFD6-C006-8CD4-C361A670AF7F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="REQUEST_ID" id="EF841573-0766-E882-8E63-92D2A0B35A60">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>A74D4A83-2970-454C-EF1D-4E6B1F30E85D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0A122842-A012-9EF2-C5B2-6CC65ECD0E83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGULATION_CD" id="24D15CE5-DD9F-9D46-2830-BC9C702692A8">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>92640021-52B7-A7F2-8C59-9161143CC4F8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>094869A9-1D9A-0C0B-C7A3-56087AE78C99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0D63A1D-A523-23DE-A59E-AB37B82FBB90" referredColumn="5D5E89D9-5E2B-9CD7-BF38-B82B00FDD795"/>
+</associations>
+</Column>
+<Column name="REQUEST_PROCESS_CD" id="9C6191C9-EE75-8267-A6B5-1CF16A00CE5D">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>BDE090F1-2A9D-5E57-24E4-0D84F336A0A9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>094869A9-1D9A-0C0B-C7A3-56087AE78C99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="572D81FD-A3D7-7CE2-4154-3D80616FEC52" referredColumn="9267881B-4B55-EA90-DF23-FFDB1E94C309"/>
+</associations>
+</Column>
+<Column name="REQUEST_TYPE_CD" id="DA13B7C3-D67D-E127-092A-376011A38353">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>A0130C60-968D-D2AB-C757-C276276E5149</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>094869A9-1D9A-0C0B-C7A3-56087AE78C99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7404467-8FAC-7326-2431-F0CBB3B1448A" referredColumn="C7308373-8AAD-A275-076D-2BB884A50263"/>
+</associations>
+</Column>
+<Column name="CURRENT_REQUEST_STATUS_CD" id="2B3070FB-1069-8616-9132-AD3FF563453E">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>086D9D22-4F46-C6FE-FEE3-80674483EFD0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1EA49217-9C4B-15BD-75DF-3D3CEAFF22E2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3542C154-0420-273A-A8E1-F26587C04DB8" referredColumn="1D72FFA6-F55A-4461-8801-A5F476A5EE84"/>
+</associations>
+</Column>
+<Column name="REQUEST_DATETIME" id="476A24A9-2F6E-5D64-8481-73CFB8E4421E">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>FF6E64C2-0123-EDA4-41B5-9E20D2979A57</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>B1188C8E-67AB-EAC7-7A23-29D4AA7A2476</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_NAME_PREFIX" id="06CEDCF2-9306-9310-EF39-2477E9299557">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>12A1C0D1-81D3-D75C-AD41-0A72567C25E6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>094869A9-1D9A-0C0B-C7A3-56087AE78C99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_FIRST_NAME" id="D2097C74-9F9C-1A20-E2AC-E2E7320DE3B8">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>A9140247-7F36-790A-8895-2941A1DAEF44</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_MIDDLE_NAME" id="4DC3B646-70FC-6F29-3D20-D43F0ADACCEE">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>51E4A72F-87B7-C403-2DF5-0382EA82BC23</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_LAST_NAME" id="06F47B46-4262-EF36-9C22-E5A737054015">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>C77AFA18-889D-0C95-C2E1-E1156E9C4E5D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_NAME_SUFFIX" id="B3F3F032-8663-28A6-7C5F-A10EED553DD1">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>9C3BEC07-7EA7-61ED-EA00-DF75EF1D1DC3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_ADDRESS_LINE1" id="CE05DE30-4DAC-F2C4-A8DC-7A5573B8B5C9">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>88144925-C6EB-BF61-9316-B2478347EFB2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F5965C6-16E4-B2BB-87D3-37A78887D1B9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_ADDRESS_LINE2" id="996D9C67-9C5B-EFA0-2979-4555C84B220C">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>1D2BFB42-A6D4-3829-99F7-70D11C9A4F2D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F5965C6-16E4-B2BB-87D3-37A78887D1B9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_ADDRESS_CITY" id="7BAFA67E-F2C4-F0E0-1246-23F1431F87E8">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>100463D4-6EEC-7575-54FC-EE759191E0C8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F1F8FF37-0F58-1721-9EB5-1B72C4380BF8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_ADDRESS_STATE" id="F30EDAA2-4424-70BF-57C9-CBE71B2BF021">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>32CA2333-18C2-DD3F-0FF9-276696FA87FB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F4E2C7EF-D29A-029C-F800-B52D4F89E1C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_POSTAL_CODE" id="E160AC27-FD76-BFDF-57A4-BFCB776E58A0">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>6CE4C5AF-C33F-933A-1F70-25CDA69BBE7A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>094869A9-1D9A-0C0B-C7A3-56087AE78C99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_ADDRESS_COUNTRY_CODE" id="FB5DF010-38B4-EDDB-6C7B-5A64396CA61D">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>069350FA-28B3-0B4C-03E1-6D4809C456A6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4E7F8F33-24BC-BFE7-4EBA-8530DF8BAE89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_TN_COUNTRY_CODE" id="9A21A3B4-5709-8DB7-37E0-C93FA775E25C">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>3799B151-E699-864D-2AA0-090FDE45289E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4E7F8F33-24BC-BFE7-4EBA-8530DF8BAE89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_TN_AREA_CODE" id="F9FD316F-1C33-70BF-80A0-B2BA002D873B">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>D0F5BFF9-B80D-B4F6-F11A-7552EB6BFDFC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A533DC5F-581F-5EBD-BBD7-E01EE49232F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_TN_EXCHANGE" id="5CF9B373-F9D7-F719-F271-46EE24A9B482">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>EE5FD0A1-B059-767C-F895-2715CCE4DDF9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A533DC5F-581F-5EBD-BBD7-E01EE49232F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_TN_LINE_NUMBER" id="E10427F5-E5D2-B8B4-0B1E-5BB4B92F49CC">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>E3106DF4-045C-F15A-3BDD-EA363C37906E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A533DC5F-581F-5EBD-BBD7-E01EE49232F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_TN_EXTENSION" id="DF93BC85-E595-4455-02F2-CD1500A0A6CE">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>5CE4EFC5-F9F2-A48F-73D1-3D4B3F376F17</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C8D2AA3F-7BE4-A8D2-A6C3-A692DC1D0DB6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_TN_TYPE_CODE" id="14BB74FD-12C2-4CEC-1C76-BDC0B1341AAA">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>500C74EF-FEF7-E568-31C6-87C1D108EFA3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>094869A9-1D9A-0C0B-C7A3-56087AE78C99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_EMAIL" id="9FA1000F-8408-850D-BF83-49D06AC63EAF">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>6F8173C6-3D9C-499A-CFB7-F693C5CCEF3D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F5965C6-16E4-B2BB-87D3-37A78887D1B9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_CUSTOMER_STATUS_CODE" id="3FE87179-5028-C0C7-4257-4B7E9156AEAE">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>F561F069-E885-20C3-8E32-FBD7B2EA5422</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>094869A9-1D9A-0C0B-C7A3-56087AE78C99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_AUTHENTICATION_ID" id="0FBFA319-0FEF-310C-DD5C-0E05C325F099">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>C9D10C32-79F7-E2A9-9C4C-27A68F6DB48A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0A122842-A012-9EF2-C5B2-6CC65ECD0E83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESI_KBP_PASS_FAIL" id="2BA12B99-5EF6-2C71-02D4-DB8B2477451F">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>9B7AA2CC-732B-A010-021D-5256EF6A92D0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>094869A9-1D9A-0C0B-C7A3-56087AE78C99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_NAME_PREFIX" id="6DC41A63-63AC-765E-F1F4-07CED3CEB73E">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>5518C851-8F77-4E53-160C-5FD244C9C913</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>094869A9-1D9A-0C0B-C7A3-56087AE78C99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_FIRST_NAME" id="4FE320EB-53A0-F6E8-081D-5068D24D0C97">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>3D8FB3D7-1D21-85A3-EDAC-6AC7F23B9054</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_MIDDLE_NAME" id="C613CF8B-B6DE-DDEB-0FDA-E36B16A8FB17">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>F143FE61-1B4B-A116-26C1-5753C9DDFC8C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_LAST_NAME" id="AAA8D0F9-8FFF-1BF2-E2CE-F296BD32374B">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>F591543F-F498-B010-3532-CE08578DCA37</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_NAME_SUFFIX" id="16B5E949-7835-EBFC-2007-18F7E82588CD">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>EA9147B9-7C4E-5C42-7E15-C54FC8FCE48D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>094869A9-1D9A-0C0B-C7A3-56087AE78C99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_ADDRESS_LINE1" id="00F567D7-D26C-B716-7E7A-B5B958C8A465">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>58BBC818-74FF-BC83-14A7-A07A74F6A99D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F5965C6-16E4-B2BB-87D3-37A78887D1B9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_ADDRESS_LINE2" id="710BC542-2277-2476-1ECD-E5A600780F7A">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>02B4FB06-8EF4-19C7-8131-D6673106BF0E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F5965C6-16E4-B2BB-87D3-37A78887D1B9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_ADDRESS_CITY" id="F9CA7229-7D16-C354-ED32-501461599B64">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>61195174-E7F9-8373-406B-D227B269DA0E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F1F8FF37-0F58-1721-9EB5-1B72C4380BF8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_ADDRESS_STATE" id="5D3A459B-4DE1-86D7-8B4F-92DEA6369796">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>7D9540BC-C73C-BF66-405C-B6180461A57A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F4E2C7EF-D29A-029C-F800-B52D4F89E1C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_POSTAL_CODE" id="3C2CF191-5953-E2B6-26CE-B1CEDBF3DE17">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>274D3824-4E3F-9BE3-EF07-B17FA41BB57A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>094869A9-1D9A-0C0B-C7A3-56087AE78C99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_ADDRESS_COUNTRY_CODE" id="CAD0FA88-549A-EEA8-D158-7A6ED20CAA70">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>2E1A4CCB-4F5F-3B39-34E0-34C833F03637</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4E7F8F33-24BC-BFE7-4EBA-8530DF8BAE89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_TN_COUNTRY_CODE" id="F0CC810F-940D-42B6-1E6E-6F172BEB8CC5">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>057B32AA-6DFD-1EB7-85FB-514A7F6517CD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4E7F8F33-24BC-BFE7-4EBA-8530DF8BAE89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_TN_AREA_CODE" id="2ED5FE45-530D-3CF4-0D25-E941CECEC04D">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>35F2312A-4A80-2DF3-172C-2632688C7693</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A533DC5F-581F-5EBD-BBD7-E01EE49232F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_TN_EXCHANGE" id="C8C5F7A8-3785-E314-39A7-2D93E320E714">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>444208E3-E3FE-73BC-D2BD-F286B2ED4FC2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A533DC5F-581F-5EBD-BBD7-E01EE49232F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_TN_LINE_NUMBER" id="160131AC-960A-4C67-069E-35C21FD9E7BA">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>A2EC416F-862E-1B73-6FF7-8B48378B7D1A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A533DC5F-581F-5EBD-BBD7-E01EE49232F2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_TN_EXTENSION" id="A7BA7B47-D1E8-12AF-E8F7-4B1462DF8D99">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>49556E07-E4D1-502D-7436-AC94BD21BDD7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C8D2AA3F-7BE4-A8D2-A6C3-A692DC1D0DB6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_TN_TYPE_CODE" id="623DCFA7-A1E0-4956-9329-BEA780EBB564">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>F0EBD9DB-60AE-92FF-D3E6-AA4D1B871748</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>094869A9-1D9A-0C0B-C7A3-56087AE78C99</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_EMAIL" id="4632F933-133C-C1AB-8497-9D44930EA23E">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>CC3DF783-3A5F-7228-12B3-56E0E0384912</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F5965C6-16E4-B2BB-87D3-37A78887D1B9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RQSTR_RESI_RELATION_CODE" id="E28EF436-C863-92D3-5C95-5DA63BACB351">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>E5FA27AF-4F4C-1E79-A2E6-273656794A3F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHERWELL_TICKET_ID" id="6BEB57C5-DA02-FF59-B991-481056F5C190">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>807DCF1F-37E1-F36B-1CE8-3A3B9AB3BD35</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3A91F12A-B395-F7BD-F5FE-5622E6EEE2C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DASP_TRANSACTION_ID" id="F7F87866-0845-070D-4BE1-C1922D515E42">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>00872765-DCF4-36A2-1F96-77AA920B338F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96F8E3AF-EE78-3885-0910-E8ACA54CC7E6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="294D0FE5-29BC-4F4A-396B-2F6CF6F7CE23">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>EC859ADF-B506-3711-BA38-5DC599E7057C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED" id="6FAC8C95-C465-E0D7-1EBC-1AABEA7DF189">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>41DBA6D3-5683-A749-634B-A380687A3197</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3C7FF079-05E8-C759-BDE2-3F07D96C2212</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED_BY" id="EA854BB8-B9D5-DCEF-ECFD-8CDBEEE8CECF">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>DA903DA8-EA51-7FDC-5765-1848639DD4E8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED" id="8B1166A3-6BF6-AE05-9286-5B23323DEC0F">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>CD49A2E7-814F-3A6B-7E6C-D12CBD84EA52</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3C7FF079-05E8-C759-BDE2-3F07D96C2212</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Created_UTC" id="139E8F51-E8A7-BBB9-CDE6-C7C7E1EBC03C">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:55:33 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Updated_UTC" id="37DC70BD-05FB-BF79-E7BF-090935114FB7">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:55:33 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC395DD5-D78F-AA5D-96B6-8977F0870D37" name="REQUEST_T_PK">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>13A28179-596E-F139-38EC-1A87E00F2E67</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF841573-0766-E882-8E63-92D2A0B35A60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A15F47E-762E-EA67-1C63-2AFACE55DBC0" schemaObject="6B9D4343-1F4E-3CF8-6865-D983A3E80920" name="SYS_C0010150">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>F29A2E5C-18E3-136D-1EDD-64A982C7AFC1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF841573-0766-E882-8E63-92D2A0B35A60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08F3764F-48BD-8E34-5D37-3D0854F9BF20" name="REGULATOR_CT_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24D15CE5-DD9F-9D46-2830-BC9C702692A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45658CFC-E8C5-9090-34BF-20D2D8776542" name="REQUEST_PROCESS_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C6191C9-EE75-8267-A6B5-1CF16A00CE5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFAE2660-33CF-045A-0BDA-A09D750BD338" name="REQUEST_STATUS_CT_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B3070FB-1069-8616-9132-AD3FF563453E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86B645F4-FFD1-ADC5-A069-FB748D34F850" name="REQUEST_TYPE_CT_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA13B7C3-D67D-E127-092A-376011A38353"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

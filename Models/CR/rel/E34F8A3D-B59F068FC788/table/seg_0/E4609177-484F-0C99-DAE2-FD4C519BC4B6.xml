@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4609177-484F-0C99-DAE2-FD4C519BC4B6" name="Customer_System_Identifiers_T">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:45:29 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Customer_ID" id="7E985965-475A-2345-FAE8-24D1C5DAAF86">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:47:02 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DEB90265-142B-9499-228A-C276FDAE16D9" referredColumn="D1DFF666-2CE1-9926-2DBD-AACFAB202A40"/>
+</associations>
+</Column>
+<Column name="System_Name" id="AE43EA46-AEC3-F860-B9BA-7980B3A05565">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:46:48 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="System_Identifier_Value" id="AD58BEA8-539B-0855-5BD4-865E818209AD">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:46:48 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CDBDC0DE-6B9D-4D05-2920-592081DF9A34" name="Cust_Identifier_Customer_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:47:02 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E985965-475A-2345-FAE8-24D1C5DAAF86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

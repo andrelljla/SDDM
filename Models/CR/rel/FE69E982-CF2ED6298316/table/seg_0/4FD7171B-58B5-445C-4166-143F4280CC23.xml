@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4FD7171B-58B5-445C-4166-143F4280CC23" name="TASK_STATUS_CT">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>system_severity_ctv1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TASK_STATUS_CD" id="7FB53D76-E787-591A-2BD3-A08071FE3CA2">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C42D1A9C-B1A4-9E22-90B8-36029817B90A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TASK_STATUS_DESC" id="0E141E28-B465-A499-41AE-3366BC010691">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F1F8FF37-0F58-1721-9EB5-1B72C4380BF8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="81AFF249-9E36-4F37-4ABD-6D8BC7E699F6">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED" id="CD1797CE-3226-2773-9681-0193DDC68062">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3C7FF079-05E8-C759-BDE2-3F07D96C2212</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED_BY" id="C492233B-46AF-616A-2014-D4B0C4D7B916">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED" id="42ED364D-43A7-E42D-6BB8-99244E204942">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3C7FF079-05E8-C759-BDE2-3F07D96C2212</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_UTC" id="88C860AF-CB20-DEF2-4430-888BA91F553A">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED_UTC" id="BF8F0AFF-F83E-24CE-E8F7-01D11455828D">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF060490-9B69-9ECE-FE61-83692D5B45E0" name="TASK_STATUS_PK">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FB53D76-E787-591A-2BD3-A08071FE3CA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7C7C953-550E-8C17-1709-634BF8E2259E" schemaObject="6B9D4343-1F4E-3CF8-6865-D983A3E80920" name="TASK_STATUS_CD_IDX">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 19:14:40 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FB53D76-E787-591A-2BD3-A08071FE3CA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

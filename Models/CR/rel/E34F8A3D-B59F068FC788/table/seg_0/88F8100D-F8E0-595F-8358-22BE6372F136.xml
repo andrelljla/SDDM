@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88F8100D-F8E0-595F-8358-22BE6372F136" name="Customer_Request_T">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 21:10:00 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Request_ID" id="7A0EB645-CEE9-2672-66EF-B8250BFD7E80">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 21:12:56 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D049787-E4D9-FF18-9B71-C5887FE872F2" referredColumn="3A879180-E893-73C8-F835-7A203CD6891A"/>
+</associations>
+</Column>
+<Column name="Request_Customer_ID" id="070DFBD7-C355-565C-00C6-2493EAFFD5C2">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 21:18:32 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35FF3BD4-143B-9534-D473-9E0E2DF25A05" referredColumn="D1DFF666-2CE1-9926-2DBD-AACFAB202A40"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29A5BB18-CF71-3679-2257-301BDC56D4C4" name="Request_Customer_FK">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 21:12:56 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A0EB645-CEE9-2672-66EF-B8250BFD7E80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="569560E9-10AF-5832-26D0-D28DC975A44C" name="Customer_FK">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 21:18:32 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="070DFBD7-C355-565C-00C6-2493EAFFD5C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

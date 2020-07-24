@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3B96CA5-8D3C-2C7B-ACCB-4B89679887B9" name="TICKET_STATUS_CT">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:56:04 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>system_severity_ctv1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TICKET_STATUS_CD" id="869A4AAF-F44F-7F6E-C1DB-37D39379F5E3">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:56:04 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C42D1A9C-B1A4-9E22-90B8-36029817B90A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TICKET_STATUS_DESC" id="2C4D9FBF-10F1-2A14-62BA-0F5EFC3D3FD3">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:56:04 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F1F8FF37-0F58-1721-9EB5-1B72C4380BF8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="461AB46B-70BD-2BCF-6264-8079FB6990D0">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:56:04 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED" id="87678836-55D3-CC4E-559C-F67A392EF949">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:56:04 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3C7FF079-05E8-C759-BDE2-3F07D96C2212</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED_BY" id="6FF51C59-3ACB-2514-A45A-422EA70AFFC7">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:56:04 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED" id="61ACB914-3544-C2A9-D700-268CAFF0C62E">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:56:04 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3C7FF079-05E8-C759-BDE2-3F07D96C2212</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_UTC" id="5632F754-B426-8D88-E473-48EF2A280A7C">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:57:02 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED_UTC" id="19755E61-FE12-8590-0A24-E0274F043FB4">
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:57:02 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F57197D-DFDA-0693-EB8E-4680492DF829" name="TICKET_STATUS_PK">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:56:04 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="869A4AAF-F44F-7F6E-C1DB-37D39379F5E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C2D3323-A376-8A86-154D-71089B5DC016" schemaObject="6B9D4343-1F4E-3CF8-6865-D983A3E80920" name="TICKET_STATUS_CD_IDX">
+<sourceDDLFile>ccpa_ct.sql</sourceDDLFile>
+<createdBy>P2719557</createdBy>
+<createdTime>2020-03-09 17:56:04 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="869A4AAF-F44F-7F6E-C1DB-37D39379F5E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

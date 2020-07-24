@@ -1,0 +1,197 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7900FEE9-1138-88CA-A0E4-D0349F9A610C" schemaObject="6B9D4343-1F4E-3CF8-6865-D983A3E80920" name="SYSTEM_MESSAGE_T">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>67DB0D9B-2A40-E589-0B9B-2A038E6E9FBB</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MESSAGE_ID" id="B943F5ED-342E-A5D9-9B4F-784DD24EED81">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>39BBB3B0-282D-3A84-DF18-A4E49CDE030D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C42D1A9C-B1A4-9E22-90B8-36029817B90A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMPONENT_CD" id="6ABF0CAF-8837-DD98-47F6-7D6EB77B6C74">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>6945EC58-1219-4214-4659-A1018E0D7670</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C42D1A9C-B1A4-9E22-90B8-36029817B90A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F64C7AC6-9F83-6255-5D6D-0772BDF428A6" referredColumn="C7020B7F-5D6D-C5CF-C906-66506C54E6D6"/>
+</associations>
+</Column>
+<Column name="SEVERITY_CD" id="3C63228A-564B-FA9F-D20F-43B3CB36E340">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>F913535D-AE21-D7AE-7F35-4CF0173BE820</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C42D1A9C-B1A4-9E22-90B8-36029817B90A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="596F66DC-B744-5DEC-4896-43E0531DF4AE" referredColumn="385DFE33-B881-F7D3-0675-AD2171F0C7E6"/>
+</associations>
+</Column>
+<Column name="USER_MESSAGE" id="7B03F0DF-D69C-4B9E-6EDD-1B42F35755FD">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>4F7DDD78-1A73-D871-3E35-36F4299A216B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>20747A04-C7B4-2DC4-4343-CF99F1DDDD2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERNAL_MESSAGE" id="4953088B-094C-10EA-DE46-9B2C5464B8D7">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>4D9CC6A8-8428-D7ED-E88D-1A9AE5AE77B8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>20747A04-C7B4-2DC4-4343-CF99F1DDDD2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="B152F162-1701-DB63-BC87-12537DFB318A">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>19FB9B14-CCFE-A697-FB68-40D0BB1E602F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED" id="FF4EA874-DD66-1413-2EF1-F0C2A37BC182">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>C25DA17E-DDCA-EC2A-31B5-4FEB41DBB4B6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3C7FF079-05E8-C759-BDE2-3F07D96C2212</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED_BY" id="9A585091-4C09-D48D-6CF5-1353FE625610">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>9ED9CAB3-DC07-DA5D-3A20-F2BB9B1ADC2C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>686C544A-13BD-54ED-4DDB-68571B0E5479</domain>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATED" id="41426665-B9A9-84BC-4C02-75E6CE0A205E">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>FCCC6E55-112D-9062-0AC3-5B2D3F65328E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3C7FF079-05E8-C759-BDE2-3F07D96C2212</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="1D4D7E7F-423E-93F6-4E09-6D31848488B5">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>EF9B256B-3990-54C8-A259-7D7B1889177C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C42D1A9C-B1A4-9E22-90B8-36029817B90A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C40D660E-8AE0-EBB2-E2A3-F4BCBD7D6F62" name="SYSTEM_MESSAGE_T_PK">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>F1DC2A88-DBD3-CB62-30E7-FEED2EEC9C30</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D4D7E7F-423E-93F6-4E09-6D31848488B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70EA8BCD-C059-ECDC-EEE9-F89129BB2594" schemaObject="6B9D4343-1F4E-3CF8-6865-D983A3E80920" name="SYS_C0010167">
+<sourceDDLFile>ccpa_T.sql</sourceDDLFile>
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<importedID>8B4025A9-0DED-AD1F-AEAB-084FCC2AB818</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D4D7E7F-423E-93F6-4E09-6D31848488B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9D9C7D9-B5A7-DE49-4D4F-73EAA112B9B2" name="SYSTEM_COMPONENT_CT_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6ABF0CAF-8837-DD98-47F6-7D6EB77B6C74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFBE2492-1C45-E5FE-0FDB-F9C454B5C57B" name="SYSTEM_SEVERITY_CT_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-12-10 14:16:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C63228A-564B-FA9F-D20F-43B3CB36E340"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

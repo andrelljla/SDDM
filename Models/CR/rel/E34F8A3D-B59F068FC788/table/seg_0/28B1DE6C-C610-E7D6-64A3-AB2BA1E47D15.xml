@@ -1,0 +1,585 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15" name="Request_T">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 15:58:17 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Request_ID" id="3A879180-E893-73C8-F835-7A203CD6891A">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 17:01:03 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Regulation_Cd" id="86E2F993-F947-CBE1-9988-6119EECE3146">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:22:26 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6336AE30-1545-B3EB-BAAA-75B7F9C77535" referredColumn="DB5CEFFA-1298-5A3B-48CD-985BD79C072C"/>
+</associations>
+</Column>
+<Column name="Request_Process_Cd" id="B039D4FE-D0A1-5A8D-94B3-4975175E9F38">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3F1976B7-428E-541E-4B2B-857967E04873" referredColumn="00814416-6D78-0DE9-7AE4-61F156D9B212"/>
+</associations>
+</Column>
+<Column name="Request_Type_Cd" id="0492F44B-466C-4AAE-579C-30E282F7326D">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 15:58:48 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C044D2D7-2CF3-45A1-5E68-2CF2D1DECA48" referredColumn="CD2094AF-B191-7D60-B8CC-D5BBD040B4F0"/>
+</associations>
+</Column>
+<Column name="Current_Request_Status_Cd" id="86240AC3-DF83-98D9-9600-97A4B19C8F1E">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-14 13:01:59 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47DDD61D-76A3-15DB-065B-64FC04240EA8" referredColumn="02F8BC2B-B8E6-3455-EC30-FB7314A3F5A9"/>
+</associations>
+</Column>
+<Column name="Request_DateTime" id="75DC69E9-6FCD-C96E-BA16-794CEE18964F">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:40:03 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_Name_Prefix" id="752EF281-2DFE-CF71-1B13-8CBAE946BCCE">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:53:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_First_Name" id="B2F97EF3-7378-2B77-278A-A27AF38E3794">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:51:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_Middle_Name" id="C4394022-81CB-38EC-CD34-4FEA317917A5">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:51:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_Last_Name" id="8ED5E1EE-40CE-D34D-FC39-11B20DA3BA4B">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:51:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_Name_Suffix" id="666CF306-B396-24AE-BA7C-19BAB3160CF2">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:53:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_Address_Line1" id="EE87624B-20F6-39CA-0529-18F545B47A63">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:53:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_Address_Line2" id="34E6BE92-36C7-C4D8-0239-8AC4F4D2DF7D">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:11:02 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_Address_City" id="DCCFE954-80C7-E0BD-DB3B-7108B3086E47">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:11:02 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_Address_State" id="CB325E1E-B259-5E05-4C58-A257042A84A8">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:11:52 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_Postal_Code" id="F8B3EEC2-7855-9B2E-1E12-9BDC7ABF0F8F">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:11:52 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_Address_Country_Code" id="CF158AA4-06D0-0446-4868-712646D7C8F3">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:13:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_TN_Country_Code" id="BDD3D7C2-B2BE-CB88-D65C-D6A8D41B7F3C">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:16:45 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_TN_Area_Code" id="0D7E2763-0AEA-4FC6-CED1-5089FD79CC77">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:27:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_TN_Exchange" id="66949E44-B66E-6039-CF6E-E10E99E4E691">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:27:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_TN_Line_Number" id="7753692F-F282-217E-7D2E-4D34AB332612">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:27:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_TN_Extension" id="A3D70D71-253C-5860-DDA2-69C140AFA6C6">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:27:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_TN_Type_Code" id="2E57ED6A-658F-81E0-99B1-52511B923C38">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:27:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_eMail" id="74208357-4133-34FF-ADD7-DCF51D5C7301">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:27:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_Customer_Status_Code" id="92D8F0BC-06C6-3D51-509B-50114F6ADD25">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:27:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_Authentication_ID" id="BA600141-F8D5-F5B3-03B6-E4E60CE31A0F">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:27:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resi_KBP_Pass_Fail" id="BF7AD427-D451-DADD-48B8-FE05DB27C637">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:27:13 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_Name_Prefix" id="D48C56C4-027C-EE8A-4FA3-84819FE36C3D">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_First_Name" id="396EB534-184E-7B21-BE4E-45423A1C345C">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_Middle_Name" id="A63CA764-5F7D-A816-15EF-8F2E1A5D943E">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_Last_Name" id="454725A2-56C3-DD57-1396-3FB7EC54AB5A">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_Name_Suffix" id="03F277F7-5777-118E-13EA-DB3E97B035E6">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_Address_Line1" id="8A9DFE80-BD1B-C157-B7BD-E8A6ECBACF5F">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_Address_Line2" id="280F6A99-B097-BCC9-7320-D2B2700C83FA">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_Address_City" id="36B88E53-C8BC-9774-53BC-564A758B5514">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_Address_State" id="61EB3DF7-7C76-1B14-4C41-E5B850B586DA">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_Postal_Code" id="DDE6673C-DEED-1BDE-920A-8F98BF532F08">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_Address_Country_Code" id="6DAAFEEE-C40C-65F8-143D-521482E8196C">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_TN_Country_Code" id="2A141B38-4FCF-D6B7-697E-A530A2DDA7CB">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_TN_Area_Code" id="502A9608-DBC2-DC62-2F3C-FEAD8744F99A">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_TN_Exchange" id="47ADC209-7072-F765-316D-C8291A5A1AC2">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_TN_Line_Number" id="056D1C7E-EBED-EFF3-D52D-963F2A86CB63">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_TN_Extension" id="3D9D0A13-D73C-87F5-6508-FDBEF4161917">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_TN_Type_Code" id="AF04AC52-0367-79EA-16AF-47A173039474">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_eMail" id="024D2A05-D546-68A3-45D8-252BCDCA9151">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:31:37 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rqstr_Resi_Relation_Code" id="B9542F55-F4E6-C2A1-E194-95671FB5987B">
+<createdBy>p2719557</createdBy>
+<createdTime>2019-10-07 20:38:20 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cherwell_Ticket_ID" id="6E407899-F36A-15D6-E8CE-A09F45077FD9">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-14 12:57:28 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9621AF51-5CD1-E212-0484-4192792260F8" name="Request_T_PK">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 17:01:03 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A879180-E893-73C8-F835-7A203CD6891A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5204978-EDF2-9CE7-7F67-574157067F96" name="Request_Type_CT_FK">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 15:58:48 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0492F44B-466C-4AAE-579C-30E282F7326D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12C2C3AC-8D93-EB9F-1B4B-5E9017F77B67" name="Regulator_CT_FK">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:22:26 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86E2F993-F947-CBE1-9988-6119EECE3146"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F296DF97-D5F2-A532-67D0-57128AF57AC0" name="Request_Process_FK">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B039D4FE-D0A1-5A8D-94B3-4975175E9F38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EDA48C4-4A9A-0CBF-FBC0-E9B2D794BD65" name="Request_Status_CT_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-14 13:01:59 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86240AC3-DF83-98D9-9600-97A4B19C8F1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

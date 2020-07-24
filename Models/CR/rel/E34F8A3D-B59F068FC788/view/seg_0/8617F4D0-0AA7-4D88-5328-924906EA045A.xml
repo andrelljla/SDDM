@@ -1,0 +1,827 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="8617F4D0-0AA7-4D88-5328-924906EA045A" name="Request_Detail_V">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:25:09 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>view_2</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT 
+	r.request_id request_id
+  ,	reg.regulation_name regulation_name
+  , 	chn.request_channel_desc request_channel
+  , 	rqtp.request_type_desc request_type
+  ,	rqst.request_status_type_desc request_status
+  , 	r.request_datetime request_received_date
+  , 	get_target_response_date (r.request_id) target_response_date
+  , 	get_actual_response_date (r.request_id) actual_response_date
+  , 	get_ticket ('CHERWELL', '', r.request_id) IT_ticketing_system_ticket_num
+  ,	get_ticket ('TMS', 'VALIDATE', r.request_id) ocs_validate_task_num
+  ,  get_ticket ('TMS', 'QC', r.request_id) ocs_qc_review_task_num
+  , 	r.resi_name_prefix resident_name_prefix
+  ,  resi_first_name resi_first_name
+  ,  resi_middle_name resi_middle_name
+  ,  resi_last_name resi_last_name
+  ,  resi_name_suffix resi_name_suffix
+  ,  resi_address_line1 resi_address_line1
+  ,  resi_address_line2 resi_address_line2
+  ,  resi_address_city resi_address_city
+  ,  resi_address_state resi_address_state
+  ,  resi_postal_code resi_postal_code
+  ,  resi_address_country_code resi_address_country_code
+  ,  'resi_foo' resi_telephone_number
+--  ,  '+ ' || NVL(to_char(resi_tn_country_code), 1) || ' (' || to_char(resi_tn_area_code) || ') '|| to_char(resi_tn_exchange) || '-' || to_char(resi_tn_line_number) || NVL(to_char(('EXT.' ||resi_tn_extension), 'No Extension') resi_telephone_number
+  ,  resi_tn_type_code resi_tn_type_code
+  ,  resi_email resi_email
+  ,  resi_customer_status_code resi_customer_status_code
+  ,  resi_authentication_id resi_authentication_id
+  ,  resi_kbp_pass_fail resi_kbp_pass_fail
+  ,  rqstr_name_prefix rqstr_name_prefix
+  ,  rqstr_first_name rqstr_first_name
+  ,  rqstr_middle_name rqstr_middle_name
+  ,  rqstr_last_name rqstr_last_name
+  ,  rqstr_name_suffix rqstr_name_suffix
+  ,  rqstr_address_line1 rqstr_address_line1
+  ,  rqstr_address_line2 rqstr_address_line2
+  ,  rqstr_address_city  rqstr_address_city
+  ,  rqstr_address_state rqstr_address_state
+  ,  rqstr_postal_code rqstr_postal_code
+  ,  rqstr_address_country_code rqstr_address_country_code
+  ,	'rqstr_foo' rqstr_telephone_number
+--  ,  '+ '|| NVL(to_Char(rqstr_tn_country_code), 1) || ' (' || to_char(rqstr_tn_area_code) || ') '|| to_char(rqstr_tn_exchange) || '-' || to_char(rqstr_tn_line_number) || NVL(to_char(('EXT.' ||rqstr_tn_extension), 'No Extension') rqstr_telephone_number
+  ,  rqstr_tn_type_code rqstr_tn_type_code
+  ,  rqstr_email rqstr_email
+  ,  rqstr_resi_relation_code rqstr_resi_relation_code  
+
+FROM
+	request_t r
+  ,	regulation_ct reg
+  , 	request_channel_ct chn
+  , 	request_type_ct rqtp
+  , 	request_status_history_t rqsthis
+  , 	request_status_ct rqst
+
+WHERE
+	r.request_t = 1
+and	r.regulation_cd = reg.regulation_cd
+and	r.request_channel_cd = chn.request_channel_cd
+and	r.request_type_cd = rqtp.request_type_cd
+and	r.request_id = rqsthis.request_id
+and	rqst.request_status_type_cd = rqsthist.request_status_type_cd]]></userDefinedSQL>
+<validSQL>false</validSQL>
+<parsed>true</parsed>
+<usedContainers>
+<container alias="rqtp" containerID="27776A88-8BE6-3D83-6E5A-F71979403C72"/>
+<container alias="chn" containerID="8D197AAC-EEEE-15D6-FB7C-9FCCAC7200AF"/>
+<container alias="rqst" containerID="7AB593C1-E7FD-325E-157D-D7929DB07879"/>
+<container alias="reg" containerID="6E765851-B535-5020-138B-99B731BEFDB0"/>
+<container alias="r" containerID="28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="request_id" id="4A0332AD-BDB4-E0D1-5BA5-DBC5E709A241">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>request_id</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>3A879180-E893-73C8-F835-7A203CD6891A</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="regulation_name" id="0B319BD1-E64A-AA0C-6B30-627A731EA375">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>regulation_name</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>867E5453-4A58-CADF-560F-50AFB6D1E468</referencedColumn>
+<table>6E765851-B535-5020-138B-99B731BEFDB0</table>
+<tableAlias>reg</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="request_channel" id="0FAA8A94-4426-17C0-B10A-53C237DF7033">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>request_channel</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>CF5C8413-ACD9-9879-FE95-FCD2476100AE</referencedColumn>
+<table>8D197AAC-EEEE-15D6-FB7C-9FCCAC7200AF</table>
+<tableAlias>chn</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="request_type" id="951FFC64-70FA-EBA7-DECE-667A22AC654A">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>request_type</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>8F02FCDE-B18B-406E-35B6-0BBE59862D24</referencedColumn>
+<table>27776A88-8BE6-3D83-6E5A-F71979403C72</table>
+<tableAlias>rqtp</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Request_Status_Desc" id="9D8D0C9B-C10B-D314-83D3-6155FF2A2E51">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>request_status</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>ECAC6D8A-DA0B-FD94-BE84-75C20A9D3810</referencedColumn>
+<table>7AB593C1-E7FD-325E-157D-D7929DB07879</table>
+<tableAlias>rqst</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="request_received_date" id="1D7A06C8-FDE5-0843-50BB-E67903E28C4C">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>request_received_date</alias>
+<dataType>DATE</dataType>
+<reference>false</reference>
+<referencedColumn>75DC69E9-6FCD-C96E-BA16-794CEE18964F</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="target_response_date" id="4FFEA7A2-913E-6E2F-ABB1-AF22DF20E285">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>target_response_date</alias>
+<dataType>UNKNOWN</dataType>
+<expression>get_target_response_date(r.Request_ID)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="actual_response_date" id="563E179B-3954-77B6-9964-C5D87E40B003">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>actual_response_date</alias>
+<dataType>UNKNOWN</dataType>
+<expression>get_actual_response_date(r.Request_ID)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="IT_ticketing_system_ticket_num" id="4BFE779F-95E4-B1B3-BFD2-0840AFE374C2">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:56:09 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>IT_ticketing_system_ticket_num</alias>
+<dataType>UNKNOWN</dataType>
+<expression>get_ticket(&apos;CHERWELL&apos;, &apos;&apos;, r.Request_ID)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ocs_validate_task_num" id="71C464BD-86B6-BCAA-F097-F0152BD5AC88">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:56:09 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ocs_validate_task_num</alias>
+<dataType>UNKNOWN</dataType>
+<expression>get_ticket(&apos;TMS&apos;, &apos;VALIDATE&apos;, r.Request_ID)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ocs_qc_review_task_num" id="C535F1E0-DC31-69D2-F4BD-17464C4A8094">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:56:09 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ocs_qc_review_task_num</alias>
+<dataType>UNKNOWN</dataType>
+<expression>get_ticket(&apos;TMS&apos;, &apos;QC&apos;, r.Request_ID)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resident_name_prefix" id="FCAAF34E-8FF7-1415-3CA1-3BB5EBE1B4B9">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resident_name_prefix</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>752EF281-2DFE-CF71-1B13-8CBAE946BCCE</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_first_name" id="413F5799-C21F-6F80-8A1F-95F934668C20">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_first_name</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>B2F97EF3-7378-2B77-278A-A27AF38E3794</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_middle_name" id="DE534098-F5FF-7F58-35AC-C34A4CB1AD6C">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_middle_name</alias>
+<dataType>VARCHAR2 (1 CHAR)</dataType>
+<reference>false</reference>
+<referencedColumn>C4394022-81CB-38EC-CD34-4FEA317917A5</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_last_name" id="AC98D280-5FDA-5C22-885E-C842E2E2CB87">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_last_name</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>8ED5E1EE-40CE-D34D-FC39-11B20DA3BA4B</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_name_suffix" id="6D474143-20F4-93B2-08AE-3D46438D7BC5">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_name_suffix</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>666CF306-B396-24AE-BA7C-19BAB3160CF2</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_address_line1" id="0218C7AA-CE82-E979-E000-2B5D4520F0DA">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_address_line1</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>EE87624B-20F6-39CA-0529-18F545B47A63</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_address_line2" id="12D6EB6E-E2AB-7FB0-2CAA-FCB10567546A">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_address_line2</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>34E6BE92-36C7-C4D8-0239-8AC4F4D2DF7D</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_address_city" id="73256910-5964-3287-ECF7-1D0DFABB1B73">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_address_city</alias>
+<dataType>VARCHAR2 (100 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>DCCFE954-80C7-E0BD-DB3B-7108B3086E47</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_address_state" id="77B0921D-525B-C296-4CA4-AFDFC429BECF">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_address_state</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>CB325E1E-B259-5E05-4C58-A257042A84A8</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_postal_code" id="F6F74EF0-6628-5946-B15A-8391065AC876">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_postal_code</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>F8B3EEC2-7855-9B2E-1E12-9BDC7ABF0F8F</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_address_country_code" id="E093500B-6CE3-9FAB-376F-C5BDFA8BE646">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_address_country_code</alias>
+<dataType>VARCHAR2 (3 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>CF158AA4-06D0-0446-4868-712646D7C8F3</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_telephone_number" id="18354598-1148-06B9-CE34-6FD7CCB0A4A7">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:51:42 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_telephone_number</alias>
+<dataType>UNKNOWN</dataType>
+<expression>&apos;resi_foo&apos;</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_tn_type_code" id="097D6598-CD45-E83E-04E9-DB5E8582CC3D">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_tn_type_code</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>2E57ED6A-658F-81E0-99B1-52511B923C38</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_email" id="135CD289-B963-0999-D561-D83202EAFB7A">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_email</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>74208357-4133-34FF-ADD7-DCF51D5C7301</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_customer_status_code" id="DFFFF2B6-F38E-5081-E57F-D45EAE5E6254">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_customer_status_code</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>92D8F0BC-06C6-3D51-509B-50114F6ADD25</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_authentication_id" id="CF131515-51D0-C43D-9A88-94A1EEEB90B2">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_authentication_id</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>BA600141-F8D5-F5B3-03B6-E4E60CE31A0F</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="resi_kbp_pass_fail" id="67329E3D-16D1-4025-597A-F448F6BA6820">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>resi_kbp_pass_fail</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>BF7AD427-D451-DADD-48B8-FE05DB27C637</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_name_prefix" id="C98C597D-5107-3A53-FB7B-D7F76DA70F8E">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_name_prefix</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>D48C56C4-027C-EE8A-4FA3-84819FE36C3D</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_first_name" id="F315D1D3-B62E-BCAE-55F9-C3F38FFC15F4">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_first_name</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>396EB534-184E-7B21-BE4E-45423A1C345C</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_middle_name" id="1DF6597C-B3EE-986A-E786-F08E90364E78">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_middle_name</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>A63CA764-5F7D-A816-15EF-8F2E1A5D943E</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_last_name" id="20B33879-6B1D-91FD-426D-BF614578B001">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_last_name</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>454725A2-56C3-DD57-1396-3FB7EC54AB5A</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_name_suffix" id="B1458C66-4730-3B8F-2EA5-1858616F2D27">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_name_suffix</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>03F277F7-5777-118E-13EA-DB3E97B035E6</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_address_line1" id="C3C98167-CFCD-7A1A-5113-DD0497813438">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_address_line1</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>8A9DFE80-BD1B-C157-B7BD-E8A6ECBACF5F</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_address_line2" id="FA39176C-A617-B9B5-0E19-38316105894D">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_address_line2</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>280F6A99-B097-BCC9-7320-D2B2700C83FA</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_address_city" id="F8D045E8-C5C1-9CE6-9F73-1B0C2E836D2E">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_address_city</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>36B88E53-C8BC-9774-53BC-564A758B5514</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_address_state" id="E435D29D-E095-8B51-4EE0-48872AA9465B">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_address_state</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>61EB3DF7-7C76-1B14-4C41-E5B850B586DA</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_postal_code" id="B2BB0FAC-9FC6-70B0-CB5A-91A7085B7B1E">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_postal_code</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>DDE6673C-DEED-1BDE-920A-8F98BF532F08</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_address_country_code" id="3580E065-7639-7E73-A6F1-7B6B372CDD40">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_address_country_code</alias>
+<dataType>VARCHAR2 (3 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>6DAAFEEE-C40C-65F8-143D-521482E8196C</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_telephone_number" id="D237BCDD-478E-0FD9-31B1-32030244A3E0">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:51:42 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_telephone_number</alias>
+<dataType>UNKNOWN</dataType>
+<expression>&apos;rqstr_foo&apos;</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_tn_type_code" id="1D291E7C-E09C-004A-5A25-92DBCE91D5AB">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_tn_type_code</alias>
+<dataType>VARCHAR2</dataType>
+<expression>NVL(r.Rqstr_TN_Type_Code, &apos;No Requestor TN&apos;)</expression>
+<reference>false</reference>
+<referencedColumn>AF04AC52-0367-79EA-16AF-47A173039474</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_email" id="C1B0054F-C772-53BD-AE44-C4320F15FD33">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_email</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>024D2A05-D546-68A3-45D8-252BCDCA9151</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="rqstr_resi_relation_code" id="9690CA77-CBB6-EF17-3D1A-494B391A07D5">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 15:43:05 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rqstr_resi_relation_code</alias>
+<dataType>VARCHAR2</dataType>
+<reference>false</reference>
+<referencedColumn>B9542F55-F4E6-C2A1-E194-95671FB5987B</referencedColumn>
+<table>28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15</table>
+<tableAlias>r</tableAlias>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="28B1DE6C-C610-E7D6-64A3-AB2BA1E47D15">
+<container>true</container>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6E765851-B535-5020-138B-99B731BEFDB0">
+<container>true</container>
+<tableName>Regulation_CT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8D197AAC-EEEE-15D6-FB7C-9FCCAC7200AF">
+<container>true</container>
+<tableName>Request_Channel_CT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="27776A88-8BE6-3D83-6E5A-F71979403C72">
+<container>true</container>
+<tableName>Request_Type_CT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7AB593C1-E7FD-325E-157D-D7929DB07879">
+<container>true</container>
+<tableName>Request_Status_CT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E84E0EA1-5CBF-6C99-398B-3CA6B3661DC7">
+<container>true</container>
+<tableName>Request_Status_History_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3A879180-E893-73C8-F835-7A203CD6891A">
+<columnName>Request_ID</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="867E5453-4A58-CADF-560F-50AFB6D1E468">
+<columnName>Regulation_Name</columnName>
+<tableName>Regulation_CT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CF5C8413-ACD9-9879-FE95-FCD2476100AE">
+<columnName>Request_Channel_Desc</columnName>
+<tableName>Request_Channel_CT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8F02FCDE-B18B-406E-35B6-0BBE59862D24">
+<columnName>Request_Type_Desc</columnName>
+<tableName>Request_Type_CT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="ECAC6D8A-DA0B-FD94-BE84-75C20A9D3810">
+<columnName>Request_Status_Type_Desc</columnName>
+<tableName>Request_Status_CT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="75DC69E9-6FCD-C96E-BA16-794CEE18964F">
+<columnName>Request_DateTime</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="752EF281-2DFE-CF71-1B13-8CBAE946BCCE">
+<columnName>Resi_Name_Prefix</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B2F97EF3-7378-2B77-278A-A27AF38E3794">
+<columnName>Resi_First_Name</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C4394022-81CB-38EC-CD34-4FEA317917A5">
+<columnName>Resi_Middle_Name</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8ED5E1EE-40CE-D34D-FC39-11B20DA3BA4B">
+<columnName>Resi_Last_Name</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="666CF306-B396-24AE-BA7C-19BAB3160CF2">
+<columnName>Resi_Name_Suffix</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EE87624B-20F6-39CA-0529-18F545B47A63">
+<columnName>Resi_Address_Line1</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="34E6BE92-36C7-C4D8-0239-8AC4F4D2DF7D">
+<columnName>Resi_Address_Line2</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DCCFE954-80C7-E0BD-DB3B-7108B3086E47">
+<columnName>Resi_Address_City</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CB325E1E-B259-5E05-4C58-A257042A84A8">
+<columnName>Resi_Address_State</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F8B3EEC2-7855-9B2E-1E12-9BDC7ABF0F8F">
+<columnName>Resi_Postal_Code</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CF158AA4-06D0-0446-4868-712646D7C8F3">
+<columnName>Resi_Address_Country_Code</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2E57ED6A-658F-81E0-99B1-52511B923C38">
+<columnName>Resi_TN_Type_Code</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="74208357-4133-34FF-ADD7-DCF51D5C7301">
+<columnName>Resi_eMail</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="92D8F0BC-06C6-3D51-509B-50114F6ADD25">
+<columnName>Resi_Customer_Status_Code</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BA600141-F8D5-F5B3-03B6-E4E60CE31A0F">
+<columnName>Resi_Authentication_ID</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BF7AD427-D451-DADD-48B8-FE05DB27C637">
+<columnName>Resi_KBP_Pass_Fail</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D48C56C4-027C-EE8A-4FA3-84819FE36C3D">
+<columnName>Rqstr_Name_Prefix</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="396EB534-184E-7B21-BE4E-45423A1C345C">
+<columnName>Rqstr_First_Name</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A63CA764-5F7D-A816-15EF-8F2E1A5D943E">
+<columnName>Rqstr_Middle_Name</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="454725A2-56C3-DD57-1396-3FB7EC54AB5A">
+<columnName>Rqstr_Last_Name</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="03F277F7-5777-118E-13EA-DB3E97B035E6">
+<columnName>Rqstr_Name_Suffix</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8A9DFE80-BD1B-C157-B7BD-E8A6ECBACF5F">
+<columnName>Rqstr_Address_Line1</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="280F6A99-B097-BCC9-7320-D2B2700C83FA">
+<columnName>Rqstr_Address_Line2</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="36B88E53-C8BC-9774-53BC-564A758B5514">
+<columnName>Rqstr_Address_City</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="61EB3DF7-7C76-1B14-4C41-E5B850B586DA">
+<columnName>Rqstr_Address_State</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DDE6673C-DEED-1BDE-920A-8F98BF532F08">
+<columnName>Rqstr_Postal_Code</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6DAAFEEE-C40C-65F8-143D-521482E8196C">
+<columnName>Rqstr_Address_Country_Code</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AF04AC52-0367-79EA-16AF-47A173039474">
+<columnName>Rqstr_TN_Type_Code</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="024D2A05-D546-68A3-45D8-252BCDCA9151">
+<columnName>Rqstr_eMail</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B9542F55-F4E6-C2A1-E194-95671FB5987B">
+<columnName>Rqstr_Resi_Relation_Code</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="86E2F993-F947-CBE1-9988-6119EECE3146">
+<columnName>Regulation_Cd</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DB5CEFFA-1298-5A3B-48CD-985BD79C072C">
+<columnName>Regulation_Cd</columnName>
+<tableName>Regulation_CT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B039D4FE-D0A1-5A8D-94B3-4975175E9F38">
+<columnName>Request_Channel_Cd</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="00814416-6D78-0DE9-7AE4-61F156D9B212">
+<columnName>Request_Channel_Cd</columnName>
+<tableName>Request_Channel_CT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0492F44B-466C-4AAE-579C-30E282F7326D">
+<columnName>Request_Type_Cd</columnName>
+<tableName>Request_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CD2094AF-B191-7D60-B8CC-D5BBD040B4F0">
+<columnName>Request_Type_Cd</columnName>
+<tableName>Request_Type_CT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E7014E52-D790-14A4-BC99-D3EA8838FCD7">
+<columnName>Request_ID</columnName>
+<tableName>Request_Status_History_T</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="02F8BC2B-B8E6-3455-EC30-FB7314A3F5A9">
+<columnName>Request_Status_Type_Cd</columnName>
+<tableName>Request_Status_CT</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

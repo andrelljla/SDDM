@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1581E705-71BB-1AF5-916B-039BB8D20BE2" name="Event_Attributes_T">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-14 13:12:16 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Compliance_Event_ID" id="9137EFDE-DD6D-0516-101C-36D18F265180">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-14 13:13:21 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C051473-41EF-088E-47AC-D8885ADA64EF" referredColumn="BE05F389-9EB9-8EB8-CB11-6E92DFEA1A99"/>
+</associations>
+</Column>
+<Column name="Attribute_Name" id="8AD6B9D9-68EE-A851-9110-0C36D5425CEA">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-14 13:13:06 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Attribute_Value" id="1C7B6351-3AA1-2FB4-EFB9-B866A51798F7">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-14 13:13:06 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E58B692A-7BE0-7A11-4B0F-996CEFD2D24D" name="Compliance_Event_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-14 13:13:21 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9137EFDE-DD6D-0516-101C-36D18F265180"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

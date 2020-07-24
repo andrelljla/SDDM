@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E84E0EA1-5CBF-6C99-398B-3CA6B3661DC7" name="Request_Status_History_T">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 17:00:18 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Request_ID" id="E7014E52-D790-14A4-BC99-D3EA8838FCD7">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 17:04:06 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="595D6AC4-94A1-FEDD-EE66-2282F6020A1F" referredColumn="3A879180-E893-73C8-F835-7A203CD6891A"/>
+</associations>
+</Column>
+<Column name="Status_Effective_DateTime" id="BA4E8ABF-9E06-051E-A840-90F0E86D59C4">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:08:49 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Request_Status_Cd" id="12EDD2DB-03CA-87A1-7270-F073ADD50806">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:08:49 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4690844-1526-B0E2-A998-A59EE788B340" referredColumn="02F8BC2B-B8E6-3455-EC30-FB7314A3F5A9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6FCB72C3-BFE4-1C86-FF8E-A60FEAD518C8" name="Request_Status_History_PK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 04:46:36 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA4E8ABF-9E06-051E-A840-90F0E86D59C4"/>
+<colUsage columnID="E7014E52-D790-14A4-BC99-D3EA8838FCD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5097BBA8-AD5B-0492-759A-BBB4C69EB95F" name="Request_History_FK">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 17:04:06 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7014E52-D790-14A4-BC99-D3EA8838FCD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B0D1B04-951B-364E-BD63-E9995ABCA353" name="Request_Status_FK">
+<createdBy>P2719557</createdBy>
+<createdTime>2019-10-03 19:13:50 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12EDD2DB-03CA-87A1-7270-F073ADD50806"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

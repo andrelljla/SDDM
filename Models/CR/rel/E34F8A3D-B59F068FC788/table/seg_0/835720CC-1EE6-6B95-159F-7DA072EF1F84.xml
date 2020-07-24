@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="835720CC-1EE6-6B95-159F-7DA072EF1F84" name="Ambiguous_Customer_Request_T">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-28 20:54:22 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Request_ID" id="0D672767-FEA7-0428-8F3C-07C92E47AAB6">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-28 20:54:22 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47EB4BD9-2503-7F33-4844-666CB434E588" referredColumn="3A879180-E893-73C8-F835-7A203CD6891A"/>
+</associations>
+</Column>
+<Column name="Ambiguous_Customer_ID" id="7EE1D3B9-A440-9E4F-F43C-12EE51B50B7F">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-28 20:55:03 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EAA58867-C42D-7620-2083-64EEB58FFD73" referredColumn="3D120586-D220-C1F1-08AA-98E787387673"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D094AA15-9B96-1D86-C285-9CB796B46529" name="Ambiguous_Customer_Request_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-28 20:54:22 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D672767-FEA7-0428-8F3C-07C92E47AAB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1AEE3B0A-8111-A0EC-BDD0-D75FE04A82CA" name="Request_Ambiguous_Customer_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-28 20:55:03 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EE1D3B9-A440-9E4F-F43C-12EE51B50B7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

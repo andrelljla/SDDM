@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4303283-6C54-9AB1-39AD-B3154A776E63" name="TMS_Integration">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-11-15 14:48:25 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TMS_Ticket_ID" id="B2F35A4B-6E14-55AA-D938-2D25205181F7">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-11-15 14:49:25 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Request_ID" id="405FD525-F8E1-B49D-B155-F58016FF7B01">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-11-15 14:49:33 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37C0E7D5-2E75-562D-8567-B29520AE4023" referredColumn="3A879180-E893-73C8-F835-7A203CD6891A"/>
+</associations>
+</Column>
+<Column name="Create_DateTime" id="95382B81-FFD5-8236-3F27-A50CE85F48C1">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-11-15 15:44:32 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7713DB2-C201-D009-0278-CEE2C1802A7C" name="TMS_Integration_PK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-11-15 14:49:25 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2F35A4B-6E14-55AA-D938-2D25205181F7"/>
+<colUsage columnID="405FD525-F8E1-B49D-B155-F58016FF7B01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BB6BBCB-0EEA-B321-AD87-64CA3BCF0BEB" name="TMS Integration_Request_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-11-15 14:49:33 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="405FD525-F8E1-B49D-B155-F58016FF7B01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

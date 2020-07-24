@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6B7C0999-F119-3C49-355E-22E7B6F385D1" name="Addl_Customer_Name_T">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:37:58 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Customer_ID" id="938096C5-3CBB-B5FA-3FDD-180FA00D74E2">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:38:39 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F7EBC46-0C24-0699-75B8-39B83CC9CE04" referredColumn="D1DFF666-2CE1-9926-2DBD-AACFAB202A40"/>
+</associations>
+</Column>
+<Column name="Name_Prefix" id="6DD050ED-7A15-373F-97C1-8363D588758E">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:38:32 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="First_Name" id="D4A390E9-D59A-7AA7-17BB-E15528C9FD5B">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:38:32 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Middle_Name" id="D4542EB8-C414-BDE0-A623-C127DDE28118">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:38:32 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Last_Name" id="536A07A2-B703-5A38-CC6B-80DD3ACFA082">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:38:32 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Name_Suffix" id="804646D4-81A7-FFBA-4FD4-60EF465BAC3A">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:38:32 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="56ADBF5D-00B4-7356-349C-ED7D240E2DFB" name="Addl_Cust_Name_Customer_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2019-10-09 03:38:39 UTC</createdTime>
+<ownerDesignName>CR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="938096C5-3CBB-B5FA-3FDD-180FA00D74E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
