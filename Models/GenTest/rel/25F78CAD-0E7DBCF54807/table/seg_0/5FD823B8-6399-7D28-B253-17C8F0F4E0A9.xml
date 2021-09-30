@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FD823B8-6399-7D28-B253-17C8F0F4E0A9" name="FactTable">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-09-30 13:10:58 UTC</createdTime>
+<ownerDesignName>GenTest</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodeTable_Code" id="98C3F72B-7613-3CB8-D0E3-11DEF77F6A02">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-09-30 13:12:18 UTC</createdTime>
+<ownerDesignName>GenTest</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="26DE8BDE-B177-3578-BEDB-0EED800CF13D" referredColumn="D2D0B059-4F82-5E85-8BDF-9B6FDD5F5876"/>
+</associations>
+</Column>
+<Column name="FactValue" id="057A2B3E-2664-44B0-4A7F-14B9BCB088D6">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-09-30 13:12:55 UTC</createdTime>
+<ownerDesignName>GenTest</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,12,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="03BCC6DF-889D-FE1F-48F5-ACC1C5695BAD" name="FactTable_CodeTable_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-09-30 13:12:18 UTC</createdTime>
+<ownerDesignName>GenTest</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98C3F72B-7613-3CB8-D0E3-11DEF77F6A02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
