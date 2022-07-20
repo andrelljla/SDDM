@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF73AEE4-C010-57BA-F017-86DD88420961" name="Tables">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-04-22 16:06:01 UTC</createdTime>
+<generatorID>3524DBEE-F42D-3BA4-3327-0409B90F1779</generatorID>
+<ownerDesignName>Information_Schema</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Table_Catalog" id="2FB59B94-244D-10C6-03B2-C4CF32CBF127">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-04-22 16:06:01 UTC</createdTime>
+<generatorID>B503D30E-CF5C-C4D6-5227-329EB0D89CEA</generatorID>
+<ownerDesignName>Information_Schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Table_Schema" id="C8DCEF83-1743-EDBC-0EA5-A1C5586B4D7E">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-04-22 16:06:01 UTC</createdTime>
+<generatorID>1174D6C8-2185-81BD-04D2-36F73A161AFD</generatorID>
+<ownerDesignName>Information_Schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Table_Name" id="8D309614-2FAD-4145-E111-6D6524B3D160">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-04-22 16:06:01 UTC</createdTime>
+<generatorID>74570D71-1109-AD37-27D9-B3F7724F4A10</generatorID>
+<ownerDesignName>Information_Schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Table_Type" id="12B249E1-68AC-5854-1D81-3A6758BC26A5">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-04-22 16:06:01 UTC</createdTime>
+<generatorID>20955BA5-C6D3-70BF-F840-4EEF1C612FC0</generatorID>
+<ownerDesignName>Information_Schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tables_ID" id="99CD82C6-EC10-D2D9-A32D-8F7B4061EB70">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-04-22 16:06:01 UTC</createdTime>
+<ownerDesignName>Information_Schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Schemata_Schemata_ID" id="D1CEA1FC-B2D9-24E4-072F-1434A9C69054">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-04-22 16:06:01 UTC</createdTime>
+<ownerDesignName>Information_Schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD09DC9C-54EC-5C08-3620-C8A866939E53" referredColumn="BAE49D31-3764-F05B-FA92-B8199BC49B53"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9CB63409-10C9-6054-B7EF-7F5144146848" name="Tables_PK">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-04-22 16:06:01 UTC</createdTime>
+<ownerDesignName>Information_Schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="99CD82C6-EC10-D2D9-A32D-8F7B4061EB70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B74E26D9-BDAC-5D87-2DA7-B066FC8700E8" name="Tables_Schemata_FK">
+<createdBy>jandrews</createdBy>
+<createdTime>2021-04-22 16:06:01 UTC</createdTime>
+<generatorID>0821B42C-0A8A-0B9F-F5AE-A1F7360E5EF5</generatorID>
+<ownerDesignName>Information_Schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1CEA1FC-B2D9-24E4-072F-1434A9C69054"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
